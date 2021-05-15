@@ -38,8 +38,8 @@ body {
 }
 
 .section {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .section--one {
@@ -206,7 +206,7 @@ h1 {
 
 .masthead {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 50% 1fr;
     align-items: center;
     gap: 32px;
 }
@@ -292,18 +292,17 @@ h1 {
 
 .testimonials {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
 }
 
 .testimonial {
-    grid-column: span 6;
-
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
 }
 .testimonial__photo {
-    width: calc(4 / 12 * 100%);
-    margin-right: 32px;
+    
 }
 .testimonial__photo img {
     border-radius: 50%;
@@ -311,7 +310,7 @@ h1 {
     border: #fff 2px solid;
 }
 .testimonial__content {
-    width: 66.6%;
+    
 }
 .testimonial__author {
     margin-top: 32px;
@@ -331,15 +330,20 @@ h1 {
 }
 .contact-block__list__item {
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    padding-left: 64px;
 }
 .contact-block__list__item:last-child {
     margin-bottom: 0;
 }
 
 
-
-
+.contact-block__list__item--email {
+    background: url('../img/contact/email.svg?123') top left no-repeat;
+}
+.contact-block__list__item--phone {
+    background: url('../img/contact/phone.svg?123') top left no-repeat;
+}
 
 
 
@@ -400,7 +404,7 @@ h1 {
 .burger__line:nth-child(1) {
     top: 4px;
     right: 0;
-    left: 0;
+    left: 12px;
 }
 .burger__line:nth-child(2) {
     bottom: 14px;
@@ -409,7 +413,7 @@ h1 {
 }
 .burger__line:nth-child(3) {
     bottom: 4px;
-    left: 0;
+    left: 12px;
     right: 0;
 }
 
@@ -474,6 +478,7 @@ h1 {
 .show-menu .burger__line:nth-child(1) {
     transform: rotate(45deg);
     top: 14px;
+    left: 0;
 }
 .show-menu .burger__line:nth-child(2) {
     opacity: 0;
@@ -481,4 +486,5 @@ h1 {
 .show-menu .burger__line:nth-child(3) {
     transform: rotate(-45deg);
     bottom: 14px;
+    left: 0;
 }

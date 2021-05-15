@@ -181,11 +181,11 @@
                 <div class="wp-block-media-text__content">
                     <ul class="contact-block__list">
                         <li class="contact-block__list__item contact-block__list__item--email">info@olano.co.uk</li>
-                        <li class="contact-block__list__item contact-block__list__item--telephone">07713 255 404</li>
+                        <li class="contact-block__list__item contact-block__list__item--phone">07713 255 404</li>
                         <li class="contact-block__list__item contact-block__list__item--address">Unit 8<br>
                         Europa Green<br>
+                        Sheffield Business Park<br>
                         Sheffield<br>
-                        Business Park Sheffield<br>
                         S9 1XH</li>
                     </ul>
                 </div>
