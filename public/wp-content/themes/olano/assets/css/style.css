@@ -162,7 +162,8 @@ h1 {
   width: 24px;
   height: 24px;
   display: inline-flex;
-  background-color: var(--red);
+  background: url("../img/arrow-right.svg") center center no-repeat;
+  background-size: 24px 24px;
   margin-left: 8px;
 }
 

@@ -39,7 +39,7 @@
             <div class="masthead">
                 <div class="masthead__left">
                     <h1>Relevant training, meaningful results.</h1>
-                    <p>This is what we love to create! Click through the characters on the right to see how.</p>
+                    <p style="font-size:20px;">This is what we love to create! Click through the characters on the right to see how.</p>
                 </div>
                 <div class="masthead__right">
                     <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
@@ -72,7 +72,7 @@
     <section id="services" class="section section--three">
         <div class="container">
 
-            <div class="section__header">
+            <div class="section__header" style="margin-left:calc(2/12*100%);width:calc(8/12*100%);">
                 <h2>Our services</h2>
                 <p>We regonise you might have your own ways of working, or are looking for something specific. That's great! If however, you are unsure, and want to explore your options, please take a look at the services we provide below and our team will explain how each one might be right for you.</p>
             </div>
@@ -170,15 +170,14 @@
     <section id="contact" class="section section--red">
         <div class="container">
 
-            <div class="section__header">
-                <h2>Contact us</h2>
-            </div>
-
             <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile">
                 <figure class="wp-block-media-text__media">
                     <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
                 </figure>
                 <div class="wp-block-media-text__content">
+                    <div class="section__header">
+                        <h2>Contact us</h2>
+                    </div>
                     <ul class="contact-block__list">
                         <li class="contact-block__list__item contact-block__list__item--email">info@olano.co.uk</li>
                         <li class="contact-block__list__item contact-block__list__item--phone">07713 255 404</li>
