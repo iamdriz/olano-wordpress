@@ -43,17 +43,14 @@
                 </div>
                 <div class="masthead__right">
                     <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
-                    <a class="pulse"
-                        data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium necessitatibus cupiditate aspernatur. Natus molestias soluta corrupti quidem error ad recusandae, incidunt porro blanditiis, minus praesentium. Atque reprehenderit facere consequatur eligendi!">
-                        <span class="pulse__inner">+</span>
+                    <a class="pulse">
+                        <span class="pulse__inner tooltip bottom" data-tooltip="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">+</span>
                     </a>
-                    <a class="pulse"
-                        data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium necessitatibus cupiditate aspernatur. Natus molestias soluta corrupti quidem error ad recusandae, incidunt porro blanditiis, minus praesentium. Atque reprehenderit facere consequatur eligendi!">
-                        <span class="pulse__inner">+</span>
+                    <a class="pulse">
+                        <span class="pulse__inner tooltip left" data-tooltip="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">+</span>
                     </a>
-                    <a class="pulse"
-                        data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium necessitatibus cupiditate aspernatur. Natus molestias soluta corrupti quidem error ad recusandae, incidunt porro blanditiis, minus praesentium. Atque reprehenderit facere consequatur eligendi!">
-                        <span class="pulse__inner">+</span>
+                    <a class="pulse">
+                        <span class="pulse__inner tooltip right" data-tooltip="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">+</span>
                     </a>
                 </div>
             </div>
