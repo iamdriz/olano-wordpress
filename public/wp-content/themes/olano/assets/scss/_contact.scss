@@ -1,0 +1,31 @@
+.contact-block__list {
+    list-style: none;
+}
+.contact-block__list__item {
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding-left: 64px;
+    position: relative;
+}
+.contact-block__list__item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-block__list__item:before {
+    background-size: 32px auto;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+.contact-block__list__item--email:before {
+    background: url('../img/contact/email.svg?123') center center no-repeat;
+}
+.contact-block__list__item--phone:before {
+    background: url('../img/contact/phone.svg?123') center center no-repeat;
+}
+.contact-block__list__item--address:before {
+    background: url('../img/contact/address.svg?123') center center no-repeat;
+}

@@ -1,0 +1,76 @@
+.section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.section--masthead {
+    min-height: 100vh;
+    background-color: var(--red);
+    background: var(--red) url('../img/masthead-background.svg') bottom center no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.section--masthead a {
+    color: #fff;
+}
+.section--video {
+    background: var(--off-white);
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.section--video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--red);
+    height: 50%;
+}
+.section--off-white {
+    background: var(--off-white);
+}
+.section--red {
+    background-color: var(--red);
+    color: #fff;
+}
+.section--red a {
+    color: #fff;
+}
+.section--yellow {
+    background-color: var(--yellow);
+}
+.section--blue {
+    background-color: var(--blue);
+}
+
+.section__header {
+    margin-bottom: 64px;
+}
+.section__header h2 {
+    font-size: 56px;
+}
+
+
+.section--pattern { position: relative; }
+.section--pattern .container { position: relative; z-index: 2; }
+.section--pattern:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: url('../img/pattern.svg') top center repeat-y;
+    background-size: cover;
+    opacity: 0.03;
+}
+
+.section:first-of-type {
+    padding-top: calc(96px + 64px);
+    min-height: 100vh;
+}
