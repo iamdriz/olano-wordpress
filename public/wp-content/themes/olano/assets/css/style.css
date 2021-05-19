@@ -16713,20 +16713,14 @@ img {
   vertical-align: middle;
 }
 
-.element {
+.video {
   position: relative;
   z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 16px;
-}
-
-.element {
-  position: relative;
   height: 0;
   padding-top: 56.25%;
   overflow: hidden;
 }
-
-.element iframe {
+.video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -16791,8 +16785,7 @@ h1 {
 
 .section--masthead {
   min-height: 100vh;
-  background-color: var(--red);
-  background: var(--red) url("../img/masthead-background.svg") bottom center no-repeat;
+  background: var(--red) url("../img/masthead-background.svg") top center no-repeat;
   background-size: contain;
   display: flex;
   align-items: center;
@@ -16801,23 +16794,6 @@ h1 {
 
 .section--masthead a {
   color: #fff;
-}
-
-.section--video {
-  background: var(--off-white);
-  position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.section--video:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: var(--red);
-  height: 50%;
 }
 
 .section--off-white {
@@ -16841,14 +16817,6 @@ h1 {
   background-color: var(--blue);
 }
 
-.section__header {
-  margin-bottom: 64px;
-}
-
-.section__header h2 {
-  font-size: 56px;
-}
-
 .section--pattern {
   position: relative;
 }
@@ -16868,23 +16836,24 @@ h1 {
   bottom: 0;
   background: url("../img/pattern.svg") top center repeat-y;
   background-size: cover;
-  opacity: 0.03;
+  opacity: 0.08;
 }
 
 .section:first-of-type {
   padding-top: calc(96px + 64px);
-  min-height: 100vh;
 }
 
-.masthead {
-  display: grid;
-  grid-template-columns: calc(5/12*100%) 1fr;
-  align-items: center;
-  gap: 32px;
+.section-header {
+  margin-bottom: 64px;
 }
 
-.masthead__right {
-  position: relative;
+.section-header__title {
+  font-size: 56px;
+}
+
+.section-header__subtitle {
+  font-size: 18px;
+  margin-top: 24px;
 }
 
 .pulse {
@@ -17227,8 +17196,8 @@ h1 {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 1000;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17297,7 +17266,7 @@ h1 {
 
 .footer-about__logo {
   margin-bottom: 24px;
-  height: 32px;
+  height: 48px;
 }
 .footer-about__logo img {
   height: 100%;

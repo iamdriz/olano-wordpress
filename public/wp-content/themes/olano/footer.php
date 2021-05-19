@@ -58,6 +58,23 @@
             e.preventDefault();
             $('body').toggleClass('show-menu');
         });
+
+        function offsetVideo(){
+            let height = $('.video').outerHeight()/2;
+            $('section#services').css({
+                marginTop: -height - 64,
+                paddingTop: height + 64
+            });
+        }
+
+        $(document).ready(function(){
+            offsetVideo();
+        });
+
+        $(window).resize(function(){
+            offsetVideo();
+        });
+
     </script>
     <?php wp_footer(); ?>
 </body>
