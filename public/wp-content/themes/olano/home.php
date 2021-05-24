@@ -11,15 +11,71 @@
                 <div class="wp-block-column">
                     <div class="" style="position:relative">
                         <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
-                        <a class="pulse">
-                            <span class="pulse__inner tooltip bottom" data-tooltip="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">+</span>
-                        </a>
-                        <a class="pulse">
-                            <span class="pulse__inner tooltip left" data-tooltip="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">+</span>
-                        </a>
-                        <a class="pulse">
-                            <span class="pulse__inner tooltip right" data-tooltip="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">+</span>
-                        </a>
+                        <div class="tooltips">
+                            <div class="tooltip" id="tooltip-1">
+                                <a class="tooltip-pulse" href="#tooltip-1" data-tooltip-open>
+                                    <i class="fas fa-plus fa-fw tooltip-pulse__icon"></i>
+                                </a>
+                                <div class="tooltip-bubble tooltip-bubble--bottom tooltip-bubble--left" aria-hidden="true">
+                                    <div class="tooltip-bubble__content">
+                                        <p>Hey! At Olano, we always start a project by understanding what the purpose of the training is you would like.</p>
+                                    </div>
+                                    <div class="tooltip-bubble__arrows">
+                                        <a class="tooltip-arrow" href="#tooltip-3" data-tooltip-open>
+                                            <i class="fas fa-arrow-left fa-fw tooltip-arrow__icon"></i>
+                                        </a>
+                                        <a class="tooltip-arrow" href="#tooltip-2" data-tooltip-open>
+                                            <i class="fas fa-arrow-right fa-fw tooltip-arrow__icon"></i>
+                                        </a>
+                                    </div>
+                                    <a class="tooltip-bubble__close" data-tooltip-close>
+                                        <i class="fas fa-times fa-fw tooltip-bubble__close__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tooltip" id="tooltip-2">
+                                <a class="tooltip-pulse" href="#tooltip-2" data-tooltip-open>
+                                    <i class="fas fa-plus fa-fw tooltip-pulse__icon"></i>
+                                </a>
+                                <div class="tooltip-bubble tooltip-bubble--top tooltip-bubble--left" aria-hidden="true">
+                                    <div class="tooltip-bubble__content">
+                                        <p>We then like to discuss the criteria needed for your project to be a success.</p>
+                                    </div>
+                                    <div class="tooltip-bubble__arrows">
+                                        <a class="tooltip-arrow" href="#tooltip-1" data-tooltip-open>
+                                            <i class="fas fa-arrow-left fa-fw tooltip-arrow__icon"></i>
+                                        </a>
+                                        <a class="tooltip-arrow" href="#tooltip-3" data-tooltip-open>
+                                            <i class="fas fa-arrow-right fa-fw tooltip-arrow__icon"></i>
+                                        </a>
+                                    </div>
+                                    <a class="tooltip-bubble__close" data-tooltip-close>
+                                        <i class="fas fa-times fa-fw tooltip-bubble__close__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tooltip" id="tooltip-3">
+                                <a class="tooltip-pulse" href="#tooltip-3" data-tooltip-open>
+                                    <i class="fas fa-plus fa-fw tooltip-pulse__icon"></i>
+                                </a>
+                                <div class="tooltip-bubble tooltip-bubble--top tooltip-bubble--right" aria-hidden="true">
+                                    <div class="tooltip-bubble__content">
+                                        <p>Once we have understood all your needs, our journey to creating your bespoke training programme begins. Scroll down to watch a short clip of what this may look like.</p>
+                                    </div>
+                                    <div class="tooltip-bubble__arrows">
+                                        <a class="tooltip-arrow" href="#tooltip-2" data-tooltip-open>
+                                            <i class="fas fa-arrow-left fa-fw tooltip-arrow__icon"></i>
+                                        </a>
+                                        <a class="tooltip-arrow" href="#tooltip-1" data-tooltip-open>
+                                            <i class="fas fa-arrow-right fa-fw tooltip-arrow__icon"></i>
+                                        </a>
+                                    </div>
+                                    <a class="tooltip-bubble__close" data-tooltip-close>
+                                        <i class="fas fa-times fa-fw tooltip-bubble__close__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

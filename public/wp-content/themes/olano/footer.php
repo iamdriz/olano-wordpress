@@ -75,6 +75,40 @@
             offsetVideo();
         });
 
+
+        $(document).on('click', function (e) {
+            if ($(e.target).parents().hasClass('tooltip')) return;
+            $('.tooltip').removeClass('tooltip--open');
+        });
+        $(document).on('click', '[data-tooltip-close]', function (e) {
+            e.preventDefault();
+            let tooltip = $(this).parents('.tooltip');
+            $(tooltip).removeClass('tooltip--open');
+        });
+        $(document).on('click', '[data-tooltip-open]', function (e) {
+            e.preventDefault();
+            let tooltip = $(this).attr('href');
+            if ($(tooltip).hasClass('tooltip--open')) {
+                $(tooltip).removeClass('tooltip--open');
+            } else {
+                $('.tooltip').removeClass('tooltip--open');
+                $(tooltip).addClass('tooltip--open');
+            }
+        });
+        $(document).on('keydown', function (e) {
+            let tooltip = $('.tooltip--open');
+            let key = e.which;
+            if (!$(tooltip).length > 0) return;
+            if (key == 27) {
+                $('.tooltip').removeClass('tooltip--open');
+            } else if (key == 37) {
+                let arrowLeft = $(tooltip).find('.tooltip-arrow:first-child');
+                $(arrowLeft).trigger('click');
+            } else if (key == 39) {
+                let arrowRight = $(tooltip).find('.tooltip-arrow:last-child');
+                $(arrowRight).trigger('click');
+            }
+        });
     </script>
     <?php wp_footer(); ?>
 </body>
