@@ -6,7 +6,7 @@
             <div class="wp-block-columns are-vertically-aligned-center" style="margin-bottom:64px;min-height:66.6vh;">
                 <div class="wp-block-column">
                     <h1>Relevant training, meaningful results.</h1>
-                    <p>This is what we love to create! Click through the characters on the right to see how.</p>
+                    <p style="font-size:20px;">This is what we love to create! Click through the characters on the right to see how.</p>
                 </div>
                 <div class="wp-block-column">
                     <div class="" style="position:relative">
