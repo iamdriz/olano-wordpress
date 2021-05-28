@@ -1,3 +1,15 @@
+<?php
+$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
+$pages = array();
+foreach ($pagelist as $page) {
+   $pages[] += $page->ID;
+}
+
+$current = array_search(get_the_ID(), $pages);
+$prevID = $pages[$current-1];
+$nextID = $pages[$current+1];
+?>
+
 <footer class="footer">
         <div class="container">
 
@@ -26,9 +38,9 @@
                     <li class="footer-menu-item">
                         <h3 class="footer-menu__title">Company</h3>
                         <ul class="footer-menu__list">
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/about">About</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
                         </ul>
                     </li>
                     <li class="footer-menu-item">
@@ -40,7 +52,9 @@
                         </ul>
                     </li>
                     <li class="footer-menu-item">
-                        <a class="arrow-link" href="#">Services</a>
+                    <?php if (!empty($nextID)) { ?>
+                        <a class="arrow-link" href="<?php echo get_permalink($nextID); ?>"><?php echo get_the_title($nextID); ?></a>
+                    <?php } ?>
                     </li>
                 </ul>
                 <div class="footer-copyright">

@@ -99,7 +99,11 @@
     list-style: none;
 }
 .menu-list li {
-    font-size: 48px;
+    font-size: 56px;
+    margin-bottom: 24px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .menu-list li a {
     color: #fff;

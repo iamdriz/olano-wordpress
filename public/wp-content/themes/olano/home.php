@@ -3,12 +3,12 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="wp-block-columns are-vertically-aligned-center" style="margin-bottom:64px;min-height:66.6vh;">
-                <div class="wp-block-column">
+            <div class="wp-block-columns are-vertically-aligned-center">
+                <div class="wp-block-column" style="flex-basis:33.3%;">
                     <h1>Relevant training, meaningful results.</h1>
-                    <p style="font-size:20px;">This is what we love to create! Click through the characters on the right to see how.</p>
+                    <p>This is what we love to create! Click through the characters on the right to see how.</p>
                 </div>
-                <div class="wp-block-column">
+                <div class="wp-block-column" style="flex-basis:66.6%;">
                     <div class="" style="position:relative">
                         <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
                         <div class="tooltips">
@@ -98,40 +98,11 @@
                       please take a look at the services we provide below and our team will explain how each one might be right for you.</p>
             </div>
 
-            <div class="services">
-                <div class="services-list-item">
-                    <div class="services-list-item__icon">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Blue.svg">
-                    </div>
-                    <h3 class="services-list-item__title">Bespoke elearning</h3>
-                    <a class="arrow-link" href="#">Explore more</a>
-                </div>
-                <div class="services-list-item">
-                    <div class="services-list-item__icon">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Green.svg">
-                    </div>
-                    <h3 class="services-list-item__title">Classroom &amp; virtual</h3>
-                    <a class="arrow-link" href="#">Explore more</a>
-                </div>
-                <div class="services-list-item">
-                    <div class="services-list-item__icon">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Red.svg">
-                    </div>
-                    <h3 class="services-list-item__title">Explainer videos</h3>
-                    <a class="arrow-link" href="#">Explore more</a>
-                </div>
-                <div class="services-list-item">
-                    <div class="services-list-item__icon">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Yellow.svg">
-                    </div>
-                    <h3 class="services-list-item__title">Content development</h3>
-                    <a class="arrow-link" href="#">Explore more</a>
-                </div>
-            </div>
+            <?php get_template_part('template-parts/services'); ?>
 
             <div class="wp-block-buttons is-content-justification-center">
                 <div class="wp-block-button is-style-fill">
-                    <a class="wp-block-button__link has-orange-background-color has-background" href="">Full list</a>
+                    <a class="wp-block-button__link has-orange-background-color has-background" href="<?php echo bloginfo('home'); ?>/services">Full list</a>
                 </div>
             </div>
 
@@ -193,31 +164,7 @@
     <section id="contact" class="section section--red section--pattern">
         <div class="container">
 
-            <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile">
-                <figure class="wp-block-media-text__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
-                </figure>
-                <div class="wp-block-media-text__content">
-                    <div class="section-header">
-                        <h2 class="section-header__title">Contact us</h2>
-                    </div>
-                    <ul class="contact-block__list">
-                        <li class="contact-block__list__item contact-block__list__item--email">
-                            info@olano.co.uk
-                        </li>
-                        <li class="contact-block__list__item contact-block__list__item--phone">
-                            07713 255 404
-                        </li>
-                        <li class="contact-block__list__item contact-block__list__item--address">
-                            Unit 8<br>
-                            Europa Green<br>
-                            Sheffield Business Park<br>
-                            Sheffield<br>
-                            S9 1XH
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <?php get_template_part('template-parts/contact'); ?>
 
         </div>
     </section>

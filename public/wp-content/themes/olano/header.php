@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
     <header class="header">
         <div class="container">
-            <a class="logo" href="">
+            <a class="logo" href="<?php echo bloginfo('home'); ?>">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/logo-white.svg" alt="Olano logo">
             </a>
             <div class="burger">
@@ -22,10 +22,10 @@
             </div>
             <nav class="menu">
                 <ul class="menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="<?php echo bloginfo('home'); ?>">Home</a></li>
+                    <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
+                    <li><a href="<?php echo bloginfo('home'); ?>/about">About</a></li>
+                    <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
                     <li><a href="#">Play</a></li>
                 </ul>
             </nav>

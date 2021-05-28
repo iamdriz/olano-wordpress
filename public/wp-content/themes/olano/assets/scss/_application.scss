@@ -31,7 +31,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -69,12 +69,20 @@ h4,
 h5,
 h6 {
     font-weight: 800;
+    margin-bottom: 24px;
 }
 
 h1 {
     font-size: 64px;
     line-height: 72px;
     margin-bottom: 24px;
+}
+
+p {
+    margin-bottom: 24px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -93,4 +101,38 @@ h1 {
     background: url('../img/arrow-right.svg') center center no-repeat;
     background-size: 24px 24px;
     margin-left: 8px;
+}
+
+
+
+.staff-list {
+    display: grid;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 25%));
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, minmax(0, 33%));
+    }
+    gap: 32px;
+}
+
+.staff-list-item {
+    box-shadow: rgba(0,0,0,.25) 0 0 8px;
+}
+
+.staff-list-item__content {
+    padding: 16px;
+}
+
+.staff-list-item__name {
+    margin-bottom: 8px;
+}
+.staff-list-item__title {
+    
+}
+
+
+.bordered {
+    border-top: #fff 2px solid;
+    padding-top: 16px;
 }

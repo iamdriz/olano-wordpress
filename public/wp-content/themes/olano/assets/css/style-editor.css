@@ -29,7 +29,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -67,12 +67,20 @@ h4,
 h5,
 h6 {
   font-weight: 800;
+  margin-bottom: 24px;
 }
 
 h1 {
   font-size: 64px;
   line-height: 72px;
   margin-bottom: 24px;
+}
+
+p {
+  margin-bottom: 24px;
+}
+p:last-of-type {
+  margin-bottom: 0;
 }
 
 .arrow-link {
@@ -90,6 +98,29 @@ h1 {
   background: url("../img/arrow-right.svg") center center no-repeat;
   background-size: 24px 24px;
   margin-left: 8px;
+}
+
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 33%));
+  gap: 32px;
+}
+
+.staff-list-item {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px;
+}
+
+.staff-list-item__content {
+  padding: 16px;
+}
+
+.staff-list-item__name {
+  margin-bottom: 8px;
+}
+
+.bordered {
+  border-top: #fff 2px solid;
+  padding-top: 16px;
 }
 
 .wp-block-media-text .wp-block-media-text__content {
@@ -117,13 +148,13 @@ h1 {
 
 .footer .container {
   display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 40px;
+  grid-template-columns: 25% auto;
+  column-gap: 32px;
 }
 
 .footer-about__logo {
   margin-bottom: 24px;
-  height: 48px;
+  height: 32px;
 }
 .footer-about__logo img {
   height: 100%;
@@ -131,16 +162,18 @@ h1 {
 
 .footer-copyright {
   border-top: var(--grey) 2px solid;
-  padding-top: 32px;
-  margin-top: 32px;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+.footer-copyright p {
+  font-size: 14px;
 }
 
 .footer-menu {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 40px;
-  grid-column: span 10;
+  column-gap: 32px;
 }
 
 .footer-menu-item:last-child {

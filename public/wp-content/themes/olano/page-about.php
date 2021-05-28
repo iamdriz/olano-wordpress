@@ -1,0 +1,132 @@
+<?php get_header(); ?>
+
+<section class="section section--red">
+    <div class="container">
+
+        <div class="wp-block-columns are-vertically-aligned-center" style="margin-bottom:128px;">
+            <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%;">
+                <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
+            </div>
+            <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:75%;">
+                <h1>About us</h1>
+                <p>We are a team of creative professionals who believe in “co-creation”, meaning we work very closely with you every step of the way to deliver incredible training experiences. We love what we do, and want to share our collective expertise to deliver meaningful results to your business</p>
+            </div>
+        </div>
+
+        <div class="wp-block-columns">
+            <div class="wp-block-column" style="flex-basis:25%;">
+                <h2 class="bordered">The Olano team</h2>
+            </div>
+            <div class="wp-block-column" style="flex-basis:75%;">
+
+                <div class="staff-list">
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="https://picsum.photos/480/480">
+                        </div>
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Kris Randall</h3>
+                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="https://picsum.photos/480/480">
+                        </div>
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Rob Freeman</h3>
+                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="https://picsum.photos/480/480">
+                        </div>
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Callum Parker</h3>
+                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="https://picsum.photos/480/480">
+                        </div>
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Ali Johnson</h3>
+                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="https://picsum.photos/480/480">
+                        </div>
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Olivia Cancellara</h3>
+                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="https://picsum.photos/480/480">
+                        </div>
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Sheena Fraser</h3>
+                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section section--off-white">
+    <div class="container">
+
+        <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile">
+            <figure class="wp-block-media-text__media">
+                <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
+            </figure>
+            <div class="wp-block-media-text__content">
+                <h2>Our Story</h2>
+                <h3>How it all started</h3>
+                <p>NA Consulting first began in 2012 when three L&D professionals became part of the Nicholas Associates Group. Bringing together a wealth of L&D experience equating to over 20 years.</p>
+                <p>As our story continues, we have modernised the traditional Consulting practice. We have played to our experience and strengths, which is our unique in-house design team and our ability to solve problems with digital solutions. This new team has the skill-set and experience to allow us to be able to take on a variety of projects that come our way. Take a look at what we do and how we work in partnership to co-create the learning interventions that your business needs.</p>
+            </div>
+        </div>
+
+        <div class="wp-block-media-text alignwide is-stacked-on-mobile">
+            <figure class="wp-block-media-text__media">
+                <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
+            </figure>
+            <div class="wp-block-media-text__content">
+                <h3>Sheffield Based, Global Reach</h3>
+                <p>We are proud of our roots. We were established and continue to remain in Sheffield. We compete with the best in the L&D market and our global reach reflects this. Over the years our large corporate clients have varied greatly which allows us to gain experiences and insights from different sectors. Through this, our processes and ways of working have continuously improved so ensure you get the best L&D or digital solution you need.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section section--yellow">
+    <div class="container">
+
+    <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile">
+            <figure class="wp-block-media-text__media">
+                <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
+            </figure>
+            <div class="wp-block-media-text__content">
+                <h2>Our guiding principles</h2>
+                <p><strong>Curiosity:</strong> Our inquisitive nature means we take time to explore everything we do. We dig deep to get to the core of your organisations needs.</p>
+                <p><strong>Creativity:</strong> We believe everyone is creative. We want to push the boundaries of Learning and challenge the norm. </p>
+                <p><strong>Mutuality:</strong> From concept to delivery, we believe in a journey of cocreation. It doesn’t work without you, so we want to create lasting relationships through on-going two way communication.</p>
+                <p><strong>Integrity:</strong> We approach every project with authenticity and honesty. We don’t play the hero, we’re real people sharing our specialisms in an honest way.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<?php get_footer(); ?>

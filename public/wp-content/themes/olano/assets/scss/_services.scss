@@ -1,24 +1,39 @@
 .services {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 40px;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    gap: 32px;
+    margin-top: 64px;
     margin-bottom: 64px;
 }
 
 .services-list-item {
     background-color: var(--white);
-    box-shadow: rgba(0, 0, 0, .125) 0 0 8px;
+    color: var(--grey);
+    box-shadow: rgba(0, 0, 0, .25) 0 0 8px;
     padding: 32px;
     text-align: center;
+
+    a {
+        color: var(--grey);
+    }
 
     .services-list-item__icon {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 32px;
+
+        img {
+            max-width: 128px;
+        }
     }
     .services-list-item__title {
-        font-size: 28px;
+        font-size: 32px;
         margin-bottom: 16px;
     }
 }
