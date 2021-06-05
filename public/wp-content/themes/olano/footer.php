@@ -11,23 +11,24 @@ $nextID = $pages[$current+1];
 ?>
 
 <footer class="footer">
-        <div class="container">
+    <div class="container">
 
-            <div class="footer__left">
+        <div class="row">
+            <div class="col md:col--2">
                 <div class="footer-about">
-                    <div class="footer-about__logo">
+                    <a class="footer-about__logo" href="<?php echo bloginfo('home'); ?>">
                         <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/logo-red.svg" alt="Olano logo">
-                    </div>
+                    </a>
                     <div class="footer-about__content">
-                        <p>Olano is part of <a href="">Nicholas Associates Group</a>, Market leading partner of choice for talent management
+                        <p>Olano is part of <a href="https://www.nicholasassociatesgroup.co.uk" target="_blank">Nicholas Associates Group</a>, Market leading partner of choice for talent management
                         solutions from Apprentice to Boardroom.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="footer__right">
-                <ul class="footer-menu">
-                    <li class="footer-menu-item">
+            <div class="col md:col--9 md:offset-1">
+                <ul class="row footer-menu">
+                    <li class="col md:col--3 footer-menu-item">
                         <h3 class="footer-menu__title">Follow us</h3>
                         <ul class="social-links">
                             <li><a href="#"><i class="fab fa-facebook fa-fw" aria-label="Facebook"></i></a></li>
@@ -35,7 +36,7 @@ $nextID = $pages[$current+1];
                             <li><a href="#"><i class="fab fa-linkedin fa-fw" aria-label="LinkedIn"></i></a></li>
                         </ul>
                     </li>
-                    <li class="footer-menu-item">
+                    <li class="col md:col--3 footer-menu-item">
                         <h3 class="footer-menu__title">Company</h3>
                         <ul class="footer-menu__list">
                             <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
@@ -43,7 +44,7 @@ $nextID = $pages[$current+1];
                             <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
                         </ul>
                     </li>
-                    <li class="footer-menu-item">
+                    <li class="col md:col--3 footer-menu-item">
                         <h3 class="footer-menu__title">Resources</h3>
                         <ul class="footer-menu__list">
                             <li><a href="#">Our Stuff</a></li>
@@ -51,9 +52,11 @@ $nextID = $pages[$current+1];
                             <li><a href="#">Policies</a></li>
                         </ul>
                     </li>
-                    <li class="footer-menu-item">
+                    <li class="col md:col--3 footer-menu-item">
                     <?php if (!empty($nextID)) { ?>
                         <a class="arrow-link" href="<?php echo get_permalink($nextID); ?>"><?php echo get_the_title($nextID); ?></a>
+                    <?php } else { ?>
+                        <a class="arrow-link" href="<?php echo bloginfo('home'); ?>">Home</a>
                     <?php } ?>
                     </li>
                 </ul>
@@ -62,9 +65,10 @@ $nextID = $pages[$current+1];
                     Registered in England – Company number: 03606174 | VAT Registration no: GB727824120</p>
                 </div>
             </div>
-
         </div>
-    </footer>
+
+    </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>

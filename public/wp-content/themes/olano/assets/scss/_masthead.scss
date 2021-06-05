@@ -1,3 +1,12 @@
+.home-hero {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 .tooltips {
   position: absolute;
   top: 0;
@@ -17,7 +26,7 @@
 
 .tooltip:nth-child(2) {
   bottom: 50%;
-  left: 25%;
+  left: 28.125%;
 }
 
 .tooltip:nth-child(3) {

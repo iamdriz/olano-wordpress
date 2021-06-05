@@ -1,11 +1,13 @@
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile">
-    <figure class="wp-block-media-text__media">
+<div class="row align-items-center">
+    <figure class="col md:col--5 md:offset-1 md:order-2">
         <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
     </figure>
-    <div class="wp-block-media-text__content">
-        <div class="section-header">
-            <h2 class="section-header__title">Contact us</h2>
-        </div>
+    <div class="col md:col--3 md:offset-2 md:order-1">
+        <?php if(is_home()) { ?>
+        <h2 class="">Contact us.</h2>
+        <?php } else { ?>
+        <h1 class="">Contact us.</h1>
+        <?php } ?>
         <ul class="contact-block__list">
             <li class="contact-block__list__item contact-block__list__item--email">
                 info@olano.co.uk

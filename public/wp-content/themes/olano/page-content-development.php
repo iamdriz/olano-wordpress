@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section class="section section--green">
+<section class="section section--yellow">
     <div class="container">
 
         <div class="wp-block-columns are-vertically-aligned-center">
             <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%;">
-                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Green.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Yellow.svg">
             </div>
             <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:75%;">
                 <h1>Content development</h1>

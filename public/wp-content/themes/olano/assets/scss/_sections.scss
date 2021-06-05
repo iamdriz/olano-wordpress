@@ -38,36 +38,38 @@
 }
 
 
-.section--pattern { position: relative; }
+.section--pattern { position: relative; overflow: hidden; }
 .section--pattern .container { position: relative; z-index: 2; }
-.section--pattern:after {
+.section--pattern .container:before {
     content: '';
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: -50vh;
     left: 0;
-    right: 0;
-    bottom: 0;
-
-    background: url('../img/pattern.svg') top center repeat-y;
-    background-size: cover;
-    opacity: 0.08;
+    bottom: -50vh;
+    width: calc((100vw - 1320px) / 2);
+    transform: translateX(-100%);
+    // background: url('../img/pattern.svg') top left repeat-y;
+    // background-size: cover;
+    background-color: rgba(0,0,0,.125);
 }
+.section--pattern .container:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -50vh;
+    right: 0;
+    bottom: -50vh;
+    width: calc((100vw - 1320px) / 2);
+    transform: translateX(100%);
+    // background: url('../img/pattern.svg') top right repeat-y;
+    // background-size: cover;
+    background-color: rgba(0,0,0,.125);
+}
+
+
+
 
 .section:first-of-type {
     padding-top: calc(96px + 64px);
-}
-
-
-
-
-.section-header {
-    margin-bottom: 64px;
-}
-.section-header__title {
-    font-size: 56px;
-}
-.section-header__subtitle {
-    font-size: 18px;
-    margin-top: 24px;
 }

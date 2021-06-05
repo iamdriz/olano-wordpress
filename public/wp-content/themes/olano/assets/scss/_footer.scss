@@ -1,21 +1,20 @@
 .footer {
+    background-color: var(--white);
     padding-top: 64px;
     padding-bottom: 64px;
 }
 
-.footer .container {
-    display: grid;
-    grid-template-columns: 25% auto;
-    column-gap: 32px;
-}
-
 .footer-about {
-    
+    p {
+        font-size: 14px;
+    }
 }
 
 .footer-about__logo {
+    display: inline-flex;
     margin-bottom: 24px;
     height: 32px;
+
     img {
         height: 100%;
     }
@@ -34,9 +33,6 @@
 
 .footer-menu {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 32px;
 }
 
 .footer-menu-item:last-child {

@@ -3,14 +3,14 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="wp-block-columns are-vertically-aligned-center">
-                <div class="wp-block-column" style="flex-basis:33.3%;">
+            <div class="row align-items-center" style="min-height:calc(100vh - (64px + 96px));">
+                <div class="col lg:col--5">
                     <h1>Relevant training, meaningful results.</h1>
                     <p>This is what we love to create! Click through the characters on the right to see how.</p>
                 </div>
-                <div class="wp-block-column" style="flex-basis:66.6%;">
-                    <div class="" style="position:relative">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
+                <div class="col lg:col--7">
+                    <div class="home-hero">
+                        <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
                         <div class="tooltips">
                             <div class="tooltip" id="tooltip-1">
                                 <a class="tooltip-pulse" href="#tooltip-1" data-tooltip-open>
@@ -91,11 +91,13 @@
     <section id="services" class="section section--off-white section--pattern">
         <div class="container">
 
-            <div class="section-header">
-                <h2 class="section-header__title">Our services</h2>
-                <p class="section-header__subtitle">We regonise you might have your own ways of working, or are looking for something specific. That's great!
-                     If however, you are unsure, and want to explore your options,
-                      please take a look at the services we provide below and our team will explain how each one might be right for you.</p>
+            <div class="row">
+                <div class="col col--7 offset-2">
+                    <h2>Our services</h2>
+                    <p>We regonise you might have your own ways of working, or are looking for something specific. That's great!
+                    If however, you are unsure, and want to explore your options,
+                    please take a look at the services we provide below and our team will explain how each one might be right for you.</p>
+                </div>
             </div>
 
             <?php get_template_part('template-parts/services'); ?>
@@ -112,10 +114,12 @@
     <section id="testimonials" class="section section--yellow">
         <div class="container">
             
-            <div class="section-header">
-                <h2 class="section-header__title">Testimonials</h2>
+            <div class="row">
+                <div class="col col--7 offset-2">
+                    <h2>Testimonials</h2>
+                </div>
             </div>
-
+            
             <div class="testimonials">
                 <div class="testimonial">
                     <div class="testimonial__photo">
