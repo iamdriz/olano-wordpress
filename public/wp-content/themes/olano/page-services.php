@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="section section--red">
+<section class="section section--red section--pattern section--pattern--alternate">
     <div class="container">
 
         <div class="row">

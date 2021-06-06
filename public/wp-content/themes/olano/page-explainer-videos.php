@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section class="section section--red">
+<section class="section section--blue">
     <div class="container">
 
         <div class="wp-block-columns are-vertically-aligned-center">
             <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%;">
-                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Red.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Blue.svg">
             </div>
             <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:75%;">
                 <h1>Explainer videos</h1>
