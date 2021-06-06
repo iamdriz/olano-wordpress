@@ -43,7 +43,7 @@ $nextID = $pages[$current+1];
                             </li>
                             <li class="social-list-item">
                                 <a class="social-list-link social-list-link--green" href="#">
-                                    <i class="fab fa-audible fa-fw" aria-label="Audible"></i>
+                                    <i class="fab fa-spotify fa-fw" aria-label="Spotify"></i>
                                 </a>
                             </li>
                         </ul>

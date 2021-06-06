@@ -1,46 +1,54 @@
 .wp-block-media-text .wp-block-media-text__content {
-    padding-left: 8.33333333333%;
-    padding-right: 0;
+  padding-left: 8.33333333333%;
+  padding-right: 0;
 }
 .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
-    padding-left: 0;
-    padding-right: 8.33333333333%;
+  padding-left: 0;
+  padding-right: 8.33333333333%;
 }
 @media (max-width: 600px) {
-    .wp-block-media-text .wp-block-media-text__content,
-    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 8.33333333333%;
-    }
+  .wp-block-media-text .wp-block-media-text__content,
+  .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 8.33333333333%;
+  }
 }
 
-
-
-
-
 .wp-block-button__link {
-    color: var(--grey) !important;
-    background-color: var(--yellow);
-    font-weight: 800;
-    border-radius: 999em;
-    display: inline-flex;
-    font-size: 1.25rem;
-    height: 3rem;
-    padding: 0 2rem;
-    min-width: 200px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  color: var(--grey) !important;
+  background-color: var(--yellow);
+  font-weight: 800;
+  border-radius: 999em;
+  display: inline-flex;
+  font-size: 1.25rem;
+  height: 3rem;
+  padding: 0 2rem;
+  min-width: 200px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-    &:after {
-        content: '';
-        position: absolute;
-        border-radius: 999em;
-        border: var(--yellow) 2px solid;
-        top: 8px;
-        left: 8px;
-        bottom: -8px;
-        right: -8px;
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    border-radius: 999em;
+    top: 8px;
+    left: 8px;
+    bottom: -8px;
+    right: -8px;
+    border: var(--yellow) 2px solid;
+  }
+}
+
+.wp-block-button__link.has-yellow-background-color:after {
+  border: var(--yellow) 2px solid;
+}
+
+.wp-block-button__link.has-white-background-color {
+  color: var(--grey) !important;
+  background-color: var(--white);
+  &:after {
+    border: var(--white) 2px solid;
+  }
 }

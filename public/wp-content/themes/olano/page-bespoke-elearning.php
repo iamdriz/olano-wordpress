@@ -3,12 +3,12 @@
 <section class="section section--red">
     <div class="container">
 
-        <div class="row align-items-center margin-bottom-md">
+        <div class="row align-items-center margin-bottom-8">
             <div class="col col--6 offset-3 md:col--2 md:offset-1">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Red.svg" style="border:#fff 2px solid;border-radius:999em;">
             </div>
             <div class="col md:col--7">
-                <h1 class="font-size-display1">Elearning</h1>
+                <h1 class="font-size-display3">Elearning</h1>
                 <p class="font-size-lg">The goal is to create the perfect training for your business.
                      Here's why elearning might be the right tool to achieve this.</p>
             </div>
@@ -26,15 +26,19 @@
     <div class="container">
 
         <div class="row">
-            <div class="col md:col--2">
-                <h3 class="" style="text-align:right;border-top:#3c3c3c 2px solid;">Why elearning?</h3>
+            <div class="col md:col--2 md:text-align-right">
+                <h3 class="font-size-h4 border-top">Why elearning?</h3>
             </div>
             <div class="col md:col--7 md:offset-1">
-                <p class="font-size-xxxl">Bespoke or Off-The-Shelf? Both can be great depending on your needs. The key is identifying your needs and tailoring the training to suit them.</p>
+                <p class="font-size-xxxl">Bespoke or Off-The-Shelf?<br>Both can be great depending on your needs. The key is identifying your needs and tailoring the training to suit them.</p>
                 <p class="font-size-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iusto reprehenderit perferendis amet quasi accusamus aliquid harum nihil sed aliquam inventore eligendi cum eveniet laboriosam porro error, tenetur vel a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione aut earum suscipit vero perferendis, accusamus libero blanditiis fugit vel magnam, natus sint temporibus sed! Corrupti tempore modi inventore velit provident.</p>
-                <div class="row">
+                <div class="row align-items-center margin-top-8">
                     <div class="col md:col--6">
-                        <a class="">Case Study</a>
+                        <div class="wp-block-buttons">
+                            <div class="wp-block-button is-style-fill">
+                                <a class="wp-block-button__link has-yellow-background-color has-background" href="">Case study</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col md:col--6 md:text-align-right">
                         <a class="arrow-link" href="">Classroom &amp; virtual</a>
@@ -50,13 +54,17 @@
     <div class="container">
 
         <div class="row">
-            <div class="col md:col-6 md:offset-3">
-                <h2>Tell us about your latest project</h2>
+            <div class="col md:col--6 md:offset-3">
+                <h2 class="font-size-display4">Tell us about your latest project</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col md:col-6 md:offset-3">
-                <a class="" href="">Contact us</a>
+            <div class="col md:col--6 md:offset-3">
+                <div class="wp-block-buttons">
+                    <div class="wp-block-button is-style-fill">
+                        <a class="wp-block-button__link has-white-background-color has-background" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
 

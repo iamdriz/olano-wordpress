@@ -1,0 +1,38 @@
+$spacing: (
+  0: 0,
+  1: 0.5rem,
+  2: 1rem,
+  3: 1.5rem,
+  4: 2rem,
+  5: 2.5rem,
+  6: 3rem,
+  7: 3.5rem,
+  8: 4rem,
+  9: 4.5rem,
+  10: 5rem,
+  11: 5.5rem,
+  12: 6rem,
+  13: 6.5rem,
+  14: 7rem,
+  15: 7.5rem,
+  16: 8rem,
+) !default;
+
+@each $key, $value in $spacing {
+  @each $direction in ("top", "right", "bottom", "left") {
+    .margin-#{$direction}-#{$key} {
+      margin-#{$direction}: $value;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
