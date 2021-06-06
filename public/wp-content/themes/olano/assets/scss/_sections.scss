@@ -1,14 +1,18 @@
 .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.section:first-of-type {
+    padding-top: 10rem;
 }
 .section--masthead {
     min-height: 100vh;
-    background: var(--red) url('../img/masthead-background.svg') top center no-repeat;
-    background-size: contain;
+    background-color: var(--red);
+    // background: var(--red) url('../img/masthead-background.svg') top center no-repeat;
+    // background-size: contain;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: var(--white);
 }
 .section--masthead a {
     color: #fff;
@@ -39,11 +43,11 @@
 
 
 .section--pattern { position: relative; overflow: hidden; }
-.section--pattern .container { position: relative; z-index: 2; }
+.section--pattern .container { position: relative; z-index: 1; }
 .section--pattern .container:before {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     top: -50vh;
     left: 0;
     bottom: -50vh;
@@ -51,25 +55,27 @@
     transform: translateX(-100%);
     // background: url('../img/pattern.svg') top left repeat-y;
     // background-size: cover;
-    background-color: rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.0625);
 }
 .section--pattern .container:after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     top: -50vh;
     right: 0;
     bottom: -50vh;
-    width: calc((100vw - 1320px) / 2);
-    transform: translateX(100%);
+    width: calc((100vw - 1320px) / 1.5);
+    transform: translateX(75%);
     // background: url('../img/pattern.svg') top right repeat-y;
     // background-size: cover;
-    background-color: rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.0625);
 }
 
-
-
-
-.section:first-of-type {
-    padding-top: calc(96px + 64px);
+.section--pattern--alternate .container:before {
+    width: calc((100vw - 1320px) / 1.5);
+    transform: translateX(-75%);
+}
+.section--pattern--alternate .container:after {
+    width: calc((100vw - 1320px) / 2);
+    transform: translateX(100%);
 }

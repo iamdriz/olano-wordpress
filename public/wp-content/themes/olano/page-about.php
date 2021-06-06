@@ -8,10 +8,10 @@
                 <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
             </div>
             <div class="col md:col--6">
-                <h1>About us</h1>
+                <h1 class="font-size-display1">About us</h1>
                 <p>We are a team of creative professionals who believe in “co-creation”,
                      meaning we work very closely with you every step of the way to deliver incredible training experiences.
-                      We love what we do, and want to share our collective expertise to deliver meaningful results to your business</p>
+                      We love what we do, and want to share our collective expertise to deliver meaningful results to your business.</p>
             </div>
         </div>
 

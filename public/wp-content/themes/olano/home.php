@@ -5,8 +5,8 @@
 
             <div class="row align-items-center" style="min-height:calc(100vh - (64px + 96px));">
                 <div class="col lg:col--5">
-                    <h1>Relevant training, meaningful results.</h1>
-                    <p>This is what we love to create! Click through the characters on the right to see how.</p>
+                    <h1 class="font-size-display1">Relevant training, meaningful results.</h1>
+                    <p class="font-size-lg">This is what we love to create! Click through the characters on the right to see how.</p>
                 </div>
                 <div class="col lg:col--7">
                     <div class="home-hero">
@@ -92,9 +92,9 @@
         <div class="container">
 
             <div class="row">
-                <div class="col col--7 offset-2">
-                    <h2>Our services</h2>
-                    <p>We regonise you might have your own ways of working, or are looking for something specific. That's great!
+                <div class="col md:col--6 md:offset-2">
+                    <h2 class="font-size-display4">Our services</h2>
+                    <p>We recgonise you might have your own ways of working, or are looking for something specific. That's great!
                     If however, you are unsure, and want to explore your options,
                     please take a look at the services we provide below and our team will explain how each one might be right for you.</p>
                 </div>
@@ -115,8 +115,8 @@
         <div class="container">
             
             <div class="row">
-                <div class="col col--7 offset-2">
-                    <h2>Testimonials</h2>
+                <div class="col md:col--6 md:offset-2">
+                    <h2 class="font-size-display4">Testimonials</h2>
                 </div>
             </div>
             
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section id="contact" class="section section--red section--pattern">
+    <section id="contact" class="section section--red section--pattern section--pattern--alternate">
         <div class="container">
 
             <?php get_template_part('template-parts/contact'); ?>

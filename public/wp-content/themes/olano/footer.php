@@ -30,10 +30,22 @@ $nextID = $pages[$current+1];
                 <ul class="row footer-menu">
                     <li class="col md:col--3 footer-menu-item">
                         <h3 class="footer-menu__title">Follow us</h3>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook fa-fw" aria-label="Facebook"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter fa-fw" aria-label="Twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin fa-fw" aria-label="LinkedIn"></i></a></li>
+                        <ul class="social-list">
+                            <li class="social-list-item">
+                                <a class="social-list-link social-list-link--yellow" href="#">
+                                    <i class="fab fa-instagram fa-fw" aria-label="Instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="social-list-link social-list-link--blue" href="#">
+                                    <i class="fab fa-linkedin fa-fw" aria-label="LinkedIn"></i>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="social-list-link social-list-link--green" href="#">
+                                    <i class="fab fa-audible fa-fw" aria-label="Audible"></i>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="col md:col--3 footer-menu-item">
@@ -47,12 +59,12 @@ $nextID = $pages[$current+1];
                     <li class="col md:col--3 footer-menu-item">
                         <h3 class="footer-menu__title">Resources</h3>
                         <ul class="footer-menu__list">
-                            <li><a href="#">Our Stuff</a></li>
-                            <li><a href="#">Brand Guidelines</a></li>
-                            <li><a href="#">Policies</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/our-stuff">Our Stuff</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/brand-guidelines">Brand Guidelines</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/policies">Policies</a></li>
                         </ul>
                     </li>
-                    <li class="col md:col--3 footer-menu-item">
+                    <li class="col md:col--3 footer-menu-item md:text-align-right">
                     <?php if (!empty($nextID)) { ?>
                         <a class="arrow-link" href="<?php echo get_permalink($nextID); ?>"><?php echo get_the_title($nextID); ?></a>
                     <?php } else { ?>
@@ -92,7 +104,6 @@ $nextID = $pages[$current+1];
         $(window).resize(function(){
             offsetVideo();
         });
-
 
         $(document).on('click', function (e) {
             if ($(e.target).parents().hasClass('tooltip')) return;

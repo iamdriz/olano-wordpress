@@ -6,17 +6,24 @@
     @media (min-width: 1200px) {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
-    gap: 32px;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .services-list-item {
     background-color: var(--white);
     color: var(--grey);
-    box-shadow: rgba(0, 0, 0, .25) 0 0 8px;
-    padding: 32px;
+    box-shadow: rgba(0, 0, 0, .125) 0 0 1rem;
+    padding: 2rem;
     text-align: center;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .125) 0 .5rem 1rem;
+        transform: translateY(-.5rem); // rotate(5.625deg)
+    }
 
     a {
         color: var(--grey);
@@ -33,7 +40,6 @@
         }
     }
     .services-list-item__title {
-        font-size: 32px;
-        margin-bottom: 16px;
+
     }
 }
