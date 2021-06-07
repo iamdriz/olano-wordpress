@@ -3,9 +3,9 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="row align-items-center" style="min-height:calc(100vh - (64px + 96px));">
+            <div class="row align-items-center margin-bottom-16" style="min-height:calc(100vh - (32px + 96px));">
                 <div class="col lg:col--5">
-                    <h1 class="font-size-display1">Relevant training, meaningful results.</h1>
+                    <h1 class="font-size-display2">Relevant training, meaningful results.</h1>
                     <p class="font-size-lg">This is what we love to create! Click through the characters on the right to see how.</p>
                 </div>
                 <div class="col lg:col--7">

@@ -6,7 +6,7 @@
         <?php if(is_home()) { ?>
         <h2 class="font-size-display4">Contact us.</h2>
         <?php } else { ?>
-        <h1 class="font-size-display1">Contact us.</h1>
+        <h1 class="font-size-display2">Contact us.</h1>
         <?php } ?>
         <ul class="contact-list">
             <li class="contact-list-item contact-list-item--email">

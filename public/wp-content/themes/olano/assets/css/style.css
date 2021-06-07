@@ -16696,6 +16696,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -18435,12 +18436,12 @@ p:last-of-type {
 }
 
 .section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .section:first-of-type {
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 .section--masthead {
@@ -18510,19 +18511,21 @@ p:last-of-type {
   position: absolute;
   z-index: -1;
   top: -50vh;
-  right: 0;
+  right: 128px;
   bottom: -50vh;
-  width: calc((100vw - 1320px) / 1.5);
-  transform: translateX(75%);
+  width: calc((100vw - 1320px) + 512px);
+  transform: translateX(100%);
   background-color: rgba(0, 0, 0, 0.0625);
 }
 
 .section--pattern--alternate .container:before {
-  width: calc((100vw - 1320px) / 1.5);
-  transform: translateX(-75%);
+  left: 128px;
+  width: calc((100vw - 1320px) + 512px);
+  transform: translateX(-100%);
 }
 
 .section--pattern--alternate .container:after {
+  right: 0;
   width: calc((100vw - 1320px) / 2);
   transform: translateX(100%);
 }
@@ -18999,7 +19002,7 @@ p:last-of-type {
   list-style: none;
 }
 .menu-list li {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .menu-list li:last-child {
   margin-bottom: 0;
