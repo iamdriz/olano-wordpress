@@ -22,11 +22,21 @@
             </div>
             <nav class="menu">
                 <ul class="menu-list">
-                    <li><a href="<?php echo bloginfo('home'); ?>">Home</a></li>
-                    <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
-                    <li><a href="<?php echo bloginfo('home'); ?>/about">About</a></li>
-                    <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
-                    <li><a href="#">Play</a></li>
+                    <li class="menu-list-item">
+                        <a href="<?php echo bloginfo('home'); ?>">Home</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="<?php echo bloginfo('home'); ?>/services">Services</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="<?php echo bloginfo('home'); ?>/about">About</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="<?php echo bloginfo('home'); ?>/contact">Contact</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#">Play</a>
+                    </li>
                 </ul>
             </nav>
             <div class="circle"></div>

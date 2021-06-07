@@ -18498,9 +18498,9 @@ p:last-of-type {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -50vh;
+  top: -100%;
   left: 0;
-  bottom: -50vh;
+  bottom: -100%;
   width: calc((100vw - 1320px) / 2);
   transform: translateX(-100%);
   background-color: rgba(0, 0, 0, 0.0625);
@@ -18510,17 +18510,17 @@ p:last-of-type {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -50vh;
+  top: -100%;
   right: 128px;
-  bottom: -50vh;
-  width: calc((100vw - 1320px) + 512px);
+  bottom: -100%;
+  width: calc((100vw - 1320px) + 1024px);
   transform: translateX(100%);
   background-color: rgba(0, 0, 0, 0.0625);
 }
 
 .section--pattern--alternate .container:before {
   left: 128px;
-  width: calc((100vw - 1320px) + 512px);
+  width: calc((100vw - 1320px) + 1024px);
   transform: translateX(-100%);
 }
 
