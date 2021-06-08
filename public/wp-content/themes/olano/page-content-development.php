@@ -3,7 +3,7 @@
 <section class="section section--green">
     <div class="container">
 
-        <div class="row align-items-center margin-bottom-8">
+        <div class="row align-items-center">
             <div class="col col--6 offset-3 md:col--2 md:offset-1">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Green.svg" style="border:#fff 2px solid;border-radius:999em;">
             </div>
@@ -14,16 +14,20 @@
             </div>
         </div>
 
-        <div class="video">
-            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/Koj3N4cupNE" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
     </div>
 </section>
 
 <section id="services" class="section section--off-white">
     <div class="container">
+
+        <div class="video-wrapper video-wrapper--green">
+            <div class="container">
+                <div class="video">
+                    <iframe width="1920" height="1080" src="https://www.youtube.com/embed/Koj3N4cupNE" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col md:col--2 md:text-align-right">

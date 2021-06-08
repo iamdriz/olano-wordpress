@@ -18,11 +18,12 @@
     &:after {
         content: '';
         position: absolute;
-        top: 0;
+        top: 6rem;
         left: 0;
         width: 5562px;
-        height: 392px;
+        height: 50%;
         background: url('../img/masthead-clouds.svg') 0 0 repeat-x;
+        background-size: 1854px auto;
         animation: clouds 60s linear 0s infinite;
     }
 
@@ -144,8 +145,8 @@
 @keyframes clouds {
     0%{
         transform: translate3d(0, 0, 0);
-      }
-      100%{
+    }
+    100%{
         transform: translate3d(-1854px, 0, 0);
-      }
+    }
 }
