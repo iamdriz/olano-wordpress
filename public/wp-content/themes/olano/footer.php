@@ -88,24 +88,6 @@ $nextID = $pages[$current+1];
             e.preventDefault();
             $('body').toggleClass('show-menu');
         });
-
-        function offsetVideo(){
-            // let height = $('.video').outerHeight()/2;
-            // let padding = parseInt($('.footer').css('padding-top'));
-            // $('section#services').css({
-            //     marginTop: -height - padding,
-            //     paddingTop: height + padding
-            // });
-        }
-
-        $(document).ready(function(){
-            offsetVideo();
-        });
-
-        $(window).resize(function(){
-            offsetVideo();
-        });
-
         $(document).on('click', function (e) {
             if ($(e.target).parents().hasClass('tooltip')) return;
             $('.tooltip').removeClass('tooltip--open');
