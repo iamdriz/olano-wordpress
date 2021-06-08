@@ -89,7 +89,7 @@ img {
 .staff-list {
   display: grid;
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 25%));
+    grid-template-columns: repeat(2, minmax(0, 50%));
   }
   @media (min-width: 1200px) {
     grid-template-columns: repeat(3, minmax(0, 33%));

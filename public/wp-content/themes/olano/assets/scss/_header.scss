@@ -48,6 +48,7 @@
     background-color: var(--white);
     position: absolute;
     transition: all .1s ease-in-out .2s, transform .2s ease-in-out 0s;
+    border-radius: 999em;
 }
 
 .burger__line:nth-child(1) {

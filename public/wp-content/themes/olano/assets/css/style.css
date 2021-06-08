@@ -16756,7 +16756,7 @@ img {
 }
 @media (min-width: 768px) {
   .staff-list {
-    grid-template-columns: repeat(2, minmax(0, 25%));
+    grid-template-columns: repeat(2, minmax(0, 50%));
   }
 }
 @media (min-width: 1200px) {
@@ -19014,6 +19014,7 @@ p:last-of-type {
   background-color: var(--white);
   position: absolute;
   transition: all 0.1s ease-in-out 0.2s, transform 0.2s ease-in-out 0s;
+  border-radius: 999em;
 }
 
 .burger__line:nth-child(1) {
