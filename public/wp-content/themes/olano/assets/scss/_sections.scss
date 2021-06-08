@@ -8,11 +8,24 @@
 .section--masthead {
     min-height: 100vh;
     background-color: var(--red);
-    // background: var(--red) url('../img/masthead-background.svg') top center no-repeat;
-    // background-size: contain;
+    background: var(--red) url('../img/masthead-background.svg') bottom center no-repeat;
+    background-size: 1920px 1080px;
     display: flex;
     align-items: center;
     color: var(--white);
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5562px;
+        height: 392px;
+        background: url('../img/masthead-clouds.svg') 0 0 repeat-x;
+        animation: clouds 60s linear 0s infinite;
+    }
+
 }
 .section--masthead a {
     color: #fff;
@@ -42,9 +55,10 @@
 }
 
 
-.section--pattern { position: relative; overflow: hidden; }
-.section--pattern .container { position: relative; z-index: 1; }
-.section--pattern .container:before {
+.section { position: relative; overflow: hidden; }
+.section > .container { position: relative; z-index: 1; }
+
+.section--pattern > .container:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -57,7 +71,7 @@
     // background-size: cover;
     background-color: rgba(0,0,0,.0625);
 }
-.section--pattern .container:after {
+.section--pattern > .container:after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -71,13 +85,67 @@
     background-color: rgba(0,0,0,.0625);
 }
 
-.section--pattern--alternate .container:before {
+.section--pattern--alternate > .container:before {
     left: 128px;
     width: calc((100vw - 1320px) + 1024px);
     transform: translateX(-100%);
 }
-.section--pattern--alternate .container:after {
+.section--pattern--alternate > .container:after {
     right: 0;
     width: calc((100vw - 1320px) / 2);
     transform: translateX(100%);
+}
+
+
+.video-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    margin-top: -64px;
+    margin-bottom: 64px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: var(--red);
+    }
+
+    &--red {
+        &:before {
+            background: var(--red);
+        }
+    }
+    &--yellow {
+        &:before {
+            background: var(--yellow);
+        }
+    }
+    &--blue {
+        &:before {
+            background: var(--blue);
+        }
+    }
+    &--green {
+        &:before {
+            background: var(--green);
+        }
+    }
+}
+
+
+@keyframes clouds {
+    0%{
+        transform: translate3d(0, 0, 0);
+      }
+      100%{
+        transform: translate3d(-1854px, 0, 0);
+      }
 }

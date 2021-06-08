@@ -4,8 +4,10 @@
     <div class="container">
 
         <div class="row align-items-center margin-bottom-8">
-            <div class="col md:col--2">
-                <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
+            <div class="col md:col--2 md:breakout-right">
+                <figure class="">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
+                </figure>
             </div>
             <div class="col md:col--7 md:offset-1">
                 <h1 class="font-size-display3">About us</h1>

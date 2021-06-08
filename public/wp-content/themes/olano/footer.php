@@ -90,12 +90,12 @@ $nextID = $pages[$current+1];
         });
 
         function offsetVideo(){
-            let height = $('.video').outerHeight()/2;
-            let padding = parseInt($('.footer').css('padding-top'));
-            $('section#services').css({
-                marginTop: -height - padding,
-                paddingTop: height + padding
-            });
+            // let height = $('.video').outerHeight()/2;
+            // let padding = parseInt($('.footer').css('padding-top'));
+            // $('section#services').css({
+            //     marginTop: -height - padding,
+            //     paddingTop: height + padding
+            // });
         }
 
         $(document).ready(function(){

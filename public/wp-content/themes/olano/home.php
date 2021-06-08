@@ -3,7 +3,7 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="row align-items-center margin-bottom-16" style="min-height:calc(100vh - (32px + 96px));">
+            <div class="row align-items-center margin-bottom-" style="min-height:calc(100vh - (32px + 96px));">
                 <div class="col lg:col--5">
                     <h1 class="font-size-display2">Relevant training, meaningful results.</h1>
                     <p class="font-size-lg">This is what we love to create! Click through the characters on the right to see how.</p>
@@ -79,17 +79,21 @@
                     </div>
                 </div>
             </div>
-
-            <div class="video">
-                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/Koj3N4cupNE" title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             
         </div>
     </section>
 
     <section id="services" class="section section--off-white section--pattern">
         <div class="container">
+
+            <div class="video-wrapper">
+                <div class="container">
+                    <div class="video">
+                        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/Koj3N4cupNE" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col md:col--6 md:offset-2">

@@ -1323,6 +1323,13 @@ img {
     order: 13 !important;
   }
 }
+.md\:breakout-right {
+  padding-right: 0;
+}
+.md\:breakout-right > * {
+  margin-right: -2rem;
+}
+
 .wp-block-media-text .wp-block-media-text__content {
   padding-left: 8.3333333333%;
   padding-right: 0;
