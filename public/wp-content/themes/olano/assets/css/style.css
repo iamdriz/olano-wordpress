@@ -16766,20 +16766,21 @@ img {
 }
 
 .staff-list-item {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 0 1rem;
+  border-radius: 0.25rem;
 }
 
 .staff-list-item__content {
-  padding: 16px;
+  padding: 1.5rem 2rem;
 }
 
 .staff-list-item__name {
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.bordered {
-  border-top: #fff 2px solid;
-  padding-top: 16px;
+.staff-list-item__title {
+  font-size: 1rem;
 }
 
 .text-align-center {
@@ -18897,8 +18898,12 @@ p:last-of-type {
 
 .testimonial {
   display: grid;
-  grid-template-columns: 1fr 2fr;
   gap: 32px;
+}
+@media (min-width: 768px) {
+  .testimonial {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .testimonial__photo img {

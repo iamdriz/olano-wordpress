@@ -22,7 +22,9 @@
 
 .testimonial {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 2fr;
+  }
   gap: 32px;
 }
 .testimonial__photo {
