@@ -28,7 +28,7 @@ $nextID = $pages[$current+1];
 
             <div class="col md:col--9 md:offset-1">
                 <ul class="row footer-menu">
-                    <li class="col md:col--3 footer-menu-item">
+                    <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Follow us</h3>
                         <ul class="social-list">
                             <li class="social-list-item">
@@ -48,7 +48,7 @@ $nextID = $pages[$current+1];
                             </li>
                         </ul>
                     </li>
-                    <li class="col md:col--3 footer-menu-item">
+                    <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Company</h3>
                         <ul class="footer-menu__list">
                             <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
@@ -56,15 +56,15 @@ $nextID = $pages[$current+1];
                             <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
                         </ul>
                     </li>
-                    <li class="col md:col--3 footer-menu-item">
+                    <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Resources</h3>
                         <ul class="footer-menu__list">
-                            <li><a href="<?php echo bloginfo('home'); ?>/our-stuff">Our Stuff</a></li>
-                            <li><a href="<?php echo bloginfo('home'); ?>/brand-guidelines">Brand Guidelines</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/our-stuff">Our stuff</a></li>
+                            <li><a href="<?php echo bloginfo('home'); ?>/brand-guidelines">Brand guidelines</a></li>
                             <li><a href="<?php echo bloginfo('home'); ?>/policies">Policies</a></li>
                         </ul>
                     </li>
-                    <li class="col md:col--3 footer-menu-item md:text-align-right">
+                    <li class="col md:col--2 md:offset-1 footer-menu-item md:text-align-right">
                     <?php if (!empty($nextID)) { ?>
                         <a class="arrow-link" href="<?php echo get_permalink($nextID); ?>"><?php echo get_the_title($nextID); ?></a>
                     <?php } else { ?>
@@ -81,6 +81,25 @@ $nextID = $pages[$current+1];
 
     </div>
 </footer>
+
+<div class="grid-overlay">
+	<div class="container">
+		<div class="grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</div>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>

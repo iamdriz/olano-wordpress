@@ -37,14 +37,14 @@
                 <p class="font-size-xxxl">Bespoke or Off-The-Shelf?<br>Both can be great depending on your needs. The key is identifying your needs and tailoring the training to suit them.</p>
                 <p class="font-size-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iusto reprehenderit perferendis amet quasi accusamus aliquid harum nihil sed aliquam inventore eligendi cum eveniet laboriosam porro error, tenetur vel a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione aut earum suscipit vero perferendis, accusamus libero blanditiis fugit vel magnam, natus sint temporibus sed! Corrupti tempore modi inventore velit provident.</p>
                 <div class="row align-items-center margin-top-8">
-                    <div class="col md:col--6">
+                    <div class="col md:col--3">
                         <div class="wp-block-buttons">
                             <div class="wp-block-button is-style-fill">
                                 <a class="wp-block-button__link has-yellow-background-color has-background" href="/services/content-development/content-development-case-study">Case study</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col md:col--6 md:text-align-right">
+                    <div class="col md:col--4 md:text-align-right">
                         <a class="arrow-link" href="">Content development</a>
                     </div>
                 </div>
