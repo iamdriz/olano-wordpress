@@ -49,39 +49,6 @@
   justify-content: space-evenly;
 }
 
-// .offset-1 {
-//   margin-left: calc(1 / 12 * 100%);
-// }
-// .offset-2 {
-//   margin-left: calc(2 / 12 * 100%);
-// }
-// .offset-3 {
-//   margin-left: calc(3 / 12 * 100%);
-// }
-// .offset-4 {
-//   margin-left: calc(4 / 12 * 100%);
-// }
-// .offset-5 {
-//   margin-left: calc(5 / 12 * 100%);
-// }
-// .offset-6 {
-//   margin-left: calc(6 / 12 * 100%);
-// }
-// .offset-7 {
-//   margin-left: calc(7 / 12 * 100%);
-// }
-// .offset-8 {
-//   margin-left: calc(8 / 12 * 100%);
-// }
-// .offset-9 {
-//   margin-left: calc(9 / 12 * 100%);
-// }
-// .offset-10 {
-//   margin-left: calc(10 / 12 * 100%);
-// }
-// .offset-11 {
-//   margin-left: calc(11 / 12 * 100%);
-// }
 .order-first {
   order: -1 !important;
 }
@@ -126,39 +93,6 @@
 }
 
 @media (min-width: 576px) {
-  //   .sm\:offset-1 {
-  //     margin-left: calc(1 / 12 * 100%);
-  //   }
-  //   .sm\:offset-2 {
-  //     margin-left: calc(2 / 12 * 100%);
-  //   }
-  //   .sm\:offset-3 {
-  //     margin-left: calc(3 / 12 * 100%);
-  //   }
-  //   .sm\:offset-4 {
-  //     margin-left: calc(4 / 12 * 100%);
-  //   }
-  //   .sm\:offset-5 {
-  //     margin-left: calc(5 / 12 * 100%);
-  //   }
-  //   .sm\:offset-6 {
-  //     margin-left: calc(6 / 12 * 100%);
-  //   }
-  //   .sm\:offset-7 {
-  //     margin-left: calc(7 / 12 * 100%);
-  //   }
-  //   .sm\:offset-8 {
-  //     margin-left: calc(8 / 12 * 100%);
-  //   }
-  //   .sm\:offset-9 {
-  //     margin-left: calc(9 / 12 * 100%);
-  //   }
-  //   .sm\:offset-10 {
-  //     margin-left: calc(10 / 12 * 100%);
-  //   }
-  //   .sm\:offset-11 {
-  //     margin-left: calc(11 / 12 * 100%);
-  //   }
   .sm\:order-first {
     order: -1 !important;
   }
@@ -203,39 +137,6 @@
   }
 }
 @media (min-width: 768px) {
-  //   .md\:offset-1 {
-  //     margin-left: calc(1 / 12 * 100%);
-  //   }
-  //   .md\:offset-2 {
-  //     margin-left: calc(2 / 12 * 100%);
-  //   }
-  //   .md\:offset-3 {
-  //     margin-left: calc(3 / 12 * 100%);
-  //   }
-  //   .md\:offset-4 {
-  //     margin-left: calc(4 / 12 * 100%);
-  //   }
-  //   .md\:offset-5 {
-  //     margin-left: calc(5 / 12 * 100%);
-  //   }
-  //   .md\:offset-6 {
-  //     margin-left: calc(6 / 12 * 100%);
-  //   }
-  //   .md\:offset-7 {
-  //     margin-left: calc(7 / 12 * 100%);
-  //   }
-  //   .md\:offset-8 {
-  //     margin-left: calc(8 / 12 * 100%);
-  //   }
-  //   .md\:offset-9 {
-  //     margin-left: calc(9 / 12 * 100%);
-  //   }
-  //   .md\:offset-10 {
-  //     margin-left: calc(10 / 12 * 100%);
-  //   }
-  //   .md\:offset-11 {
-  //     margin-left: calc(11 / 12 * 100%);
-  //   }
   .md\:order-first {
     order: -1 !important;
   }
@@ -280,39 +181,6 @@
   }
 }
 @media (min-width: 992px) {
-  //   .lg\:offset-1 {
-  //     margin-left: calc(1 / 12 * 100%);
-  //   }
-  //   .lg\:offset-2 {
-  //     margin-left: calc(2 / 12 * 100%);
-  //   }
-  //   .lg\:offset-3 {
-  //     margin-left: calc(3 / 12 * 100%);
-  //   }
-  //   .lg\:offset-4 {
-  //     margin-left: calc(4 / 12 * 100%);
-  //   }
-  //   .lg\:offset-5 {
-  //     margin-left: calc(5 / 12 * 100%);
-  //   }
-  //   .lg\:offset-6 {
-  //     margin-left: calc(6 / 12 * 100%);
-  //   }
-  //   .lg\:offset-7 {
-  //     margin-left: calc(7 / 12 * 100%);
-  //   }
-  //   .lg\:offset-8 {
-  //     margin-left: calc(8 / 12 * 100%);
-  //   }
-  //   .lg\:offset-9 {
-  //     margin-left: calc(9 / 12 * 100%);
-  //   }
-  //   .lg\:offset-10 {
-  //     margin-left: calc(10 / 12 * 100%);
-  //   }
-  //   .lg\:offset-11 {
-  //     margin-left: calc(11 / 12 * 100%);
-  //   }
   .lg\:order-first {
     order: -1 !important;
   }
@@ -357,39 +225,6 @@
   }
 }
 @media (min-width: 1200px) {
-  //   .xl\:offset-1 {
-  //     margin-left: calc(1 / 12 * 100%);
-  //   }
-  //   .xl\:offset-2 {
-  //     margin-left: calc(2 / 12 * 100%);
-  //   }
-  //   .xl\:offset-3 {
-  //     margin-left: calc(3 / 12 * 100%);
-  //   }
-  //   .xl\:offset-4 {
-  //     margin-left: calc(4 / 12 * 100%);
-  //   }
-  //   .xl\:offset-5 {
-  //     margin-left: calc(5 / 12 * 100%);
-  //   }
-  //   .xl\:offset-6 {
-  //     margin-left: calc(6 / 12 * 100%);
-  //   }
-  //   .xl\:offset-7 {
-  //     margin-left: calc(7 / 12 * 100%);
-  //   }
-  //   .xl\:offset-8 {
-  //     margin-left: calc(8 / 12 * 100%);
-  //   }
-  //   .xl\:offset-9 {
-  //     margin-left: calc(9 / 12 * 100%);
-  //   }
-  //   .xl\:offset-10 {
-  //     margin-left: calc(10 / 12 * 100%);
-  //   }
-  //   .xl\:offset-11 {
-  //     margin-left: calc(11 / 12 * 100%);
-  //   }
   .xl\:order-first {
     order: -1 !important;
   }
@@ -434,39 +269,6 @@
   }
 }
 @media (min-width: 1400px) {
-  //   .xxl\:offset-1 {
-  //     margin-left: calc(1 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-2 {
-  //     margin-left: calc(2 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-3 {
-  //     margin-left: calc(3 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-4 {
-  //     margin-left: calc(4 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-5 {
-  //     margin-left: calc(5 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-6 {
-  //     margin-left: calc(6 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-7 {
-  //     margin-left: calc(7 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-8 {
-  //     margin-left: calc(8 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-9 {
-  //     margin-left: calc(9 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-10 {
-  //     margin-left: calc(10 / 12 * 100%);
-  //   }
-  //   .xxl\:offset-11 {
-  //     margin-left: calc(11 / 12 * 100%);
-  //   }
   .xxl\:order-first {
     order: -1 !important;
   }
