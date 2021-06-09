@@ -40,7 +40,7 @@
                     <div class="col md:col--6">
                         <div class="wp-block-buttons">
                             <div class="wp-block-button is-style-fill">
-                                <a class="wp-block-button__link has-yellow-background-color has-background" href="">Case study</a>
+                                <a class="wp-block-button__link has-yellow-background-color has-background" href="/services/bespoke-elearning/bespoke-elearning-case-study">Case study</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
             <div class="col md:col--6 md:offset-3">
                 <div class="wp-block-buttons">
                     <div class="wp-block-button is-style-fill">
-                        <a class="wp-block-button__link has-white-background-color has-background" href=""><i class="fa fa-arrow-right"></i></a>
+                        <a class="wp-block-button__link has-white-background-color has-background" href="/contact"><i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

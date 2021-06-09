@@ -100,6 +100,7 @@ img {
 .staff-list-item {
   box-shadow: rgba(0, 0, 0, 0.125) 0 0 1rem;
   border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 .staff-list-item__content {

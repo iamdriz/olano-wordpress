@@ -5,6 +5,12 @@
 .section:first-of-type {
     padding-top: 8rem;
 }
+
+.section--padded {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
 .section--masthead {
     min-height: 100vh;
     background-color: var(--red);

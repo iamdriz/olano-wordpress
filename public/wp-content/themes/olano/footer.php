@@ -121,6 +121,13 @@ $nextID = $pages[$current+1];
                 $(arrowRight).trigger('click');
             }
         });
+
+        $(document).on('click', '.book a', function (e) {
+            e.preventDefault();
+            let page = $(this).attr('href');
+            $('.book-page--current').removeClass('book-page--current');
+            $(page).addClass('book-page--current');
+        });
     </script>
     <?php wp_footer(); ?>
 </body>
