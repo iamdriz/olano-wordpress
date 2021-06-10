@@ -25640,7 +25640,8 @@ p:last-of-type {
   bottom: -100%;
   width: calc((100vw - 1320px) / 2);
   transform: translateX(-100%);
-  background-color: rgba(0, 0, 0, 0.0625);
+  background: url("../img/pattern/pattern-2.svg") center right repeat;
+  background-size: 192px auto;
 }
 
 .section--pattern > .container:after {
@@ -25648,23 +25649,39 @@ p:last-of-type {
   position: absolute;
   z-index: -1;
   top: -100%;
-  right: 128px;
+  right: 192px;
   bottom: -100%;
   width: calc((100vw - 1320px) + 1024px);
   transform: translateX(100%);
-  background-color: rgba(0, 0, 0, 0.0625);
+  background: url("../img/pattern/pattern-2-alternate.svg") center left repeat;
+  background-size: 192px auto;
 }
 
 .section--pattern--alternate > .container:before {
-  left: 128px;
+  left: 192px;
   width: calc((100vw - 1320px) + 1024px);
   transform: translateX(-100%);
+  background: url("../img/pattern/pattern-2-alternate.svg") center right repeat;
+  background-size: 192px auto;
 }
 
 .section--pattern--alternate > .container:after {
   right: 0;
   width: calc((100vw - 1320px) / 2);
   transform: translateX(100%);
+  background: url("../img/pattern/pattern-2.svg") center left repeat;
+  background-size: 192px auto;
+}
+
+.section--red.section--pattern > .container:before,
+.section--yellow.section--pattern > .container:before,
+.section--blue.section--pattern > .container:before,
+.section--green.section--pattern > .container:before,
+.section--red.section--pattern > .container:after,
+.section--yellow.section--pattern > .container:after,
+.section--blue.section--pattern > .container:after,
+.section--green.section--pattern > .container:after {
+  opacity: 0.0625;
 }
 
 .video-wrapper {
