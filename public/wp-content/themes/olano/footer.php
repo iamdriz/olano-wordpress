@@ -157,7 +157,6 @@ $nextID = $pages[$current+1];
             delete pressed[event.which];
         });
         document.addEventListener('keydown', (event) => {
-            console.log(pressed);
             if(pressed[16]&&pressed[71]){
                 $('.grid-overlay').toggleClass('grid-overlay--visible');
             }
