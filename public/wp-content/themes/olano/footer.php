@@ -50,19 +50,31 @@ $nextID = $pages[$current+1];
                     </li>
                     <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Company</h3>
-                        <ul class="footer-menu__list">
+                        <!--<ul class="footer-menu__list">
                             <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
                             <li><a href="<?php echo bloginfo('home'); ?>/about">About</a></li>
                             <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
-                        </ul>
+                        </ul>-->
+                        <?php wp_nav_menu( array( 
+                            'theme_location' => 'footer-menu-1', 
+                            'container' => '',
+                            'container_class' => '',
+                            'menu_class' => 'footer-menu__list',
+                            'fallback_cb' => false ) ); ?>
                     </li>
                     <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Resources</h3>
-                        <ul class="footer-menu__list">
+                        <!--<ul class="footer-menu__list">
                             <li><a href="<?php echo bloginfo('home'); ?>/our-stuff">Our stuff</a></li>
                             <li><a href="<?php echo bloginfo('home'); ?>/brand-guidelines">Brand guidelines</a></li>
                             <li><a href="<?php echo bloginfo('home'); ?>/policies">Policies</a></li>
-                        </ul>
+                        </ul>-->
+                        <?php wp_nav_menu( array( 
+                            'theme_location' => 'footer-menu-2', 
+                            'container' => '',
+                            'container_class' => '',
+                            'menu_class' => 'footer-menu__list',
+                            'fallback_cb' => false ) ); ?>
                     </li>
                     <li class="col md:col--2 md:offset-1 footer-menu-item md:text-align-right">
                     <?php if (!empty($nextID)) { ?>
@@ -101,6 +113,7 @@ $nextID = $pages[$current+1];
 	</div>
 </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
         $(document).on('click', '.burger__link', function(e){

@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section id="testimonials" class="section section--yellow">
+    <section id="testimonials" class="section section--yellow section--padded">
         <div class="container">
             
             <div class="row">
@@ -160,18 +160,18 @@
             </div>
 
             <div class="client-logos">
-                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Clugston-01.svg">
-                <!-- <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/O2-01.svg"> -->
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/O2-01.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Vanderlande-01.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Muller-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Haven-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Howdens-01.svg">
+                <!--<img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Clugston-01.svg">             
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Lavazza-01.svg">
-                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Muller-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/NHS-01.svg">
-                <!-- <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Vodafone-01.svg"> -->
-                <!-- <img src="./clients/NSA-01.svg">
-                <img src="./clients/Telefonica-01.svg">
-                <img src="./clients/Vanderlande-01.svg">
-                <img src="./clients/Youngs-01.svg"> -->
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Vodafone-01.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/NSA-01.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Telefonica-01.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Youngs-01.svg"> -->
             </div>
 
         </div>

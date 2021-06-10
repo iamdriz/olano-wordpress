@@ -106,7 +106,13 @@
 
         a {
             color: var(--white);
-            font-weight: 800;
+            font-weight: 700;
+        }
+    }
+    li.current-menu-item,
+    li.current-page-ancestor {
+        a {
+            color: var(--yellow);
         }
     }
 }

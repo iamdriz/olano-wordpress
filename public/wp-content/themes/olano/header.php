@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body <?php body_class(); ?>>
     <header class="header">
@@ -21,23 +22,12 @@
                 </a>
             </div>
             <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-item">
-                        <a href="<?php echo bloginfo('home'); ?>">Home</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a href="<?php echo bloginfo('home'); ?>/services">Services</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a href="<?php echo bloginfo('home'); ?>/about">About</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a href="<?php echo bloginfo('home'); ?>/contact">Contact</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a href="#">Play</a>
-                    </li>
-                </ul>
+                <?php wp_nav_menu( array( 
+                    'theme_location' => 'header-menu', 
+                    'container' => '',
+                    'container_class' => '',
+                    'menu_class' => 'menu-list',
+                    'fallback_cb' => false ) ); ?>
             </nav>
             <div class="circle"></div>
         </div>

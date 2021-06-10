@@ -3,7 +3,7 @@
 <section class="section section--red">
     <div class="container">
 
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col col--6 offset-3 md:col--2 md:offset-1">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/services/Red.svg" style="border:#fff 2px solid;border-radius:999em;">
             </div>
@@ -54,7 +54,7 @@
     </div>
 </section>
 
-<section class="section section--yellow section--pattern">
+<section class="section section--yellow section--pattern section--padded">
     <div class="container">
 
         <div class="row">

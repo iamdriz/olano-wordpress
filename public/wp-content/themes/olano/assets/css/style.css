@@ -16867,7 +16867,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.5rem;
 }
@@ -25679,14 +25679,17 @@ p:last-of-type {
 }
 
 .section--red.section--pattern > .container:before,
-.section--yellow.section--pattern > .container:before,
-.section--blue.section--pattern > .container:before,
-.section--green.section--pattern > .container:before,
-.section--red.section--pattern > .container:after,
-.section--yellow.section--pattern > .container:after,
-.section--blue.section--pattern > .container:after,
-.section--green.section--pattern > .container:after {
+.section--red.section--pattern > .container:after {
   opacity: 0.125;
+}
+
+.section--yellow.section--pattern > .container:before,
+.section--yellow.section--pattern > .container:after,
+.section--blue.section--pattern > .container:before,
+.section--blue.section--pattern > .container:after,
+.section--green.section--pattern > .container:before,
+.section--green.section--pattern > .container:after {
+  opacity: 0.25;
 }
 
 .video-wrapper {
@@ -26319,7 +26322,11 @@ p:last-of-type {
 }
 .menu-list li a {
   color: var(--white);
-  font-weight: 800;
+  font-weight: 700;
+}
+.menu-list li.current-menu-item a,
+.menu-list li.current-page-ancestor a {
+  color: var(--yellow);
 }
 
 .show-menu {

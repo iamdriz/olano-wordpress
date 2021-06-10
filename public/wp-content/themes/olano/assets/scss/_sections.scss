@@ -106,14 +106,16 @@
 }
 
 .section--red.section--pattern > .container:before,
-.section--yellow.section--pattern > .container:before,
-.section--blue.section--pattern > .container:before,
-.section--green.section--pattern > .container:before,
-.section--red.section--pattern > .container:after,
-.section--yellow.section--pattern > .container:after,
-.section--blue.section--pattern > .container:after,
-.section--green.section--pattern > .container:after {
+.section--red.section--pattern > .container:after {
     opacity: .125;
+}
+.section--yellow.section--pattern > .container:before,
+.section--yellow.section--pattern > .container:after,
+.section--blue.section--pattern > .container:before,
+.section--blue.section--pattern > .container:after,
+.section--green.section--pattern > .container:before,
+.section--green.section--pattern > .container:after {
+    opacity: .25;
 }
 
 
