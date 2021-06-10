@@ -25525,7 +25525,7 @@ p:last-of-type {
 .wp-block-button__link {
   color: var(--grey) !important;
   background-color: var(--yellow);
-  font-weight: 800;
+  font-weight: 700;
   border-radius: 999em;
   display: inline-flex;
   font-size: 1.25rem;
@@ -25699,8 +25699,8 @@ p:last-of-type {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  margin-top: -64px;
-  margin-bottom: 64px;
+  margin-top: -4rem;
+  margin-bottom: 4rem;
 }
 .video-wrapper:before {
   content: "";
@@ -25722,6 +25722,11 @@ p:last-of-type {
 }
 .video-wrapper--green:before {
   background: var(--green);
+}
+
+.section--padded .video-wrapper {
+  margin-top: -8rem;
+  margin-bottom: 8rem;
 }
 
 @keyframes clouds {
@@ -25770,8 +25775,8 @@ p:last-of-type {
 .tooltip-pulse {
   cursor: pointer;
   display: inline-flex;
-  width: 24px;
-  height: 24px;
+  width: 2rem;
+  height: 2rem;
   border: transparent 2px solid;
   background-color: #fff;
   border-radius: 999em;
@@ -25779,12 +25784,12 @@ p:last-of-type {
   align-items: center;
   position: relative;
   transition: all 0.2s ease-in-out;
-  color: #000;
+  color: var(--grey);
 }
 
 .tooltip-pulse__icon {
-  color: #000;
-  font-size: 12px;
+  color: var(--grey);
+  font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -25796,8 +25801,8 @@ p:last-of-type {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0);
   border: #fff 2px solid;
-  width: 16px;
-  height: 16px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   animation: pulse-animation 1.5s linear infinite;
   z-index: 10;
@@ -25822,97 +25827,77 @@ p:last-of-type {
   opacity: 0;
   visibility: hidden;
   z-index: 10001;
-  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 8px 8px);
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 8px 16px);
 }
 
 .tooltip-bubble--top {
-  bottom: 48px;
+  bottom: 3.5rem;
 }
 
 .tooltip-bubble--bottom {
-  top: 48px;
+  top: 3.5rem;
 }
 
 .tooltip-bubble--right {
-  right: -32px;
+  right: -1.75rem;
 }
 
 .tooltip-bubble--left {
-  left: -32px;
+  left: -1.75rem;
 }
 
 .tooltip-bubble:after {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #fff;
   position: absolute;
   transform: rotate(45deg);
 }
 
 .tooltip-bubble--top:after {
-  bottom: -12px;
+  bottom: -0.75rem;
 }
 
 .tooltip-bubble--bottom:after {
-  top: -12px;
+  top: -0.75rem;
 }
 
 .tooltip-bubble--left:after {
-  left: 32px;
+  left: 2rem;
 }
 
 .tooltip-bubble--right:after {
-  right: 32px;
+  right: 2rem;
 }
 
-@media (max-width: 767px) {
-  .tooltip-bubble {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .tooltip-bubble__content {
-  color: #000;
-  padding: 24px 24px;
-}
-
-.tooltip-bubble__content p {
-  font-size: 16px;
+  color: var(--grey);
+  padding: 2rem 2rem;
 }
 
 .tooltip-bubble__content a {
-  color: #000;
-  box-shadow: #000 0 2px 0;
+  color: var(--grey);
+  box-shadow: var(--grey) 0 2px 0;
 }
 
 .tooltip-bubble__arrows {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 16px 16px 16px;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .tooltip-arrow {
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  width: auto;
+  height: 2rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #eee;
-  color: #000 !important;
-  margin-left: 8px;
-  border-radius: 999em;
+  color: var(--grey) !important;
+  margin-left: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -25921,34 +25906,38 @@ p:last-of-type {
 }
 
 .tooltip-arrow:hover {
-  background-color: #000;
-  color: #fff !important;
+  color: var(--grey) !important;
 }
 
 .tooltip-arrow__icon {
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 .tooltip-bubble__close {
   cursor: pointer;
   position: absolute;
-  top: -12px;
-  right: -12px;
+  top: 32px;
+  right: 32px;
   width: 32px;
   height: 32px;
   font-size: 16px;
-  background-color: #000;
+  background-color: var(--grey);
   border: #fff 2px solid;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 8px 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999em;
 }
+@media (min-width: 768px) {
+  .tooltip-bubble__close {
+    display: none;
+  }
+}
 
 .tooltip-bubble__close:hover {
-  background-color: #000;
+  background-color: var(--grey);
   color: #fff;
 }
 
@@ -25959,8 +25948,9 @@ p:last-of-type {
 }
 
 .tooltip--open .tooltip-pulse {
-  background-color: #000;
+  background-color: var(--grey);
   border-color: #fff;
+  transform: rotate(45deg);
 }
 
 .tooltip--open .tooltip-pulse:after {
@@ -25971,6 +25961,21 @@ p:last-of-type {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .tooltip-bubble {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10004;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .services {
   display: grid;
   gap: 2rem;
@@ -25992,7 +25997,7 @@ p:last-of-type {
   background-color: var(--white);
   color: var(--grey);
   box-shadow: rgba(0, 0, 0, 0.125) 0 0 1rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;

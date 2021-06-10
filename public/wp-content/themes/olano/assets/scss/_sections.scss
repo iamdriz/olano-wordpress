@@ -127,8 +127,8 @@
     margin-left: -50vw;
     margin-right: -50vw;
 
-    margin-top: -64px;
-    margin-bottom: 64px;
+    margin-top: -4rem;
+    margin-bottom: 4rem;
 
     &:before {
         content: '';
@@ -160,6 +160,11 @@
             background: var(--green);
         }
     }
+}
+
+.section--padded .video-wrapper {
+    margin-top: -8rem;
+    margin-bottom: 8rem;
 }
 
 

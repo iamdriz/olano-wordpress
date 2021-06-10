@@ -3,10 +3,10 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="row align-items-center margin-bottom-" style="min-height:calc(100vh - (32px + 96px));">
+            <div class="row align-items-center" style="min-height:calc(100vh - (32px + 96px));">
                 <div class="col lg:col--5">
                     <h1 class="font-size-display2">Relevant training, meaningful results.</h1>
-                    <p class="font-size-lg">This is what we love to create! Click through the characters on the right to see how.</p>
+                    <p class="font-size-lg">This is what we love to create! <b>Click through</b> the characters on the right to see how.</p>
                 </div>
                 <div class="col lg:col--7">
                     <div class="home-hero">
@@ -14,7 +14,7 @@
                         <div class="tooltips">
                             <div class="tooltip" id="tooltip-1">
                                 <a class="tooltip-pulse" href="#tooltip-1" data-tooltip-open>
-                                    <i class="fas fa-plus fa-fw tooltip-pulse__icon"></i>
+                                    <i class="far fa-plus fa-fw tooltip-pulse__icon"></i>
                                 </a>
                                 <div class="tooltip-bubble tooltip-bubble--bottom tooltip-bubble--left" aria-hidden="true">
                                     <div class="tooltip-bubble__content">
@@ -22,20 +22,20 @@
                                     </div>
                                     <div class="tooltip-bubble__arrows">
                                         <a class="tooltip-arrow" href="#tooltip-3" data-tooltip-open>
-                                            <i class="fas fa-arrow-left fa-fw tooltip-arrow__icon"></i>
+                                            <i class="far fa-chevron-left fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                         <a class="tooltip-arrow" href="#tooltip-2" data-tooltip-open>
-                                            <i class="fas fa-arrow-right fa-fw tooltip-arrow__icon"></i>
+                                            <i class="far fa-chevron-right fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                     </div>
                                     <a class="tooltip-bubble__close" data-tooltip-close>
-                                        <i class="fas fa-times fa-fw tooltip-bubble__close__icon"></i>
+                                        <i class="far fa-times fa-fw tooltip-bubble__close__icon"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="tooltip" id="tooltip-2">
                                 <a class="tooltip-pulse" href="#tooltip-2" data-tooltip-open>
-                                    <i class="fas fa-plus fa-fw tooltip-pulse__icon"></i>
+                                    <i class="far fa-plus fa-fw tooltip-pulse__icon"></i>
                                 </a>
                                 <div class="tooltip-bubble tooltip-bubble--top tooltip-bubble--left" aria-hidden="true">
                                     <div class="tooltip-bubble__content">
@@ -43,20 +43,20 @@
                                     </div>
                                     <div class="tooltip-bubble__arrows">
                                         <a class="tooltip-arrow" href="#tooltip-1" data-tooltip-open>
-                                            <i class="fas fa-arrow-left fa-fw tooltip-arrow__icon"></i>
+                                            <i class="far fa-chevron-left fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                         <a class="tooltip-arrow" href="#tooltip-3" data-tooltip-open>
-                                            <i class="fas fa-arrow-right fa-fw tooltip-arrow__icon"></i>
+                                            <i class="far fa-chevron-right fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                     </div>
                                     <a class="tooltip-bubble__close" data-tooltip-close>
-                                        <i class="fas fa-times fa-fw tooltip-bubble__close__icon"></i>
+                                        <i class="far fa-times fa-fw tooltip-bubble__close__icon"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="tooltip" id="tooltip-3">
                                 <a class="tooltip-pulse" href="#tooltip-3" data-tooltip-open>
-                                    <i class="fas fa-plus fa-fw tooltip-pulse__icon"></i>
+                                    <i class="far fa-plus fa-fw tooltip-pulse__icon"></i>
                                 </a>
                                 <div class="tooltip-bubble tooltip-bubble--top tooltip-bubble--right" aria-hidden="true">
                                     <div class="tooltip-bubble__content">
@@ -64,14 +64,14 @@
                                     </div>
                                     <div class="tooltip-bubble__arrows">
                                         <a class="tooltip-arrow" href="#tooltip-2" data-tooltip-open>
-                                            <i class="fas fa-arrow-left fa-fw tooltip-arrow__icon"></i>
+                                            <i class="far fa-chevron-left fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                         <a class="tooltip-arrow" href="#tooltip-1" data-tooltip-open>
-                                            <i class="fas fa-arrow-right fa-fw tooltip-arrow__icon"></i>
+                                            <i class="far fa-chevron-right fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                     </div>
                                     <a class="tooltip-bubble__close" data-tooltip-close>
-                                        <i class="fas fa-times fa-fw tooltip-bubble__close__icon"></i>
+                                        <i class="far fa-times fa-fw tooltip-bubble__close__icon"></i>
                                     </a>
                                 </div>
                             </div>
@@ -165,9 +165,9 @@
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Muller-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Haven-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Howdens-01.svg">
+                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/NHS-01.svg">
                 <!--<img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Clugston-01.svg">             
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Lavazza-01.svg">
-                <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/NHS-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Vodafone-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/NSA-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Telefonica-01.svg">
