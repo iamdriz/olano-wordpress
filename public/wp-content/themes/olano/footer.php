@@ -50,11 +50,6 @@ $nextID = $pages[$current+1];
                     </li>
                     <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Company</h3>
-                        <!--<ul class="footer-menu__list">
-                            <li><a href="<?php echo bloginfo('home'); ?>/services">Services</a></li>
-                            <li><a href="<?php echo bloginfo('home'); ?>/about">About</a></li>
-                            <li><a href="<?php echo bloginfo('home'); ?>/contact">Contact</a></li>
-                        </ul>-->
                         <?php wp_nav_menu( array( 
                             'theme_location' => 'footer-menu-1', 
                             'container' => '',
@@ -64,11 +59,6 @@ $nextID = $pages[$current+1];
                     </li>
                     <li class="col md:col--2 footer-menu-item">
                         <h3 class="footer-menu__title">Resources</h3>
-                        <!--<ul class="footer-menu__list">
-                            <li><a href="<?php echo bloginfo('home'); ?>/our-stuff">Our stuff</a></li>
-                            <li><a href="<?php echo bloginfo('home'); ?>/brand-guidelines">Brand guidelines</a></li>
-                            <li><a href="<?php echo bloginfo('home'); ?>/policies">Policies</a></li>
-                        </ul>-->
                         <?php wp_nav_menu( array( 
                             'theme_location' => 'footer-menu-2', 
                             'container' => '',
