@@ -147,6 +147,21 @@ $nextID = $pages[$current+1];
             $('.book-page--current').removeClass('book-page--current');
             $(page).addClass('book-page--current');
         });
+
+        let pressed = {};
+
+        document.addEventListener('keydown', (event) => {
+            pressed[event.which] = true;
+        });
+        document.addEventListener('keyup', (event) => {
+            delete pressed[event.which];
+        });
+        document.addEventListener('keydown', (event) => {
+            console.log(pressed);
+            if(pressed[16]&&pressed[71]){
+                $('.grid-overlay').toggleClass('grid-overlay--visible');
+            }
+        });
     </script>
     <?php wp_footer(); ?>
 </body>

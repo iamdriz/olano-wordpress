@@ -74,7 +74,7 @@ img {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-flex;
-    align-items: center;
+    flex: 0 0 auto;
     background: url("../img/arrow-right.svg") center center no-repeat;
     background-size: 1.5rem 1.5rem;
     margin-left: 0.5rem;

@@ -124,28 +124,36 @@
                 </div>
             </div>
             
-            <div class="testimonials">
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="https://picsum.photos/640/640">
-                    </div>
-                    <div class="testimonial__content">
-                        <p class="testimonial__quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis repellendus eum doloremque laudantium harum voluptatibus deserunt, iste non consequuntur provident quae nobis dolor! Perferendis odio autem ex dolores itaque."</p>
-                        <div class="testimonial__author">
-                            <p class="testimonial__author__name">John Doe</p>
-                            <p class="testimonial__author__title">Jobtitle goes here</p>
+            <div class="row testimonials">
+                <div class="col md:col--6 testimonial">
+                    <div class="row">
+                        <div class="col md:col--2 testimonial__photo">
+                            <img src="https://picsum.photos/640/640">
+                        </div>
+                        <div class="col md:col--4 testimonial__content">
+                            <p class="testimonial__quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Possimus corporis repellendus eum doloremque laudantium harum voluptatibus deserunt,
+                                  iste non consequuntur provident quae nobis dolor! Perferendis odio autem ex dolores itaque."</p>
+                            <div class="testimonial__author">
+                                <p class="testimonial__author__name">John Doe</p>
+                                <p class="testimonial__author__title">Jobtitle goes here</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="https://picsum.photos/640/640">
-                    </div>
-                    <div class="testimonial__content">
-                        <p class="testimonial__quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis repellendus eum doloremque laudantium harum voluptatibus deserunt, iste non consequuntur provident quae nobis dolor! Perferendis odio autem ex dolores itaque."</p>
-                        <div class="testimonial__author">
-                            <p class="testimonial__author__name">John Doe</p>
-                            <p class="testimonial__author__title">Jobtitle goes here</p>
+                <div class="col md:col--6 testimonial">
+                    <div class="row">
+                        <div class="col md:col--2 testimonial__photo">
+                            <img src="https://picsum.photos/640/640">
+                        </div>
+                        <div class="col md:col--4 testimonial__content">
+                            <p class="testimonial__quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Possimus corporis repellendus eum doloremque laudantium harum voluptatibus deserunt,
+                                  iste non consequuntur provident quae nobis dolor! Perferendis odio autem ex dolores itaque."</p>
+                            <div class="testimonial__author">
+                                <p class="testimonial__author__name">John Doe</p>
+                                <p class="testimonial__author__title">Jobtitle goes here</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,16 +161,16 @@
 
             <div class="client-logos">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Clugston-01.svg">
+                <!-- <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/O2-01.svg"> -->
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Haven-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Howdens-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Lavazza-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Muller-01.svg">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/NHS-01.svg">
+                <!-- <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/Vodafone-01.svg"> -->
                 <!-- <img src="./clients/NSA-01.svg">
-                <img src="./clients/O2-01.svg">
                 <img src="./clients/Telefonica-01.svg">
                 <img src="./clients/Vanderlande-01.svg">
-                <img src="./clients/Vodafone-01.svg">
                 <img src="./clients/Youngs-01.svg"> -->
             </div>
 

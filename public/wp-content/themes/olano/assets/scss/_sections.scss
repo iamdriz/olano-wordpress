@@ -74,7 +74,7 @@
     top: -100%;
     left: 0;
     bottom: -100%;
-    width: calc((100vw - 1320px) / 2);
+    width: 100vw;
     transform: translateX(-100%);
     background: url('../img/pattern/pattern-2.svg') center right repeat;
     background-size: 192px auto;
@@ -86,7 +86,7 @@
     top: -100%;
     right: 192px;
     bottom: -100%;
-    width: calc((100vw - 1320px) + 1024px);
+    width: 100vw;
     transform: translateX(100%);
     background: url('../img/pattern/pattern-2-alternate.svg') center left repeat;
     background-size: 192px auto;
@@ -94,14 +94,12 @@
 
 .section--pattern--alternate > .container:before {
     left: 192px;
-    width: calc((100vw - 1320px) + 1024px);
     transform: translateX(-100%);
     background: url('../img/pattern/pattern-2-alternate.svg') center right repeat;
     background-size: 192px auto;
 }
 .section--pattern--alternate > .container:after {
     right: 0;
-    width: calc((100vw - 1320px) / 2);
     transform: translateX(100%);
     background: url('../img/pattern/pattern-2.svg') center left repeat;
     background-size: 192px auto;
@@ -115,7 +113,7 @@
 .section--yellow.section--pattern > .container:after,
 .section--blue.section--pattern > .container:after,
 .section--green.section--pattern > .container:after {
-    opacity: .0625;
+    opacity: .125;
 }
 
 

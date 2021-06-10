@@ -72,7 +72,7 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   display: inline-flex;
-  align-items: center;
+  flex: 0 0 auto;
   background: url("../img/arrow-right.svg") center center no-repeat;
   background-size: 1.5rem 1.5rem;
   margin-left: 0.5rem;
@@ -8422,6 +8422,13 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.grid-overlay--visible {
+  transform: translateY(0);
 }
 
 .grid-overlay,

@@ -16740,7 +16740,7 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   display: inline-flex;
-  align-items: center;
+  flex: 0 0 auto;
   background: url("../img/arrow-right.svg") center center no-repeat;
   background-size: 1.5rem 1.5rem;
   margin-left: 0.5rem;
@@ -25479,6 +25479,13 @@ p:last-of-type {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.grid-overlay--visible {
+  transform: translateY(0);
 }
 
 .grid-overlay,
@@ -25638,7 +25645,7 @@ p:last-of-type {
   top: -100%;
   left: 0;
   bottom: -100%;
-  width: calc((100vw - 1320px) / 2);
+  width: 100vw;
   transform: translateX(-100%);
   background: url("../img/pattern/pattern-2.svg") center right repeat;
   background-size: 192px auto;
@@ -25651,7 +25658,7 @@ p:last-of-type {
   top: -100%;
   right: 192px;
   bottom: -100%;
-  width: calc((100vw - 1320px) + 1024px);
+  width: 100vw;
   transform: translateX(100%);
   background: url("../img/pattern/pattern-2-alternate.svg") center left repeat;
   background-size: 192px auto;
@@ -25659,7 +25666,6 @@ p:last-of-type {
 
 .section--pattern--alternate > .container:before {
   left: 192px;
-  width: calc((100vw - 1320px) + 1024px);
   transform: translateX(-100%);
   background: url("../img/pattern/pattern-2-alternate.svg") center right repeat;
   background-size: 192px auto;
@@ -25667,7 +25673,6 @@ p:last-of-type {
 
 .section--pattern--alternate > .container:after {
   right: 0;
-  width: calc((100vw - 1320px) / 2);
   transform: translateX(100%);
   background: url("../img/pattern/pattern-2.svg") center left repeat;
   background-size: 192px auto;
@@ -25681,7 +25686,7 @@ p:last-of-type {
 .section--yellow.section--pattern > .container:after,
 .section--blue.section--pattern > .container:after,
 .section--green.section--pattern > .container:after {
-  opacity: 0.0625;
+  opacity: 0.125;
 }
 
 .video-wrapper {
@@ -26019,29 +26024,9 @@ p:last-of-type {
   max-height: 32px;
 }
 
-.testimonials {
-  display: grid;
-  gap: 32px;
-}
-@media (min-width: 768px) {
-  .testimonials {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.testimonial {
-  display: grid;
-  gap: 32px;
-}
-@media (min-width: 768px) {
-  .testimonial {
-    grid-template-columns: 1fr 2fr;
-  }
-}
-
 .testimonial__photo img {
-  border-radius: 50%;
-  padding: 16px;
+  border-radius: 999em;
+  padding: 1rem;
   border: #fff 2px solid;
 }
 

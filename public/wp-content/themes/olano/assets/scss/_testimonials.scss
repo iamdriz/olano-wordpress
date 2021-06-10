@@ -12,25 +12,10 @@
   }
 }
 
-.testimonials {
-  display: grid;
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  gap: 32px;
-}
-
-.testimonial {
-  display: grid;
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 2fr;
-  }
-  gap: 32px;
-}
 .testimonial__photo {
   img {
-    border-radius: 50%;
-    padding: 16px;
+    border-radius: 999em;
+    padding: 1rem;
     border: #fff 2px solid;
   }
 }
