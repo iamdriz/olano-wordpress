@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="section section--yellow">
+<section class="section section--green">
     <div class="container">
 
         <div class="row">
@@ -10,7 +10,7 @@
                 </figure>
             </div>
             <div class="col md:col--7 md:offset-1">
-                <p>Classroom & virtual</p>
+                <p>Content development</p>
                 <h1 class="font-size-display3">Insert title</h1>
                 <h3>The challenge</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, aut rem! Libero quod voluptates veniam repudiandae?

@@ -64,7 +64,8 @@
         grid-row: 1 / 2;
         border-radius: 4px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
         grid-template-rows: auto;
 
         position: relative;
@@ -88,7 +89,7 @@
 
     .book-page__content {
         border-radius: 0 4px 4px 0;
-        padding: 4rem 4rem;
+        padding: 4rem calc(2 / 12 * 100%);
     }
 
     .book-page__media {
