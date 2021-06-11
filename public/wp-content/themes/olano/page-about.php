@@ -10,7 +10,7 @@
                 </figure>
             </div>
             <div class="col md:col--7 md:offset-1">
-                <h1 class="font-size-display3">About us</h1>
+                <h1 class="font-size-display2">About us</h1>
                 <p class="font-size-lg">We are a team of creative professionals who believe in “co-creation”,
                      meaning we work very closely with you every step of the way to deliver incredible training experiences.
                       We love what we do, and want to share our collective expertise to deliver meaningful results to your business.</p>
