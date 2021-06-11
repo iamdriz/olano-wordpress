@@ -26,7 +26,7 @@
                 <div class="staff-list">
                     <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=1">
+                            <img loading="lazy" src="https://picsum.photos/640/640?random=1" width="640" height="640">
                         </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Kris Randall</h3>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=2">
+                            <img loading="lazy" src="https://picsum.photos/640/640?random=2" width="640" height="640">
                         </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Rob Freeman</h3>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=3">
+                            <img loading="lazy" src="https://picsum.photos/640/640?random=3" width="640" height="640">
                         </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Callum Parker</h3>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=4">
+                            <img loading="lazy" src="https://picsum.photos/640/640?random=4" width="640" height="640">
                         </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Ali Johnson</h3>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=5">
+                            <img loading="lazy" src="https://picsum.photos/640/640?random=5" width="640" height="640">
                         </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Olivia Cancellara</h3>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=6">
+                            <img loading="lazy" src="https://picsum.photos/640/640?random=6" width="640" height="640">
                         </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Sheena Fraser</h3>

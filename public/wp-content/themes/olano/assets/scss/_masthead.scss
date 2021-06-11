@@ -266,6 +266,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .show-tooltip {
+    overflow-y: hidden;
+  }
+}
+
 .show-tooltip .section--masthead > .container {
   z-index: 10004;
 }
