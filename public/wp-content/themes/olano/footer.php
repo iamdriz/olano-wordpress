@@ -116,20 +116,24 @@ $nextID = $pages[$current+1];
         $(document).on('click', function (e) {
             if ($(e.target).parents().hasClass('tooltip')) return;
             $('.tooltip').removeClass('tooltip--open');
+            $('body').removeClass('show-tooltip');
         });
         $(document).on('click', '[data-tooltip-close]', function (e) {
             e.preventDefault();
             let tooltip = $(this).parents('.tooltip');
             $(tooltip).removeClass('tooltip--open');
+            $('body').removeClass('show-tooltip');
         });
         $(document).on('click', '[data-tooltip-open]', function (e) {
             e.preventDefault();
             let tooltip = $(this).attr('href');
             if ($(tooltip).hasClass('tooltip--open')) {
                 $(tooltip).removeClass('tooltip--open');
+                $('body').removeClass('show-tooltip');
             } else {
                 $('.tooltip').removeClass('tooltip--open');
                 $(tooltip).addClass('tooltip--open');
+                $('body').addClass('show-tooltip');
             }
         });
         $(document).on('keydown', function (e) {
