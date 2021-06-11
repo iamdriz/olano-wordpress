@@ -3,25 +3,25 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="row align-items-center" style="min-height:calc(100vh - (32px + 96px));">
-                <div class="col lg:col--5">
+            <div class="row align-items-center min-h">
+                <div class="col lg:col--4">
                     <h1 class="font-size-display2">Relevant training, meaningful results.</h1>
-                    <p class="font-size-lg">This is what we love to create! <b>Click through</b> the characters on the right to see how.</p>
+                    <p class="font-size-xl">This is what we love to create!<br> Click through the characters on the right to see how.</p>
                 </div>
-                <div class="col lg:col--7">
-                    <div class="home-hero">
+                <div class="col lg:col--7 lg:offset-1">
+                    <div class="the-o">
                         <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/masthead.svg">
                         <div class="tooltips">
                             <div class="tooltip" id="tooltip-1">
                                 <a class="tooltip-pulse" href="#tooltip-1" data-tooltip-open>
                                     <i class="far fa-plus fa-fw tooltip-pulse__icon"></i>
                                 </a>
-                                <div class="tooltip-bubble tooltip-bubble--bottom tooltip-bubble--left" aria-hidden="true">
+                                <div class="tooltip-bubble tooltip-bubble--bottom tooltip-bubble--right" aria-hidden="true">
                                     <div class="tooltip-bubble__content">
                                         <p>Hey! At Olano, we always start a project by understanding what the purpose of the training is you would like.</p>
                                     </div>
                                     <div class="tooltip-bubble__arrows">
-                                        <a class="tooltip-arrow" href="#tooltip-3" data-tooltip-open>
+                                        <a class="tooltip-arrow tooltip-arrow--disabled" href="#tooltip-3" data-tooltip-open>
                                             <i class="far fa-chevron-left fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                         <a class="tooltip-arrow" href="#tooltip-2" data-tooltip-open>
@@ -66,7 +66,7 @@
                                         <a class="tooltip-arrow" href="#tooltip-2" data-tooltip-open>
                                             <i class="far fa-chevron-left fa-fw tooltip-arrow__icon"></i>
                                         </a>
-                                        <a class="tooltip-arrow" href="#tooltip-1" data-tooltip-open>
+                                        <a class="tooltip-arrow tooltip-arrow--disabled" href="#tooltip-1" data-tooltip-open>
                                             <i class="far fa-chevron-right fa-fw tooltip-arrow__icon"></i>
                                         </a>
                                     </div>

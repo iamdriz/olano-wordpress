@@ -106,6 +106,9 @@ $nextID = $pages[$current+1];
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
+        $(window).load(function() {
+            $('.preload').removeClass('preload');
+        });
         $(document).on('click', '.burger__link', function(e){
             e.preventDefault();
             $('body').toggleClass('show-menu');

@@ -14,7 +14,7 @@
 .section--masthead {
     min-height: 100vh;
     background-color: var(--red);
-    background: var(--red) url('../img/masthead-background.svg') bottom center no-repeat;
+    background: var(--red) url('../img/masthead-background.svg') center center repeat-x;
     background-size: 1920px 1080px;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
 .footer,
 .section { position: relative; overflow: hidden; }
 .footer > .container,
-.section > .container { position: relative; z-index: 1; }
+.section > .container { position: relative; z-index: 1 }
 
 .section--pattern > .container:before {
     content: '';

@@ -1,4 +1,4 @@
-.home-hero {
+.the-o {
   position: relative;
   img {
     width: 100%;
@@ -6,6 +6,9 @@
   }
 }
 
+.min-h {
+  min-height: calc(100vh - (32px + 96px));
+}
 
 .tooltips {
   position: absolute;
@@ -112,6 +115,10 @@
   left: -1.75rem;
 }
 
+.tooltip-bubble--center {
+  left: calc(-320px / 2);
+}
+
 .tooltip-bubble:after {
   content: '';
   width: 1.5rem;
@@ -137,6 +144,10 @@
   right: 2rem;
 }
 
+.tooltip-bubble--center:after {
+  left: calc(50% + .25rem);
+}
+
 .tooltip-bubble__content {
   color: var(--grey);
   padding: 2rem 2rem;
@@ -156,7 +167,7 @@
 
 .tooltip-arrow {
   cursor: pointer;
-  width: auto;
+  width: 2rem;
   height: 2rem;
   display: inline-flex;
   align-items: center;
@@ -165,6 +176,11 @@
   color: var(--grey)!important;
   margin-left: .5rem;
   transition: all .2s ease-in-out;
+
+  &--disabled {
+    opacity: .25;
+    pointer-events: none;
+  }
 }
 
 .tooltip-arrow:first-child {

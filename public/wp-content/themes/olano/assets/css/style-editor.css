@@ -31,6 +31,10 @@ body {
   overflow-x: hidden;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 a {
   color: var(--grey);
   text-decoration: none;
