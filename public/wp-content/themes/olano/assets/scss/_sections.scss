@@ -14,7 +14,7 @@
 .section--masthead {
     min-height: 100vh;
     background-color: var(--red);
-    background: var(--red) url('../img/masthead-background.svg') center center repeat-x;
+    background: var(--red) url('../img/masthead-background-2.svg') center center repeat-x;
     background-size: 1920px 1080px;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@
     bottom: -100%;
     width: 100vw;
     transform: translateX(-100%);
-    background: url('../img/pattern/pattern-2.svg') center right repeat;
+    background: url('../img/pattern/pattern-off-white.svg') center right repeat;
     background-size: 192px auto;
 }
 .section--pattern > .container:after {
@@ -88,34 +88,39 @@
     bottom: -100%;
     width: 100vw;
     transform: translateX(100%);
-    background: url('../img/pattern/pattern-2-alternate.svg') center left repeat;
+    background: url('../img/pattern/pattern-off-white.svg') center left repeat;
     background-size: 192px auto;
 }
 
 .section--pattern--alternate > .container:before {
     left: 192px;
     transform: translateX(-100%);
-    background: url('../img/pattern/pattern-2-alternate.svg') center right repeat;
+    background: url('../img/pattern/pattern-off-white.svg') center right repeat;
     background-size: 192px auto;
 }
 .section--pattern--alternate > .container:after {
     right: 0;
     transform: translateX(100%);
-    background: url('../img/pattern/pattern-2.svg') center left repeat;
+    background: url('../img/pattern/pattern-off-white.svg') center left repeat;
     background-size: 192px auto;
 }
 
-.section--red.section--pattern > .container:before,
-.section--red.section--pattern > .container:after {
-    opacity: .125;
+.section--red.section--pattern > .container:before {
+    background: url('../img/pattern/pattern-red.svg') center right repeat;
+    background-size: 192px auto;
 }
-.section--yellow.section--pattern > .container:before,
-.section--yellow.section--pattern > .container:after,
-.section--blue.section--pattern > .container:before,
-.section--blue.section--pattern > .container:after,
-.section--green.section--pattern > .container:before,
-.section--green.section--pattern > .container:after {
-    opacity: .25;
+.section--red.section--pattern > .container:after {
+    background: url('../img/pattern/pattern-red.svg') center left repeat;
+    background-size: 192px auto;
+}
+
+.section--yellow.section--pattern > .container:before {
+    background: url('../img/pattern/pattern-yellow.svg') center right repeat;
+    background-size: 192px auto;
+}
+.section--yellow.section--pattern > .container:after {
+    background: url('../img/pattern/pattern-yellow.svg') center left repeat;
+    background-size: 192px auto;
 }
 
 

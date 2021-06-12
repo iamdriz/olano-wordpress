@@ -3,7 +3,7 @@
     <section class="section section--masthead">
         <div class="container">
 
-            <div class="row align-items-center min-h">
+            <div class="row align-items-center">
                 <div class="col lg:col--4">
                     <h1 class="font-size-display2">Relevant training, meaningful results.</h1>
                     <p class="font-size-xl">This is what we love to create!<br> Click through the characters on the right to see how.</p>
@@ -120,7 +120,7 @@
             
             <div class="row">
                 <div class="col md:col--6 md:offset-2">
-                    <h2 class="font-size-display4">Testimonials</h2>
+                    <h2 class="font-size-display4">Our clients</h2>
                 </div>
             </div>
             

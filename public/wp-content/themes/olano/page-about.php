@@ -25,57 +25,57 @@
 
                 <div class="staff-list">
                     <div class="staff-list-item">
-                        <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=1" width="640" height="640">
-                        </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Kris Randall</h3>
                             <p class="staff-list-item__title">Digital Management Consultant</p>
                         </div>
-                    </div>
-                    <div class="staff-list-item">
                         <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=2" width="640" height="640">
-                        </div>
-                        <div class="staff-list-item__content">
-                            <h3 class="staff-list-item__name">Rob Freeman</h3>
-                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                            <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/about/Kris.svg" width="640" height="640">
                         </div>
                     </div>
                     <div class="staff-list-item">
-                        <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=3" width="640" height="640">
-                        </div>
-                        <div class="staff-list-item__content">
-                            <h3 class="staff-list-item__name">Callum Parker</h3>
-                            <p class="staff-list-item__title">Digital Management Consultant</p>
-                        </div>
-                    </div>
-                    <div class="staff-list-item">
-                        <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=4" width="640" height="640">
-                        </div>
-                        <div class="staff-list-item__content">
-                            <h3 class="staff-list-item__name">Ali Johnson</h3>
-                            <p class="staff-list-item__title">Digital Management Consultant</p>
-                        </div>
-                    </div>
-                    <div class="staff-list-item">
-                        <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=5" width="640" height="640">
-                        </div>
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Olivia Cancellara</h3>
-                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                            <p class="staff-list-item__title">Junior Graphic Designer</p>
+                        </div>
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/about/Liv.svg" width="640" height="640">
                         </div>
                     </div>
                     <div class="staff-list-item">
-                        <div class="staff-list-item__photo">
-                            <img loading="lazy" src="https://picsum.photos/640/640?random=6" width="640" height="640">
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Callum Parker</h3>
+                            <p class="staff-list-item__title">Motion Designer</p>
                         </div>
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/about/Cal.svg" width="640" height="640">
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
                         <div class="staff-list-item__content">
                             <h3 class="staff-list-item__name">Sheena Fraser</h3>
-                            <p class="staff-list-item__title">Digital Management Consultant</p>
+                            <p class="staff-list-item__title">Graphic Designer</p>
+                        </div>
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/about/Sheena.svg" width="640" height="640">
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Rob Freeman</h3>
+                            <p class="staff-list-item__title">Digital Content Designer</p>
+                        </div>
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/about/Rob.svg" width="640" height="640">
+                        </div>
+                    </div>
+                    <div class="staff-list-item">
+                        <div class="staff-list-item__content">
+                            <h3 class="staff-list-item__name">Ali Johnson</h3>
+                            <p class="staff-list-item__title">Graphic Designer</p>
+                        </div>
+                        <div class="staff-list-item__photo">
+                            <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/about/Ali.svg" width="640" height="640">
                         </div>
                     </div>
                 </div>

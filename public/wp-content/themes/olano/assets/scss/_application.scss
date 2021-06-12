@@ -103,13 +103,17 @@ img {
 }
 
 .staff-list-item {
+  background-color: var(--red);
   box-shadow: rgba(0, 0, 0, .125) 0 0 1rem;
   border-radius: .25rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .staff-list-item__content {
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
+  flex: 1 1 auto;
 }
 
 .staff-list-item__name {
@@ -117,7 +121,10 @@ img {
   margin-bottom: .5rem;
 }
 .staff-list-item__title {
-  font-size: 1rem;
+  font-size: 0.875rem;
+}
+.staff-list-item__photo {
+
 }
 
 .text-align-center {
