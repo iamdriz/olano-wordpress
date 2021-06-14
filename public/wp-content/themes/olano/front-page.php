@@ -6,7 +6,7 @@
             <div class="row align-items-center">
                 <div class="col lg:col--4">
                     <h1 class="font-size-display2">Relevant training, meaningful results.</h1>
-                    <p class="font-size-xl">This is what we love to create!<br> Click through the characters on the right to see how.</p>
+                    <p class="font-size-lg">This is what we love to create!<br> Click through the characters on the right to see how.</p>
                 </div>
                 <div class="col lg:col--7 lg:offset-1">
                     <div class="the-o">

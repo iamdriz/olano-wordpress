@@ -40,7 +40,7 @@
         margin-bottom: 32px;
 
         img {
-            max-width: 128px;
+            max-width: calc(33.3% + 64px);
         }
     }
     .services-list-item__title {

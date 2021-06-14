@@ -14,12 +14,24 @@
 .section--masthead {
     min-height: 100vh;
     background-color: var(--red);
-    background: var(--red) url('../img/masthead-background-2.svg') center center repeat-x;
-    background-size: 1920px 1080px;
-    display: flex;
-    align-items: center;
     color: var(--white);
+    position: relative;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--red) url('../img/masthead-background-2.svg') center center repeat-x;
+        background-size: 1920px 1080px;
+    }
 
     &:after {
         content: '';
