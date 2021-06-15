@@ -2,6 +2,7 @@
 
 :root {
   --red: #fe3845;
+  --off-red: #fe4c57;
   --off-white: #f3f3f3;
   --yellow: #ffc050;
   --green: #00af85;
@@ -103,9 +104,13 @@ img {
 }
 
 .staff-list-item {
-  background-color: var(--red);
-  box-shadow: rgba(0, 0, 0, .125) 0 0 1rem;
-  border-radius: .25rem;
+  background-color: var(--off-red);
+  background-image: url("../img/about/about-background.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 0 1rem;
+  border-radius: 0.25rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -118,7 +123,7 @@ img {
 
 .staff-list-item__name {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .staff-list-item__title {
   font-size: 0.875rem;

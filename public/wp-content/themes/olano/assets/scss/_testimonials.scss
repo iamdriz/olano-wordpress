@@ -25,11 +25,36 @@
   margin-top: 1.5rem;
 }
 .testimonial__author__name {
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .testimonial__author__title {
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 0;
+}
+
+
+.testimonial__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.testimonial-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 999em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  margin-left: 1rem;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.testimonial-arrow__icon {
+  font-size: 1.5rem;
 }

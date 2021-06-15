@@ -124,8 +124,21 @@
                 </div>
             </div>
             
-            <div class="row testimonials">
-                <div class="col md:col--6 testimonial">
+
+                    <div class="row align-items-center">
+                        <div class="col md:col--3 testimonial__photo">
+                            <img loading="lazy" src="https://picsum.photos/640/640" width="640" height="640">
+                        </div>
+                        <div class="col md:col--8 testimonial__content">
+                            <p class="testimonial__quote">Olano are true L&D professionals, reliable, communicative and creative. It is always a pleasure to work with them deadlines and agreements are kept, communication is always fast, friendly and to the point and challenging assignments are transformed into exciting, feasible solutions. Olano will think along with you on both the problem statement front of things as well as the solution front. Whether we come in with a blank sheet or predetermined game plan, Olano work with us to create an engaging learning solution that fits our company.</p>
+                            <div class="testimonial__author">
+                                <p class="testimonial__author__name">Joyce Aurik</p>
+                                <p class="testimonial__author__title">Title goes here</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                <!-- <div class="col md:col--6 testimonial">
                     <div class="row">
                         <div class="col md:col--2 testimonial__photo">
                             <img src="https://picsum.photos/640/640">
@@ -136,28 +149,18 @@
                                   iste non consequuntur provident quae nobis dolor! Perferendis odio autem ex dolores itaque."</p>
                             <div class="testimonial__author">
                                 <p class="testimonial__author__name">John Doe</p>
-                                <p class="testimonial__author__title">Jobtitle goes here</p>
+                                <p class="testimonial__author__title">Title goes here</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col md:col--6 testimonial">
-                    <div class="row">
-                        <div class="col md:col--2 testimonial__photo">
-                            <img src="https://picsum.photos/640/640">
-                        </div>
-                        <div class="col md:col--4 testimonial__content">
-                            <p class="testimonial__quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Possimus corporis repellendus eum doloremque laudantium harum voluptatibus deserunt,
-                                  iste non consequuntur provident quae nobis dolor! Perferendis odio autem ex dolores itaque."</p>
-                            <div class="testimonial__author">
-                                <p class="testimonial__author__name">John Doe</p>
-                                <p class="testimonial__author__title">Jobtitle goes here</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div> -->
+
+
+                <!-- <div class="testimonial__arrows">
+                    <a class="testimonial-arrow"><i class="far fa-arrow-left fa-fw testimonial-arrow__icon"></i></a>
+                    <a class="testimonial-arrow"><i class="far fa-arrow-right fa-fw testimonial-arrow__icon"></i></a>
+                </div> -->
+
 
             <div class="client-logos">
                 <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/clients/O2-01.svg">
