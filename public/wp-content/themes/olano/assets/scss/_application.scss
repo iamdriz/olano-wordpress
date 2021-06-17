@@ -114,6 +114,10 @@ img {
   display: flex;
   flex-direction: column;
 }
+.staff-list-item.wp-block {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .staff-list-item__content {
   padding: 2rem 2rem;

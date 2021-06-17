@@ -1,28 +1,21 @@
 (function(blocks, editor, element, blockEditor, components) {
     var el = element.createElement;
-    var InnerBlocks = blockEditor.InnerBlocks;
     var RichText = blockEditor.RichText;
     var MediaUpload = blockEditor.MediaUpload;
     var useBlockProps = blockEditor.useBlockProps;
 
-    blocks.registerBlockType('olano/olano-about-team-item-block', {
+    blocks.registerBlockType('olano/olano-services-list-item-block', {
         apiVersion: 2,
-        parent: ['olano/olano-about-team-block'],
-        title: 'About Team Item Block',
+        parent: ['olano/olano-services-list-block'],
+        title: 'Services List Item Block',
         icon: 'universal-access-alt',
         category: 'layout',
         example: {},
         attributes: {
-            name: {
-                type: 'array',
-                source: 'children',
-                selector: 'h3',
-                default: 'Enter name.',
-            },
             title: {
                 type: 'array',
                 source: 'children',
-                selector: 'p',
+                selector: 'h3',
                 default: 'Enter title.',
             },
             mediaID: {
@@ -36,9 +29,6 @@
 			},
         },
         edit: function(props) {
-            function onChangeName( newName ) {
-                props.setAttributes( { name: newName } );
-            }
             function onChangeTitle( newTitle ) {
                 props.setAttributes( { title: newTitle } );
             }
@@ -49,24 +39,10 @@
 				});
 			};
 
-            const blockProps = useBlockProps( { className: 'staff-list-item' } );
+            const blockProps = useBlockProps( { className: 'services-list-item' } );
 
             return el('div', { ...blockProps },
-                el('div', { className: 'staff-list-item__content'},
-                    el( RichText, {
-                        tagName: 'h3',
-                        className: 'staff-list-item__name',
-                        value: props.attributes.name,
-                        onChange: onChangeName,
-                    } ),
-                    el( RichText, {
-                        tagName: 'p',
-                        className: 'staff-list-item__title',
-                        value: props.attributes.title,
-                        onChange: onChangeTitle,
-                    } )
-                ),
-                el('div', { className: 'staff-list-item__photo' },
+                el('div', { className: 'services-list-item__icon' },
                     el( MediaUpload, {
                         onSelect: onSelectImage,
                         allowedTypes: 'image',
@@ -87,28 +63,31 @@
                         },
                     } ),
                     (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
-                )
+                ),
+                el('div', { className: 'services-list-item__content'},
+                    el( RichText, {
+                        tagName: 'h3',
+                        className: 'services-list-item__title',
+                        value: props.attributes.title,
+                        onChange: onChangeTitle,
+                    } )
+                ),
             )
         },
         save: function(props) {
             return el('div', {
-                    className: 'staff-list-item'
+                    className: 'services-list-item'
                 },
-                el('div', { className: 'staff-list-item__content'},
+                el('div', { className: 'services-list-item__icon' },
+                    (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                ),
+                el('div', { className: 'services-list-item__content'},
                     el( RichText.Content, {
                         tagName: 'h3',
-                        className: 'staff-list-item__name',
-                        value: props.attributes.name,
-                    } ),
-                    el( RichText.Content, {
-                        tagName: 'p',
-                        className: 'staff-list-item__title',
+                        className: 'services-list-item__title',
                         value: props.attributes.title,
                     } )
                 ),
-                el('div', { className: 'staff-list-item__photo' },
-                    (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
-                )
             )
         },
     });
