@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<section class="section section--red">
+<?php the_content(); ?>
+
+<!--<section class="section section--red">
     <div class="container">
 
         <div class="row align-items-center margin-bottom-8">
@@ -131,6 +133,6 @@
         </div>
 
     </div>
-</section>
+</section>-->
 
 <?php get_footer(); ?>

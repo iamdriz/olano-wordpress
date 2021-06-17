@@ -31,76 +31,94 @@ $font-size-display4: $font-size-base * 3.5;
 $font-size-display5: $font-size-base * 3;
 $font-size-display6: $font-size-base * 2.5;
 
-.font-size-sm {
+.font-size-sm,
+.has-sm-font-size {
   font-size: $font-size-sm;
 }
-.font-size-md {
+.font-size-md,
+.has-md-font-size {
   font-size: $font-size-md;
 }
-.font-size-lg {
+.font-size-lg,
+.has-lg-font-size {
   font-size: $font-size-lg;
 }
-.font-size-xl {
+.font-size-xl,
+.has-xl-font-size {
   font-size: $font-size-xl;
 }
-.font-size-xxl {
+.font-size-xxl,
+.has-xxl-font-size {
   font-size: $font-size-xxl;
 }
-.font-size-xxxl {
+.font-size-xxxl,
+.has-xxxl-font-size {
   font-size: $font-size-xxxl;
 }
 
 h1,
-.font-size-h1 {
+.font-size-h1,
+.has-h1-font-size {
   font-size: $font-size-h1;
 }
 h2,
-.font-size-h2 {
+.font-size-h2,
+.has-h2-font-size {
   font-size: $font-size-h2;
 }
 h3,
-.font-size-h3 {
+.font-size-h3,
+.has-h3-font-size {
   font-size: $font-size-h3;
 }
 h4,
-.font-size-h4 {
+.font-size-h4,
+.has-h4-font-size {
   font-size: $font-size-h4;
 }
 h5,
-.font-size-h5 {
+.font-size-h5,
+.has-h5-font-size {
   font-size: $font-size-h5;
 }
 h6,
-.font-size-h6 {
+.font-size-h6,
+.has-h6-font-size {
   font-size: $font-size-h6;
 }
 
-.font-size-display1 {
+.font-size-display1,
+.has-display1-font-size {
   font-size: $font-size-display1;
   font-size: clamp(3.5rem, 2.9545rem + 2.7273vw, 5rem);
   margin-bottom: 2rem;
 }
-.font-size-display2 {
+.font-size-display2,
+.has-display2-font-size {
   font-size: $font-size-display2;
   font-size: clamp(3rem, 2.4545rem + 2.7273vw, 4.5rem);
   margin-bottom: 2rem;
 }
-.font-size-display3 {
+.font-size-display3,
+.has-display3-font-size {
   font-size: $font-size-display3;
   font-size: clamp(2.5rem, 1.9545rem + 2.7273vw, 4rem);
   margin-bottom: 2rem;
 }
-.font-size-display4 {
+.font-size-display4,
+.has-display4-font-size {
   font-size: $font-size-display4;
   font-size: clamp(2rem, 1.4545rem + 2.7273vw, 3.5rem);
   margin-bottom: 2rem;
 }
-.font-size-display5 {
+.font-size-display5,
+.has-display5-font-size {
   font-size: $font-size-display5;
   font-size: clamp(1.5rem, 0.9545rem + 2.7273vw, 3rem);
   margin-bottom: 2rem;
 }
-.font-size-display6 {
+.font-size-display6,
+.has-display6-font-size {
   font-size: $font-size-display6;
   font-size: clamp(1rem, 0.4545rem + 2.7273vw, 2.5rem);
   margin-bottom: 2rem;
