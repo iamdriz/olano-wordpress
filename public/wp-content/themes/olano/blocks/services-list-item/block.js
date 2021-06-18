@@ -4,6 +4,21 @@
     var MediaUpload = blockEditor.MediaUpload;
     var useBlockProps = blockEditor.useBlockProps;
 
+    const { InspectorControls, BlockControls } = editor;
+	const { Fragment } = element;
+	const {
+        TextControl,
+        CheckboxControl,
+        RadioControl,
+        SelectControl,
+        TextareaControl,
+        ToggleControl,
+        RangeControl,
+        Panel,
+        PanelBody,
+        PanelRow
+    } = components;
+
     blocks.registerBlockType('olano/olano-services-list-item-block', {
         apiVersion: 2,
         parent: ['olano/olano-services-list-block'],
@@ -27,6 +42,9 @@
 				selector: 'img',
 				attribute: 'src',
 			},
+            href: {
+                type: 'string'
+            }
         },
         edit: function(props) {
             function onChangeTitle( newTitle ) {
@@ -41,38 +59,69 @@
 
             const blockProps = useBlockProps( { className: 'services-list-item' } );
 
-            return el('div', { ...blockProps },
-                el('div', { className: 'services-list-item__icon' },
-                    el( MediaUpload, {
-                        onSelect: onSelectImage,
-                        allowedTypes: 'image',
-                        value: props.attributes.mediaID,
-                        render: function( obj ) {
-                            return el(
-                                components.Button,
-                                {
-                                    className: props.attributes.mediaID
-                                        ? 'button button-large'
-                                        : 'button button-large',
-                                    onClick: obj.open,
+            return (
+                el( Fragment, {},
+
+                    /*  
+                     * SETTINGS
+                     */
+                    el( InspectorControls, {},
+                        el( PanelBody, { title: 'Services List Item Settings', initialOpen: true },
+         
+                            el( PanelRow, {},
+                                el( TextControl,
+                                    {
+                                        label: 'href',
+                                        onChange: ( value ) => {
+                                            props.setAttributes( { href: value } );
+                                        },
+                                        value: props.attributes.href
+                                    }
+                                ),
+                            ),
+
+                        ),
+                    ),
+        
+                    /*  
+                    * BLOCK
+                    */
+                    el('div', { ...blockProps },
+                        el('div', { className: 'services-list-item__icon' },
+                            el( MediaUpload, {
+                                onSelect: onSelectImage,
+                                allowedTypes: 'image',
+                                value: props.attributes.mediaID,
+                                render: function( obj ) {
+                                    return el(
+                                        components.Button,
+                                        {
+                                            className: props.attributes.mediaID
+                                                ? 'button button-large'
+                                                : 'button button-large',
+                                            onClick: obj.open,
+                                        },
+                                        ! props.attributes.mediaID
+                                            ? 'Upload Image'
+                                            : 'Edit Image'
+                                    );
                                 },
-                                ! props.attributes.mediaID
-                                    ? 'Upload Image'
-                                    : 'Edit Image'
-                            );
-                        },
-                    } ),
-                    (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
-                ),
-                el('div', { className: 'services-list-item__content'},
-                    el( RichText, {
-                        tagName: 'h3',
-                        className: 'services-list-item__title',
-                        value: props.attributes.title,
-                        onChange: onChangeTitle,
-                    } )
-                ),
-            )
+                            } ),
+                            (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                        ),
+                        el('div', { className: 'services-list-item__content'},
+                            el( RichText, {
+                                tagName: 'h3',
+                                className: 'services-list-item__title',
+                                value: props.attributes.title,
+                                onChange: onChangeTitle,
+                            } ),
+                            el('a', { className: 'arrow-link', href: props.attributes.href },
+                                'Explore more'
+                            )
+                        ),
+                    )
+            ));
         },
         save: function(props) {
             return el('div', {
@@ -86,7 +135,10 @@
                         tagName: 'h3',
                         className: 'services-list-item__title',
                         value: props.attributes.title,
-                    } )
+                    } ),
+                    el('a', { className: 'arrow-link', href: props.attributes.href },
+                        'Explore more'
+                    )
                 ),
             )
         },
