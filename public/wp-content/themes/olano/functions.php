@@ -1,13 +1,23 @@
 <?php
 
+// general
 require get_stylesheet_directory() . '/blocks/section/index.php';
+require get_stylesheet_directory() . '/blocks/services-list/index.php';
+require get_stylesheet_directory() . '/blocks/services-list-item/index.php';
+require get_stylesheet_directory() . '/blocks/video-wrapper/index.php';
+// home
+require get_stylesheet_directory() . '/blocks/home/home-masthead/index.php';
 require get_stylesheet_directory() . '/blocks/home/home-services/index.php';
+require get_stylesheet_directory() . '/blocks/home/home-contact/index.php';
+// services
+require get_stylesheet_directory() . '/blocks/services/services-header/index.php';
+// about
 require get_stylesheet_directory() . '/blocks/about/about-header/index.php';
 require get_stylesheet_directory() . '/blocks/about/about-team/index.php';
 require get_stylesheet_directory() . '/blocks/about/about-team-item/index.php';
 require get_stylesheet_directory() . '/blocks/about/about-content/index.php';
-require get_stylesheet_directory() . '/blocks/services-list/index.php';
-require get_stylesheet_directory() . '/blocks/services-list-item/index.php';
+// contact
+require get_stylesheet_directory() . '/blocks/contact/contact-content/index.php';
 
 function olano_css() {
 	// get_stylesheet_directory_uri() => child theme

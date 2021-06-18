@@ -21,17 +21,17 @@
         title: 'Section Block',
         description: 'Block-level sections to wrap content with coloured backgrounds.',
         icon: 'universal-access-alt',
-        category: 'theme',
-        styles: [
-            {
-                name: 'style1',
-                label: 'Style 1',
-                isDefault: true
-            }, {
-                name: 'style2',
-                label: 'Style 2'
-            }
-        ],
+        category: 'layout',
+        // styles: [
+        //     {
+        //         name: 'style1',
+        //         label: 'Style 1',
+        //         isDefault: true
+        //     }, {
+        //         name: 'style2',
+        //         label: 'Style 2'
+        //     }
+        // ],
         example: {},
         attributes: {
             section_id: {
@@ -86,6 +86,7 @@
                                             { label: 'Section Blue', value: 'section--blue' },
                                             { label: 'Section Yellow', value: 'section--yellow' },
                                             { label: 'Section Green', value: 'section--green' },
+                                            { label: 'Section Masthead', value: 'section--masthead' },
                                         ],
                                         onChange: ( value ) => {
                                             props.setAttributes( { section_class: value } );
