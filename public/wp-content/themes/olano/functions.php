@@ -9,6 +9,9 @@ require get_stylesheet_directory() . '/blocks/video-wrapper/index.php';
 require get_stylesheet_directory() . '/blocks/home/home-masthead/index.php';
 require get_stylesheet_directory() . '/blocks/home/home-services/index.php';
 require get_stylesheet_directory() . '/blocks/home/home-contact/index.php';
+require get_stylesheet_directory() . '/blocks/home/home-client-list/index.php';
+require get_stylesheet_directory() . '/blocks/home/home-testimonials-list/index.php';
+require get_stylesheet_directory() . '/blocks/home/home-testimonials-list-item/index.php';
 // services
 require get_stylesheet_directory() . '/blocks/services/services-header/index.php';
 // about
