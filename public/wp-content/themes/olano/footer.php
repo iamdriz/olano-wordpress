@@ -171,6 +171,39 @@ $nextID = $pages[$current+1];
                 $('.grid-overlay').toggleClass('grid-overlay--visible');
             }
         });
+
+        function nextTestimonial() {
+            $('.testimonial-arrow:first-child').removeClass('testimonial-arrow--disabled');
+            let testimonial = $('.testimonials-list-item--active').next();
+            if( $(testimonial).is(':last-child') ) {
+                $('.testimonial-arrow:last-child').addClass('testimonial-arrow--disabled');
+            }
+            $('.testimonials-list-item').removeClass('testimonials-list-item--active');
+            $(testimonial).addClass('testimonials-list-item--active');
+        }
+
+        function previousTestimonial() {
+            $('.testimonial-arrow:last-child').removeClass('testimonial-arrow--disabled');
+            let testimonial = $('.testimonials-list-item--active').prev();
+            if( $(testimonial).is(':first-child') ) {
+                $('.testimonial-arrow:first-child').addClass('testimonial-arrow--disabled');
+            }
+            $('.testimonials-list-item').removeClass('testimonials-list-item--active');
+            $(testimonial).addClass('testimonials-list-item--active');
+        }
+
+        $('.testimonials-list-item:first-child').addClass('testimonials-list-item--active');
+        $('.testimonial-arrow:first-child').addClass('testimonial-arrow--disabled');
+
+        $(document).on('click', '.testimonial-arrow:first-child', function(e){
+            e.preventDefault();
+            previousTestimonial();
+        });
+        $(document).on('click', '.testimonial-arrow:last-child', function(e){
+            e.preventDefault();
+            nextTestimonial();
+        });
+
     </script>
     <?php wp_footer(); ?>
 </body>

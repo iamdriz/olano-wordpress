@@ -1,16 +1,17 @@
 .book {
-    background: #ffffff;
+    background-color: var(--white);
+    color: var(--grey) !important;
     box-shadow: rgba(0, 0, 0, .125) 0 0 16px;
     border-radius: 4px;
-    // min-height: calc(100vh - 128px);
 
-
-    margin-bottom: 4rem;
+    a {
+        color: var(--grey) !important;
+    }
 
 }
 
 .book-page__media {
-    background: #3c3c3c;
+    background: var(--grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +59,6 @@
         grid-template-rows: auto;
 
     }
-
     .book-page {
         grid-column: 1 / 1;
         grid-row: 1 / 2;
@@ -67,68 +67,46 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 32px;
         grid-template-rows: auto;
-
         position: relative;
         z-index: 1;
-        perspective: 1000px;
-
         visibility: hidden;
         opacity: 0;
-        transition: all 1s cubic-bezier(0.50, 0.00, 0.25, 1.00);
+        transition: all 1s ease-in-out;
     }
-
-    .book-page__content {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
-
-    .book-page__media {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    .book-page__content {
-        border-radius: 0 4px 4px 0;
-        padding: 4rem calc(2 / 12 * 100%);
-    }
-
-    .book-page__media {
-        border-radius: 4px 0 0 4px;
-    }
-
-    .other {
-        -webkit-backface-visibility: hidden;
-        /* Safari */
-        backface-visibility: hidden;
-        transform: rotateY(0);
-        transform-style: preserve-3d;
-        transform-origin: left;
-        transition: all 3s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-    }
-
     .book-page--current {
         z-index: 2;
         opacity: 1;
         visibility: visible;
     }
+    .book-page__content {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .book-page__media {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .book-page__content {
+        border-radius: 0 4px 4px 0;
+        padding: 4rem calc(2 / 12 * 100%);
+    }
+    .book-page__media {
+        border-radius: 4px 0 0 4px;
+    }
 }
 
 @media (max-width: 991px) {
-
     .book-page:first-child .book-page__media {
         border-radius: 4px 4px 0 0;
     }
-
     .book-page:last-child .book-page__content {
         border-radius: 0 0 4px 4px;
     }
-
     .book-page__media,
     .book-page__content {
         width: 100%;
         flex: 0 0 auto;
     }
-
     .book-page__content__footer {
         display: none;
     }

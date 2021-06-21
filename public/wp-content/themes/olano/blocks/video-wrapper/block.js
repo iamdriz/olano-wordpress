@@ -66,9 +66,9 @@
                                             { label: 'Green', value: 'video-wrapper--green' },
                                         ],
                                         onChange: ( value ) => {
-                                            props.setAttributes( { section_class: value } );
+                                            props.setAttributes( { video_wrapper_class: value } );
                                         },
-                                        value: props.attributes.section_class
+                                        value: props.attributes.video_wrapper_class
                                     }
                                 )
                             ),

@@ -87,6 +87,7 @@
                                             { label: 'Section Yellow', value: 'section--yellow' },
                                             { label: 'Section Green', value: 'section--green' },
                                             { label: 'Section Masthead', value: 'section--masthead' },
+                                            { label: 'Section Grey', value: 'section--grey' },
                                         ],
                                         onChange: ( value ) => {
                                             props.setAttributes( { section_class: value } );

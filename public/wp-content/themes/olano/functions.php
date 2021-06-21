@@ -14,6 +14,11 @@ require get_stylesheet_directory() . '/blocks/home/home-testimonials-list/index.
 require get_stylesheet_directory() . '/blocks/home/home-testimonials-list-item/index.php';
 // services
 require get_stylesheet_directory() . '/blocks/services/services-header/index.php';
+require get_stylesheet_directory() . '/blocks/services/services-content/index.php';
+// service
+require get_stylesheet_directory() . '/blocks/service/service-header/index.php';
+require get_stylesheet_directory() . '/blocks/service/service-content/index.php';
+require get_stylesheet_directory() . '/blocks/service/service-links/index.php';
 // about
 require get_stylesheet_directory() . '/blocks/about/about-header/index.php';
 require get_stylesheet_directory() . '/blocks/about/about-team/index.php';
