@@ -112,6 +112,7 @@ $nextID = $pages[$current+1];
         $(document).on('click', '.burger__link', function(e){
             e.preventDefault();
             $('body').toggleClass('show-menu');
+            window.scrollTo(0,0);
         });
         $(document).on('click', function (e) {
             if ($(e.target).parents().hasClass('tooltip')) return;

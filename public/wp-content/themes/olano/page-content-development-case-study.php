@@ -1,47 +1,30 @@
 <?php get_header(); ?>
 
-<section class="section section--green">
+<section id="services" class="section section--green">
     <div class="container">
 
-        <div class="row">
-        <div class="col md:col--2 md:breakout-right">
-                <figure class="">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/contact-us.svg">
-                </figure>
-            </div>
-            <div class="col md:col--7 md:offset-1">
-                <p>Content development</p>
-                <h1 class="font-size-display3">Insert title</h1>
-                <h3>The challenge</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, aut rem! Libero quod voluptates veniam repudiandae?
-                 Voluptatum molestiae quas esse nostrum nobis vero cumque, deleniti porro nemo sit facilis numquam.</p>
-                <h3>The outcome</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, aut rem! Libero quod voluptates veniam repudiandae?
-                 Voluptatum molestiae quas esse nostrum nobis vero cumque, deleniti porro nemo sit facilis numquam.</p>
+
+        <div class="row margin-bottom-1">
+            <div class="col md:col--7 md:offset-3">
+                <p>Case Study: <b>Cyber Security</b></p>
             </div>
         </div>
-
-    </div>
-</section>
-
-<section id="services" class="section section--off-white">
-    <div class="container">
+        <div class="row margin-bottom-4">
+            <div class="col md:col--7 md:offset-3">
+                <h1 class="font-size-display2">Making a dry subject engaging!</h1>
+            </div>
+        </div>
 
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="https://picsum.photos/1024/1024?random=1">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step1.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
-                        <p>1 / 6</p>
-                        <h2>Step 1 title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
+                        <p>1 / 5</p>
+                        <p>Cyber security was the topic area and the audience was broad, meaning that we had some
+work to do to ensure we keep all learners engaged, regardless of their technical expertise.</p>
                     </div>
                     <div class="book-page__content__footer">
                         <div class="book-page__content__footer__left">
@@ -55,21 +38,13 @@
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="https://picsum.photos/1024/1024?random=2">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step2.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
-                        <p>2 / 6</p>
-                        <h2>Step 2 title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
+                        <p>2 / 5</p>
+                        <p>Therefore, we used metaphors, animation and lots of visuals to help make the content feel
+familiar and easy to understand.</p>
                     </div>
                     <div class="book-page__content__footer">
                         <div class="book-page__content__footer__left">
@@ -83,18 +58,13 @@
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="https://picsum.photos/1024/1024?random=3">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
-                        <p>3 / 6</p>
-                        <h2>Step 3 title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
+                        <p>3 / 5</p>
+                        <p>Language was key to ensure the course made sense to the learners, enough to make them
+feel empowered and understand what their roles and responsibilities were.</p>
                     </div>
                     <div class="book-page__content__footer">
                         <div class="book-page__content__footer__left">
@@ -108,18 +78,14 @@
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="https://picsum.photos/1024/1024?random=4">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step4.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
-                        <p>4 / 6</p>
-                        <h2>Step 4 title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
+                        <p>4 / 5</p>
+                        <p>The outcome was a short eLearning course (circa 25 minutes) which included a 2 minute
+video to set the scene, a dive into the history and some case studies to support the
+importance. From there we utilised lots of creative visuals to drive the messages.</p>
                     </div>
                     <div class="book-page__content__footer">
                         <div class="book-page__content__footer__left">
@@ -133,73 +99,66 @@
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="https://picsum.photos/1024/1024?random=5">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step5.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
-                        <p>5 / 6</p>
-                        <h2>Step 5 title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
+                        <p>5 / 5</p>
+                        <p>TA perfect example of great content combined with creative animations in a small package.
+Perfectly tailored towards the materials handling systems market.</p>
+                        <p>If you would like to know more about this project please read more below...</p>
                     </div>
                     <div class="book-page__content__footer">
                         <div class="book-page__content__footer__left">
                             <a href="#page-4">Previous</a>
                         </div>
                         <div class="book-page__content__footer__right">
-                            <a class="arrow-link" href="#page-6">Next</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="book-page" id="page-6">
-                <div class="book-page__media">
-                    <img loading="lazy" src="https://picsum.photos/1024/1024?random=6">
-                </div>
-                <div class="book-page__content">
-                    <div class="book-page__content__main">
-                        <p>6 / 6</p>
-                        <h2>Step 6 title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus aperiam,
-                            ratione error distinctio dolorem dolore impedit fuga architecto animi inventore, non id!
-                            Minus cum modi iusto, explicabo obcaecati accusamus.</p>
-                    </div>
-                    <div class="book-page__content__footer">
-                        <div class="book-page__content__footer__left">
-                            <a href="#page-5">Previous</a>
-                        </div>
-                        <div class="book-page__content__footer__right">
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row margin-top-8">
             <div class="col md:col--2 md:text-align-right">
-                <h2 class="font-size-h4 border-top">Client quote</h2>
+                <h2 class="font-size-h4 border-top">The story</h2>
             </div>
             <div class="col md:col--7 md:offset-1">
-                <figure>
-                    <blockquote>
-                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi cumque nemo debitis
-                         adipisci dignissimos sed in corrupti quam provident hic beatae incidunt veritatis cupiditate ut harum, similique, pariatur laudantium."</p>
-                    </blockquote>
-                    <figcaption>
-                        <p>John Doe</p>
-                    </figcaption>
-                </figure>
+                <h3>The situation</h3>
+                <p>Some topics are easy to transform into an engaging piece of training. But every so often you get a
+particularly dry subject which no matter which way you look at the content it will send some people
+to sleep.</p>
+                <p>Cyber Security was one of those subjects, especially to those who do not share the interest.</p>
+                <h3>Prompts for Action</h3>
+                <p>Using familiar metaphorical examples made it easier to deliver language which was understood by a
+wider audience. It was important to establish stories, the history and case studies to deliver drama
+and impact around the issues of cyber Security. At all times referring back to the client’s business to
+make the context relevant and familiar to the employee.</p>
+                <p>The element of history should be told through the use of visuals or a moving timeline of events.
+Illustrations and characters would be a great way to do this.</p>
+                <h3>Consequences</h3>
+                <p>It was important not to use complex language for those who do not have a software background but
+in the same instance, software developers also needed to be kept engaged and reminded them that
+anyone or any business could be a target of a cyber attack.</p>
+                <p>The main driver for the course was to empower and drive awareness, surrounding the importance of
+how cyber security must be considered within all businesses today. Not only IT businesses, banks
+and governments are targets for a cyber attack anymore. It extends much further than this!</p>
+                <h3>Outcomes</h3>
+                <p>The outcome was a 25 minute eLearning course, which contained a 2 minute video to set the scene.
+There were also animations to expand into the history, which allowed for a deeper dive into the
+content. We also created a metaphor which related the different cyber security levels, which
+compared to the different devices and security systems you could typically install in your home to
+defend against intruders. For this we developed another interaction; a nice isometric house graphic.
+This metaphor was used to compare other aspects of cyber security systems later in the course,
+which further aided the embedding of knowledge surrounding the subject. All in all a great solution
+well liked and highly rated by the learners.</p>
+                <h3>Moral</h3>
+                <p>The key to understanding a complex or unfamiliar topic is simplicity or familiarity of a topic close to
+home. In this case, literally your home. For Olano, courses that drive awareness and empowerment
+are a great opportunity to show what we can do to fully engage the audience, regardless of how dry
+the subject area may be.</p>
             </div>
         </div>
-
 
     </div>
 </section>

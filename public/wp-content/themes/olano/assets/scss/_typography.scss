@@ -142,6 +142,9 @@ p {
   border-top: var(--grey) 2px solid;
 }
 
-.section--red .border-top {
+.section--red .border-top,
+.section--green .border-top,
+.section--blue .border-top,
+.section--grey .border-top {
   border-top-color: var(--white);
 }
