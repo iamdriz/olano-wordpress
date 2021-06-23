@@ -6,7 +6,7 @@
 
         <div class="row margin-bottom-1">
             <div class="col md:col--7 md:offset-3">
-                <p>Case Study: <b>Economics of Mutuality</b></p>
+                <p class="border-top border-top--half">Case Study: <b>Economics of Mutuality</b></p>
             </div>
         </div>
         <div class="row margin-bottom-4">
@@ -122,10 +122,10 @@ looking site overflowing with knowledge and opportunity to inspire the reader.</
         </div>
 
         <div class="row margin-top-8">
-            <div class="col md:col--2 md:text-align-right">
+            <!-- <div class="col md:col--2 md:text-align-right">
                 <h2 class="font-size-h4 border-top">The story</h2>
-            </div>
-            <div class="col md:col--7 md:offset-1">
+            </div> -->
+            <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>Partnering with the Economics of Mutuality, the project was to create a knowledge hub for a major
 manufacturing business to empower and promote the benefits of a route-to-market for vulnerable

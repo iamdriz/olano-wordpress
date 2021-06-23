@@ -6,7 +6,7 @@
 
         <div class="row margin-bottom-1">
             <div class="col md:col--7 md:offset-3">
-                <p>Case Study: <b>ITIL standard</b></p>
+                <p class="border-top border-top--half">Case Study: <b>ITIL standard</b></p>
             </div>
         </div>
         <div class="row margin-bottom-4">
@@ -64,7 +64,7 @@ imaginative metaphor would be needed.</p>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>3 / 5</p>
-                        <p>The metaphor couldn’t be too creativity as it may become too detached from reality.</p>
+                        <p>The example story couldn’t be too creative or far from what the business would find familiar.</p>
                     </div>
                     <div class="book-page__content__footer">
                         <div class="book-page__content__footer__left">
@@ -121,10 +121,10 @@ effectively.</p>
         </div>
 
         <div class="row margin-top-8">
-            <div class="col md:col--2 md:text-align-right">
+            <!-- <div class="col md:col--2 md:text-align-right">
                 <h2 class="font-size-h4 border-top">The story</h2>
-            </div>
-            <div class="col md:col--7 md:offset-1">
+            </div> -->
+            <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>As part of a larger project around the ITIL standard, the client needed to explain the difference
 between incidents, problems and changes to a varied audience. The aim was to clearly differentiate

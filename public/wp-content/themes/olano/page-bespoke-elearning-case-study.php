@@ -6,7 +6,7 @@
 
         <div class="row margin-bottom-1">
             <div class="col md:col--7 md:offset-3">
-                <p>Case Study: <b>Brightest Bulb</b></p>
+                <p class="border-top border-top--half">Case Study: <b>Brightest Bulb</b></p>
             </div>
         </div>
         <div class="row margin-bottom-4">
@@ -122,10 +122,10 @@ complete before uploading to a video portal for review.</p>
         </div>
 
         <div class="row margin-top-8">
-            <div class="col md:col--2 md:text-align-right">
+            <!-- <div class="col md:col--2 md:text-align-right">
                 <h2 class="font-size-h4 border-top">The story</h2>
-            </div>
-            <div class="col md:col--7 md:offset-1">
+            </div> -->
+            <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>Brightest Bulb are a fantastic company that train people how to create employee generated, professional looking videos on a smartphone.</p>
                 <p>Their courses are great, but they needed our help transitioning from face to face workshops to

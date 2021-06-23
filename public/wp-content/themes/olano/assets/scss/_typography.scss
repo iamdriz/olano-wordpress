@@ -139,12 +139,27 @@ p {
 
 .border-top {
   padding-top: 1rem;
-  border-top: var(--grey) 2px solid;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: var(--grey) 2px solid;
+  }
+  &--half {
+    &:before {
+      width: 128px;
+    }
+  }
 }
 
 .section--red .border-top,
 .section--green .border-top,
 .section--blue .border-top,
 .section--grey .border-top {
-  border-top-color: var(--white);
+  &:before {
+    border-top-color: var(--white);
+  }
 }

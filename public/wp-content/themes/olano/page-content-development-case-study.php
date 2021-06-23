@@ -6,7 +6,7 @@
 
         <div class="row margin-bottom-1">
             <div class="col md:col--7 md:offset-3">
-                <p>Case Study: <b>Cyber Security</b></p>
+                <p class="border-top border-top--half">Case Study: <b>Cyber Security</b></p>
             </div>
         </div>
         <div class="row margin-bottom-4">
@@ -120,10 +120,10 @@ Perfectly tailored towards the materials handling systems market.</p>
         </div>
 
         <div class="row margin-top-8">
-            <div class="col md:col--2 md:text-align-right">
+            <!-- <div class="col md:col--2 md:text-align-right">
                 <h2 class="font-size-h4 border-top">The story</h2>
-            </div>
-            <div class="col md:col--7 md:offset-1">
+            </div> -->
+            <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>Some topics are easy to transform into an engaging piece of training. But every so often you get a
 particularly dry subject which no matter which way you look at the content it will send some people
