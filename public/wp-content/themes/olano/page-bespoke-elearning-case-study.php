@@ -18,7 +18,7 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step1.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/bespoke-elearning-step1.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -40,7 +40,7 @@ workshops into digital online training.</p>
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step2.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/bespoke-elearning-step2.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -62,7 +62,7 @@ plenty of interactivity and animation).</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/bespoke-elearning-step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -84,7 +84,7 @@ be achieved once each stage was passed.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step4.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/bespoke-elearning-step4.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -106,7 +106,7 @@ complete before uploading to a video portal for review.</p>
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step5.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/bespoke-elearning-step5.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">

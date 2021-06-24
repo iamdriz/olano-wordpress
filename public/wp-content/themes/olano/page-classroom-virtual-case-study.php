@@ -18,7 +18,7 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step1.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/classroom-virtual-step1.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -39,7 +39,7 @@ to be visually appealing, interactive but remain editable.</p>
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step2.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/classroom-virtual-step2.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -60,7 +60,7 @@ reference material, videos and downloadable templates.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/classroom-virtual-step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -81,7 +81,7 @@ careful about how to maintain the readers engagement.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step4.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/classroom-virtual-step4.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -104,7 +104,7 @@ content.</p>
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step5.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/classroom-virtual-step5.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">

@@ -18,7 +18,7 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step1.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/content-development-step1.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -39,7 +39,7 @@ work to do to ensure we keep all learners engaged, regardless of their technical
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step2.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/content-development-step2.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -60,7 +60,7 @@ familiar and easy to understand.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/content-development-step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -81,7 +81,7 @@ feel empowered and understand what their roles and responsibilities were.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step4.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/content-development-step4.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -103,7 +103,7 @@ importance. From there we utilised lots of creative visuals to drive the message
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step5.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/content-development-step5.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">

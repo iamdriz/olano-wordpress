@@ -18,7 +18,7 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step1.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step1.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -39,7 +39,7 @@ differences between Incidents, Problems and Changes.</p>
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step2.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step2.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -61,7 +61,7 @@ imaginative metaphor would be needed.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -81,7 +81,7 @@ imaginative metaphor would be needed.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step4.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step4.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -102,7 +102,7 @@ After Effects, all which complimented the client’s brand.</p>
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step5.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step5.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
