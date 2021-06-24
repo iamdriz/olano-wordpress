@@ -109,7 +109,7 @@ importance. From there we utilised lots of creative visuals to drive the message
                     <div class="book-page__content__main">
                         <p>5 / 5</p>
                         <h3>Step 5</h3>
-                        <p>TA perfect example of great content combined with creative animations in a small package.
+                        <p>A perfect example of great content combined with creative animations in a small package.
 Perfectly tailored towards the materials handling systems market.</p>
                         <p>If you would like to know more about this project please read more below...</p>
                     </div>
