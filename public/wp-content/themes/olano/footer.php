@@ -204,7 +204,13 @@ $nextID = $pages[$current+1];
             e.preventDefault();
             nextTestimonial();
         });
-
+        $(document).on('click', '.toggle-services-full-list a', function(e){
+            e.preventDefault();
+            $('.section--full-services').toggleClass('section--full-services--visible');
+            $('html, body').animate({
+                scrollTop: $('.section--full-services').offset().top
+            }, 200);
+        });
     </script>
     <?php wp_footer(); ?>
 </body>
