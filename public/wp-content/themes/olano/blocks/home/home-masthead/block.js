@@ -190,7 +190,7 @@
                     * BLOCK
                     */
                     el('div', { className: 'row align-items-center' },
-                        el('div', { className: 'col lg:col--4' },
+                        el('div', { className: 'col lg:col--4 margin-bottom-4 md:margin-bottom-0' },
                             el( RichText, {
                                 tagName: 'h1',
                                 className: 'font-size-display2',
@@ -237,7 +237,7 @@
         save: function (props) {
 
             return el('div', { className: 'row align-items-center' },
-                el('div', { className: 'col lg:col--4' },
+                el('div', { className: 'col lg:col--4 margin-bottom-4 md:margin-bottom-0' },
                     el( RichText.Content, {
                         tagName: 'h1',
                         className: 'font-size-display2',

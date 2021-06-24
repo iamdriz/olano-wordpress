@@ -104,7 +104,7 @@
                     * BLOCK
                     */
                     el('div', { className: 'row align-items-center margin-top-8' },
-                        el('div', { className: 'col md:col--3'},
+                        el('div', { className: 'col md:col--3 margin-bottom-4 md:margin-bottom-0'},
                             el('div', { className: 'wp-block-buttons' },
                                 el('div', { className: 'wp-block-button is-style-fill'},
                                     el('a', { className: 'wp-block-button__link has-yellow-background-color has-background', href: props.attributes.case_study_href },
@@ -124,7 +124,7 @@
         save: function (props) {
 
             return el('div', { className: 'row align-items-center margin-top-8' },
-                el('div', { className: 'col md:col--3'},
+                el('div', { className: 'col md:col--3 margin-bottom-4 md:margin-bottom-0'},
                     el('div', { className: 'wp-block-buttons' },
                         el('div', { className: 'wp-block-button is-style-fill'},
                             el('a', { className: 'wp-block-button__link has-yellow-background-color has-background', href: props.attributes.case_study_href },

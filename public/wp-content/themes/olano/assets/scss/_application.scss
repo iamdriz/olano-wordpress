@@ -70,50 +70,6 @@ img {
   }
 }
 
-.staff-list {
-  display: grid;
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 50%));
-  }
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(3, minmax(0, 33%));
-  }
-  gap: 32px;
-}
-
-.staff-list-item {
-  background-color: var(--off-red);
-  background-image: url("../img/about/about-background.svg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  box-shadow: rgba(0, 0, 0, 0.125) 0 0 1rem;
-  border-radius: 0.25rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.staff-list-item.wp-block {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.staff-list-item__content {
-  padding: 2rem 2rem;
-  flex: 1 1 auto;
-}
-
-.staff-list-item__name {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-.staff-list-item__title {
-  font-size: 0.875rem;
-}
-.staff-list-item__photo {
-  padding: 0 1rem 0 2rem;
-}
-
 .text-align-center {
   text-align: center;
 }
@@ -176,5 +132,12 @@ img {
   }
   .xxl\:text-align-right {
     text-align: right;
+  }
+}
+
+.figure--rounded {
+  img {
+    border: #fff 2px solid;
+    border-radius: 999em;
   }
 }

@@ -345,6 +345,34 @@
   width: auto;
 }
 
+@media (max-width: 575px) {
+  @for $i from 12 through 1 {
+    .xs\:col--#{$i},
+    .xs\:row--col--#{$i} > * {
+      flex: 0 0 auto;
+      width: calc(#{$i} / 12 * 100%);
+    }
+    .xs\:offset-#{$i} {
+      margin-left: calc(#{$i} / 12 * 100%);
+    }
+
+    @for $j from 12 through 1 {
+      [class*="col--#{$i}"] .xs\:col--#{$j} {
+        flex: 0 0 auto;
+        width: calc(#{$j} / #{$i} * 100%);
+      }
+      [class*="col--#{$i}"] .xs\:offset-#{$j} {
+        margin-left: calc(#{$j} / #{$i} * 100%);
+      }
+    }
+  }
+  .xs\:col--auto,
+  .xs\:row--col--auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+}
+
 @media (min-width: 576px) {
   @for $i from 12 through 1 {
     .sm\:col--#{$i},

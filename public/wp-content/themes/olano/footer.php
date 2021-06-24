@@ -14,7 +14,7 @@ $nextID = $pages[$current+1];
     <div class="container">
 
         <div class="row">
-            <div class="col md:col--2">
+            <div class="col md:col--2 margin-bottom-4 md:margin-bottom-0">
                 <div class="footer-about">
                     <a class="footer-about__logo" href="<?php echo bloginfo('home'); ?>">
                         <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/logo-red.svg" alt="Olano logo">
@@ -28,7 +28,7 @@ $nextID = $pages[$current+1];
 
             <div class="col md:col--9 md:offset-1">
                 <ul class="row footer-menu">
-                    <li class="col md:col--2 footer-menu-item">
+                    <li class="col md:col--2 margin-bottom-4 md:margin-bottom-0 footer-menu-item">
                         <h3 class="footer-menu__title">Follow us</h3>
                         <ul class="social-list">
                             <li class="social-list-item">
@@ -48,7 +48,7 @@ $nextID = $pages[$current+1];
                             </li>
                         </ul>
                     </li>
-                    <li class="col md:col--2 footer-menu-item">
+                    <li class="col md:col--2 margin-bottom-4 md:margin-bottom-0 footer-menu-item">
                         <h3 class="footer-menu__title">Company</h3>
                         <?php wp_nav_menu( array( 
                             'theme_location' => 'footer-menu-1', 
@@ -57,7 +57,7 @@ $nextID = $pages[$current+1];
                             'menu_class' => 'footer-menu__list',
                             'fallback_cb' => false ) ); ?>
                     </li>
-                    <li class="col md:col--2 footer-menu-item">
+                    <li class="col md:col--2 margin-bottom-4 md:margin-bottom-0 footer-menu-item">
                         <h3 class="footer-menu__title">Resources</h3>
                         <?php wp_nav_menu( array( 
                             'theme_location' => 'footer-menu-2', 

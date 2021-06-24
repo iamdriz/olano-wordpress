@@ -18,11 +18,12 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step1.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step1.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>1 / 5</p>
+                        <h3>Step 1</h3>
                         <p>Cyber security was the topic area and the audience was broad, meaning that we had some
 work to do to ensure we keep all learners engaged, regardless of their technical expertise.</p>
                     </div>
@@ -38,11 +39,12 @@ work to do to ensure we keep all learners engaged, regardless of their technical
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step2.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step2.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>2 / 5</p>
+                        <h3>Step 2</h3>
                         <p>Therefore, we used metaphors, animation and lots of visuals to help make the content feel
 familiar and easy to understand.</p>
                     </div>
@@ -58,11 +60,12 @@ familiar and easy to understand.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>3 / 5</p>
+                        <h3>Step 3</h3>
                         <p>Language was key to ensure the course made sense to the learners, enough to make them
 feel empowered and understand what their roles and responsibilities were.</p>
                     </div>
@@ -78,11 +81,12 @@ feel empowered and understand what their roles and responsibilities were.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step4.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step4.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>4 / 5</p>
+                        <h3>Step 4</h3>
                         <p>The outcome was a short eLearning course (circa 25 minutes) which included a 2 minute
 video to set the scene, a dive into the history and some case studies to support the
 importance. From there we utilised lots of creative visuals to drive the messages.</p>
@@ -99,11 +103,12 @@ importance. From there we utilised lots of creative visuals to drive the message
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step5.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/content-development/step5.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>5 / 5</p>
+                        <h3>Step 5</h3>
                         <p>TA perfect example of great content combined with creative animations in a small package.
 Perfectly tailored towards the materials handling systems market.</p>
                         <p>If you would like to know more about this project please read more below...</p>
@@ -120,9 +125,6 @@ Perfectly tailored towards the materials handling systems market.</p>
         </div>
 
         <div class="row margin-top-8">
-            <!-- <div class="col md:col--2 md:text-align-right">
-                <h2 class="font-size-h4 border-top">The story</h2>
-            </div> -->
             <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>Some topics are easy to transform into an engaging piece of training. But every so often you get a

@@ -25,7 +25,11 @@
 }
 
 .book-page__content {
-    background: #ffffff;
+    background-color: #ffffff;
+    background-image: url('../img/case-studies/case-studies-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
@@ -65,7 +69,7 @@
         border-radius: 4px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 32px;
+        // column-gap: 32px;
         grid-template-rows: auto;
         position: relative;
         z-index: 1;

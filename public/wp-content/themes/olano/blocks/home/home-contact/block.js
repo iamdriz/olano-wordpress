@@ -114,7 +114,7 @@
                     * BLOCK
                     */
                     el('div', { className: 'row align-items-center' },
-                        el('div', { className: 'col md:col--5 md:offset-1 md:order-2'},
+                        el('div', { className: 'col md:col--5 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0'},
                             el('figure', { className: '' },
                                 el( MediaUpload, {
                                     onSelect: onSelectImage,
@@ -163,7 +163,7 @@
         save: function (props) {
 
             return el('div', { className: 'row align-items-center' },
-                el('div', { className: 'col md:col--5 md:offset-1 md:order-2'},
+                el('div', { className: 'col md:col--5 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0'},
                     el('figure', { className: '' },
                         (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                     )

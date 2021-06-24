@@ -18,11 +18,12 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step1.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step1.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>1 / 5</p>
+                        <h3>Step 1</h3>
                         <p>We were to create a digital knowledge hub containing a lot of presentations which needed
 to be visually appealing, interactive but remain editable.</p>
                     </div>
@@ -38,11 +39,12 @@ to be visually appealing, interactive but remain editable.</p>
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step2.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step2.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>2 / 5</p>
+                        <h3>Step 2</h3>
                         <p>The hub needed to have a clear line of navigation with helpful instructions, access to
 reference material, videos and downloadable templates.</p>
                     </div>
@@ -58,11 +60,12 @@ reference material, videos and downloadable templates.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>3 / 5</p>
+                        <h3>Step 3</h3>
                         <p>With over 300 slides of the content for the main content delivery, we needed to be very
 careful about how to maintain the readers engagement.</p>
                     </div>
@@ -78,11 +81,12 @@ careful about how to maintain the readers engagement.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step4.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step4.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>4 / 5</p>
+                        <h3>Step 4</h3>
                         <p>A custom SharePoint site was developed with interlinking sections and documents referring
 to other documents and resources held within the hub. Surveys, templates, videos,
 interactive sections and non-linear sections were used to keep the reader engrossed in the
@@ -100,11 +104,12 @@ content.</p>
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step5.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/classroom-virtual/step5.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>5 / 5</p>
+                        <h3>Step 5</h3>
                         <p>The project followed a tight delivery timeline but with some careful planning and
 organisation between our team and our partner we turned around a purposeful, great
 looking site overflowing with knowledge and opportunity to inspire the reader.</p>
@@ -122,9 +127,6 @@ looking site overflowing with knowledge and opportunity to inspire the reader.</
         </div>
 
         <div class="row margin-top-8">
-            <!-- <div class="col md:col--2 md:text-align-right">
-                <h2 class="font-size-h4 border-top">The story</h2>
-            </div> -->
             <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>Partnering with the Economics of Mutuality, the project was to create a knowledge hub for a major

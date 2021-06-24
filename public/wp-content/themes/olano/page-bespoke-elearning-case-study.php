@@ -23,6 +23,7 @@
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>1 / 5</p>
+                        <h3>Step 1</h3>
                         <p>Brightest Bulb are a fantastic company that train people how to create employee generated,
 professional looking videos on a smartphone. Our task was to transition their face-to-face
 workshops into digital online training.</p>
@@ -44,6 +45,7 @@ workshops into digital online training.</p>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>2 / 5</p>
+                        <h3>Step 2</h3>
                         <p>To do this, a lot of video was required, so we worked with them during filming to keep their
 content engaging and outlined some exciting techniques to extract their content (including
 plenty of interactivity and animation).</p>
@@ -65,6 +67,7 @@ plenty of interactivity and animation).</p>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>3 / 5</p>
+                        <h3>Step 3</h3>
                         <p>Collectively, we chose to split the course into biteze modules – each module could then be
 progressively assessed, meaning that progress through to the end of the course could only
 be achieved once each stage was passed.</p>
@@ -86,6 +89,7 @@ be achieved once each stage was passed.</p>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>4 / 5</p>
+                        <h3>Step 4</h3>
                         <p>The output was a 10-module programme with a variety of interactive knowledge
 checkpoints. There were larger filming assessments for the learners to go away and
 complete before uploading to a video portal for review.</p>
@@ -107,6 +111,7 @@ complete before uploading to a video portal for review.</p>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>5 / 5</p>
+                        <h3>Step 5</h3>
                         <p>Video heavy content can be managed effectively with some upfront planning and careful consideration.</p>
                         <p>Please read more about the details of the project below...</p>
                     </div>
@@ -122,9 +127,6 @@ complete before uploading to a video portal for review.</p>
         </div>
 
         <div class="row margin-top-8">
-            <!-- <div class="col md:col--2 md:text-align-right">
-                <h2 class="font-size-h4 border-top">The story</h2>
-            </div> -->
             <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>Brightest Bulb are a fantastic company that train people how to create employee generated, professional looking videos on a smartphone.</p>

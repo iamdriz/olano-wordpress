@@ -18,11 +18,12 @@
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step1.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step1.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>1 / 5</p>
+                        <h3>Step 1</h3>
                         <p>As part of an eLearning we needed to create an explainer video to clearly stage the
 differences between Incidents, Problems and Changes.</p>
                     </div>
@@ -38,11 +39,12 @@ differences between Incidents, Problems and Changes.</p>
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step2.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step2.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>2 / 5</p>
+                        <h3>Step 2</h3>
                         <p>We weren’t to be specific and couldn’t focus on the object or machine at fault. We were to
 use characters and something generic which all departments could relate too. A strong
 imaginative metaphor would be needed.</p>
@@ -59,11 +61,12 @@ imaginative metaphor would be needed.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step3.jpg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>3 / 5</p>
+                        <h3>Step 3</h3>
                         <p>The example story couldn’t be too creative or far from what the business would find familiar.</p>
                     </div>
                     <div class="book-page__content__footer">
@@ -78,11 +81,12 @@ imaginative metaphor would be needed.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step4.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step4.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>4 / 5</p>
+                        <h3>Step 4</h3>
                         <p>A 3 minute animation was created using characters we had designed and animated in
 After Effects, all which complimented the client’s brand.</p>
                     </div>
@@ -98,11 +102,12 @@ After Effects, all which complimented the client’s brand.</p>
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/bespoke-elearning/step5.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('template_directory'); ?>/assets/img/case-studies/explainer-videos/step5.svg">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
                         <p>5 / 5</p>
+                        <h3>Step 5</h3>
                         <p>We really drove a lot of thought an creativity into this animation though only 3 minutes it
 was important to get it right. Enough to not leave the viewer in wonder and clearly define
 the differences in order to move onto the next topic of how to manage each situation
@@ -121,9 +126,6 @@ effectively.</p>
         </div>
 
         <div class="row margin-top-8">
-            <!-- <div class="col md:col--2 md:text-align-right">
-                <h2 class="font-size-h4 border-top">The story</h2>
-            </div> -->
             <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
                 <p>As part of a larger project around the ITIL standard, the client needed to explain the difference

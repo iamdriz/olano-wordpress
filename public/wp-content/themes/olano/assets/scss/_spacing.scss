@@ -25,14 +25,57 @@ $spacing: (
     }
   }
 }
-
+@media (max-width: 575px) {
+  @each $key, $value in $spacing {
+    @each $direction in ("top", "right", "bottom", "left") {
+      .xs\:margin-#{$direction}-#{$key} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
+}
 @media (min-width: 576px) {
+  @each $key, $value in $spacing {
+    @each $direction in ("top", "right", "bottom", "left") {
+      .sm\:margin-#{$direction}-#{$key} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
+  @each $key, $value in $spacing {
+    @each $direction in ("top", "right", "bottom", "left") {
+      .md\:margin-#{$direction}-#{$key} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
 }
 @media (min-width: 992px) {
+  @each $key, $value in $spacing {
+    @each $direction in ("top", "right", "bottom", "left") {
+      .lg\:margin-#{$direction}-#{$key} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
 }
 @media (min-width: 1200px) {
+  @each $key, $value in $spacing {
+    @each $direction in ("top", "right", "bottom", "left") {
+      .xl\:margin-#{$direction}-#{$key} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
 }
 @media (min-width: 1400px) {
+  @each $key, $value in $spacing {
+    @each $direction in ("top", "right", "bottom", "left") {
+      .xxl\:margin-#{$direction}-#{$key} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
 }
