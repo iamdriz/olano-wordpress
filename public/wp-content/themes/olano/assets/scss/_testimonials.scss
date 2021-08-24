@@ -44,6 +44,11 @@
     font-weight: 700;
     margin-bottom: 0;
   }
+  .testimonials-list-item__quote {
+    background: url('../img/quote.svg') top left no-repeat;
+    background-size: 2rem 2rem;
+    padding-top: 3rem;
+  }
 }
 
 .testimonial-arrows {
@@ -54,6 +59,7 @@
 }
 
 .testimonial-arrow {
+  cursor: pointer;
   width: 48px;
   height: 48px;
   border-radius: 999em;
@@ -61,8 +67,15 @@
   align-items: center;
   justify-content: center;
   background-color: var(--white);
-  color: var(--yellow);
+  color: var(--yellow) !important;
   margin-left: 1rem;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: var(--grey);
+    color: var(--yellow) !important;
+  }
+
   &:first-child {
     margin-left: 0;
   }
@@ -70,6 +83,7 @@
   &--disabled {
     pointer-events: none;
     opacity: .5;
+    cursor: default;
   }
 }
 .testimonial-arrow__icon {

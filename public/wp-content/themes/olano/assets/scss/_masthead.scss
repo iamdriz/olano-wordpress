@@ -95,7 +95,7 @@
 
 .tooltip-bubble {
   position: absolute;
-  width: 320px;
+  width: 256px;
   background-color: #fff;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -157,7 +157,7 @@
 
 .tooltip-bubble__content {
   color: var(--grey);
-  padding: 2rem 2rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .tooltip-bubble__content a {
