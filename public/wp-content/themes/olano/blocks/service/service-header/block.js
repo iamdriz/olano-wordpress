@@ -49,7 +49,7 @@
             
             return el(
                 'div', { className: 'row' },
-                    el('div', { className: 'col col--6 offset-3 md:col--2 md:offset-1' },
+                    el('div', { className: 'col col--6 offset-3 md:col--2 md:offset-1 margin-bottom-4 md:margin-bottom-0' },
                         el('figure', { className: 'figure figure--rounded' },
                             el( MediaUpload, {
                                 onSelect: onSelectImage,
@@ -92,7 +92,7 @@
         save: function (props) {
             return el(
                 'div', { className: 'row' },
-                    el('div', { className: 'col col--6 offset-3 md:col--2 md:offset-1' },
+                    el('div', { className: 'col col--6 offset-3 md:col--2 md:offset-1 margin-bottom-4 md:margin-bottom-0' },
                         el('figure', { className: 'figure figure--rounded' },
                             (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                         )

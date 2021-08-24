@@ -20,6 +20,10 @@ require get_stylesheet_directory() . '/blocks/service/service-header/index.php';
 require get_stylesheet_directory() . '/blocks/service/service-content/index.php';
 require get_stylesheet_directory() . '/blocks/service/service-links/index.php';
 require get_stylesheet_directory() . '/blocks/service/service-contact/index.php';
+// work
+require get_stylesheet_directory() . '/blocks/work/work-header/index.php';
+require get_stylesheet_directory() . '/blocks/work/work-case-studies/index.php';
+require get_stylesheet_directory() . '/blocks/work/work-case-studies-item/index.php';
 // about
 require get_stylesheet_directory() . '/blocks/about/about-header/index.php';
 require get_stylesheet_directory() . '/blocks/about/about-team/index.php';

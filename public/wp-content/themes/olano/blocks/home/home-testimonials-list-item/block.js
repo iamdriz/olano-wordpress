@@ -61,7 +61,7 @@
             const blockProps = useBlockProps( { className: 'testimonials-list-item row align-items-center' } );
 
             return el('div', { ...blockProps },
-                el('div', { className: 'col md:col--3 testimonials-list-item__photo' },
+                el('div', { className: 'col md:col--3 testimonials-list-item__photo margin-bottom-4 md:margin-bottom-0' },
                     el( MediaUpload, {
                         onSelect: onSelectImage,
                         allowedTypes: 'image',
@@ -111,7 +111,7 @@
             return el('div', {
                     className: 'testimonials-list-item row align-items-center'
                 },
-                el('div', { className: 'col md:col--3 testimonials-list-item__photo' },
+                el('div', { className: 'col md:col--3 testimonials-list-item__photo margin-bottom-4 md:margin-bottom-0' },
                     (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                 ),
                 el('div', { className: 'col md:col--7 testimonials-list-item__content'},

@@ -83,6 +83,16 @@
   }
 }
 
+.tooltip--disabled {
+  opacity: .5;
+  .tooltip-pulse {
+    cursor: default;
+    &:after {
+        display: none;
+    }
+  }
+}
+
 .tooltip-bubble {
   position: absolute;
   width: 320px;

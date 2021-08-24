@@ -162,3 +162,92 @@
         }
     }
   }
+
+
+  .work-case-studies {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media (min-width: 768px) {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+  }
+  .case-studies-item {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 4rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .case-studies-item__content {
+
+    }
+    .case-studies-item__photo img {
+        box-shadow: rgba(0, 0, 0, 0.125) 0 0 16px;
+    }
+  }
+  @media (max-width: 767px) {
+      .case-studies-item {
+        .case-studies-item__content {
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            order: 1;
+            .case-studies-item__category {
+                margin-bottom: 1rem;
+            }
+        }
+        .case-studies-item__photo {
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            order: 2;
+        }
+      }
+  }
+  @media (min-width: 768px) {
+    .case-studies-item {
+        .case-studies-item__content {
+            padding-top: 4rem;
+            .case-studies-item__category {
+                margin-bottom: 2rem;
+                padding-top: 1rem;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    border-top: #fff 2px solid;
+                }
+            }
+        }
+    }
+    .case-studies-item:nth-child(odd) {
+        .case-studies-item__content {
+            width: calc(3 / 12 * 100%);
+            padding-right: 1rem;
+            order: 1;
+        }
+        .case-studies-item__photo {
+            width: calc(9 / 12 * 100%);
+            padding-left: 1rem;
+            order: 2;
+        }
+    }
+    .case-studies-item:nth-child(even) {
+        .case-studies-item__content {
+            width: calc(3 / 12 * 100%);
+            padding-left: 1rem;
+            order: 2;
+        }
+        .case-studies-item__photo {
+            width: calc(9 / 12 * 100%);
+            padding-right: 1rem;
+            order: 1;
+        }
+    }
+}

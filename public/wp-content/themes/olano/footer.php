@@ -128,6 +128,7 @@ $nextID = $pages[$current+1];
         $(document).on('click', '[data-tooltip-open]', function (e) {
             e.preventDefault();
             let tooltip = $(this).attr('href');
+            if($(tooltip).hasClass('tooltip--disabled')) return false;
             if ($(tooltip).hasClass('tooltip--open')) {
                 $(tooltip).removeClass('tooltip--open');
                 $('body').removeClass('show-tooltip');
@@ -136,6 +137,7 @@ $nextID = $pages[$current+1];
                 $(tooltip).addClass('tooltip--open');
                 $('body').addClass('show-tooltip');
             }
+            unlockNextTooltip(tooltip);
         });
         $(document).on('keydown', function (e) {
             let tooltip = $('.tooltip--open');
@@ -151,6 +153,14 @@ $nextID = $pages[$current+1];
                 $(arrowRight).trigger('click');
             }
         });
+
+        function unlockNextTooltip(tooltip) {
+            if(tooltip == '#tooltip-1') {
+                $('#tooltip-2').removeClass('tooltip--disabled');
+            } else if(tooltip == '#tooltip-2') {
+                $('#tooltip-3').removeClass('tooltip--disabled');
+            }
+        }
 
         $(document).on('click', '.book a', function (e) {
             e.preventDefault();
@@ -204,13 +214,13 @@ $nextID = $pages[$current+1];
             e.preventDefault();
             nextTestimonial();
         });
-        $(document).on('click', '.toggle-services-full-list a', function(e){
-            e.preventDefault();
-            $('.section--full-services').toggleClass('section--full-services--visible');
-            $('html, body').animate({
-                scrollTop: $('.section--full-services').offset().top
-            }, 200);
-        });
+        // $(document).on('click', '.toggle-services-full-list a', function(e){
+        //     e.preventDefault();
+        //     $('.section--full-services').toggleClass('section--full-services--visible');
+        //     $('html, body').animate({
+        //         scrollTop: $('.section--full-services').offset().top
+        //     }, 200);
+        // });
     </script>
     <?php wp_footer(); ?>
 </body>

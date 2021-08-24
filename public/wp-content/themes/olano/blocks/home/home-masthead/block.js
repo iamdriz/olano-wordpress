@@ -41,7 +41,7 @@
                     ),
                 )
             ),
-            el('div', { className: 'tooltip', id: 'tooltip-2' },
+            el('div', { className: 'tooltip tooltip--disabled', id: 'tooltip-2' },
                 el('a', { className: 'tooltip-pulse', href: '#tooltip-2', 'data-tooltip-open': '' },
                     el('i', { className: 'far fa-plus fa-fw tooltip-pulse__icon' })
                 ),
@@ -62,7 +62,7 @@
                     ),
                 )
             ),
-            el('div', { className: 'tooltip', id: 'tooltip-3' },
+            el('div', { className: 'tooltip tooltip--disabled', id: 'tooltip-3' },
                 el('a', { className: 'tooltip-pulse', href: '#tooltip-3', 'data-tooltip-open': '' },
                     el('i', { className: 'far fa-plus fa-fw tooltip-pulse__icon' })
                 ),
