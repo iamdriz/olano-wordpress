@@ -28,9 +28,17 @@
                 type: 'string',
                 default: 'Enter content.'
             },
+            email_href: {
+                type: 'string',
+                default: ''
+            },
             phone: {
                 type: 'string',
                 default: 'Enter content.'
+            },
+            phone_href: {
+                type: 'string',
+                default: ''
             },
             address: {
                 type: 'string',
@@ -87,11 +95,33 @@
                             el( PanelRow, {},
                                 el( TextControl,
                                     {
+                                        label: 'Email address href',
+                                        onChange: ( value ) => {
+                                            props.setAttributes( { email_href: value } );
+                                        },
+                                        value: props.attributes.email_href
+                                    }
+                                ),
+                            ),
+                            el( PanelRow, {},
+                                el( TextControl,
+                                    {
                                         label: 'Phone number',
                                         onChange: ( value ) => {
                                             props.setAttributes( { phone: value } );
                                         },
                                         value: props.attributes.phone
+                                    }
+                                ),
+                            ),
+                            el( PanelRow, {},
+                                el( TextControl,
+                                    {
+                                        label: 'Phone number href',
+                                        onChange: ( value ) => {
+                                            props.setAttributes( { phone_href: value } );
+                                        },
+                                        value: props.attributes.phone_href
                                     }
                                 ),
                             ),
@@ -147,10 +177,10 @@
                             } ),
                             el('ul', { className: 'contact-list' },
                                 el('li', { className: 'contact-list-item contact-list-item--email'},
-                                    props.attributes.email
+                                    el('a', { href: props.attributes.email_href }, props.attributes.email)
                                 ),
                                 el('li', { className: 'contact-list-item contact-list-item--phone'},
-                                    props.attributes.phone
+                                    el('a', { href: props.attributes.phone_href }, props.attributes.phone)
                                 ),
                                 el('li', { className: 'contact-list-item contact-list-item--address'},
                                     props.attributes.address
@@ -176,10 +206,10 @@
                     } ),
                     el('ul', { className: 'contact-list' },
                         el('li', { className: 'contact-list-item contact-list-item--email'},
-                            props.attributes.email
+                            el('a', { href: props.attributes.email_href }, props.attributes.email)
                         ),
                         el('li', { className: 'contact-list-item contact-list-item--phone'},
-                            props.attributes.phone
+                            el('a', { href: props.attributes.phone_href }, props.attributes.phone)
                         ),
                         el('li', { className: 'contact-list-item contact-list-item--address'},
                             props.attributes.address

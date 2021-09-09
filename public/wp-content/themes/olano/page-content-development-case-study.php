@@ -127,38 +127,40 @@ Perfectly tailored towards the materials handling systems market.</p>
         <div class="row margin-top-8">
             <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
-                <p>Some topics are easy to transform into an engaging piece of training. But every so often you get a
+                <p>Some topics are easy to transform into an engaging piece of training but every so often you get a
 particularly dry subject which no matter which way you look at the content it will send some people
 to sleep.</p>
-                <p>Cyber Security was one of those subjects, especially to those who do not share the interest.</p>
+                <p>Cyber Security was one of those subjects that doesn’t always naturally engaged people.</p>
                 <h3>Prompts for Action</h3>
-                <p>Using familiar metaphorical examples made it easier to deliver language which was understood by a
-wider audience. It was important to establish stories, the history and case studies to deliver drama
-and impact around the issues of cyber Security. At all times referring back to the client’s business to
-make the context relevant and familiar to the employee.</p>
-                <p>The element of history should be told through the use of visuals or a moving timeline of events.
-Illustrations and characters would be a great way to do this.</p>
+                <p>Using metaphors made it easier to deliver language which was understood by a wider audience. It
+was important to establish stories, the history and case studies to deliver drama and impact around
+the issues of Cyber Security. At all times referring to the client’s business to make the context
+relevant and familiar to the employee.</p>
+                <p>The element of history should be told using visuals or a moving timeline of events. Illustrations and
+characters would be a great way to do this.</p>
                 <h3>Consequences</h3>
-                <p>It was important not to use complex language for those who do not have a software background but
-in the same instance, software developers also needed to be kept engaged and reminded them that
-anyone or any business could be a target of a cyber attack.</p>
-                <p>The main driver for the course was to empower and drive awareness, surrounding the importance of
-how cyber security must be considered within all businesses today. Not only IT businesses, banks
-and governments are targets for a cyber attack anymore. It extends much further than this!</p>
+                <p>It was important not to use complex language for those who do not have a software background
+whilst also ensuring software developers are kept engaged and reminding them that anyone or any
+business could be a target of a cyber-attack.</p>
+                <p>The main driver for the course was to empower and drive awareness surrounding the importance of
+how cyber security must be considered within all businesses today. It’s not only IT businesses, banks
+and governments that are targets for cyber-attacks anymore.</p>
+                <p>It extends much further than this!</p>
                 <h3>Outcomes</h3>
-                <p>The outcome was a 25 minute eLearning course, which contained a 2 minute video to set the scene.
-There were also animations to expand into the history, which allowed for a deeper dive into the
-content. We also created a metaphor which related the different cyber security levels, which
-compared to the different devices and security systems you could typically install in your home to
-defend against intruders. For this we developed another interaction; a nice isometric house graphic.
-This metaphor was used to compare other aspects of cyber security systems later in the course,
-which further aided the embedding of knowledge surrounding the subject. All in all a great solution
-well liked and highly rated by the learners.</p>
+                <p>The outcome was a 25-minute eLearning course, which contained a 2-minute video to set the scene.
+Additionally, we added animations to expand into the history which allowed for a deeper dive into
+the content.</p>
+                <p>We also thought a little out the box creating a metaphor which related the different cyber security
+levels, comparing the different devices and security systems you could typically install in your home
+to defend against intruders. For this we developed another interaction, a nice isometric house
+graphic. This metaphor was repeated later in the course used to compare other aspects of cyber
+security systems, which further aided the embedding of knowledge surrounding the subject.</p>
+                <p>All in all, a great solution which was well liked and highly rated by the learners.</p>
                 <h3>Moral</h3>
-                <p>The key to understanding a complex or unfamiliar topic is simplicity or familiarity of a topic close to
-home. In this case, literally your home. For Olano, courses that drive awareness and empowerment
-are a great opportunity to show what we can do to fully engage the audience, regardless of how dry
-the subject area may be.</p>
+                <p>The key to understanding a complex or unfamiliar topic is to simplify or familiarise the topic closer to
+home. In this case, literally your home.</p>
+                <p>For Olano courses that drive awareness and empowerment are a great opportunity to show what we
+can do to fully engage an audience, regardless of how dry the subject area may be.</p>
             </div>
         </div>
 

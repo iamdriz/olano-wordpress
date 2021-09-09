@@ -5,6 +5,7 @@ require get_stylesheet_directory() . '/blocks/section/index.php';
 require get_stylesheet_directory() . '/blocks/services-list/index.php';
 require get_stylesheet_directory() . '/blocks/services-list-item/index.php';
 require get_stylesheet_directory() . '/blocks/video-wrapper/index.php';
+require get_stylesheet_directory() . '/blocks/video-wrapper2/index.php';
 // home
 require get_stylesheet_directory() . '/blocks/home/home-masthead/index.php';
 require get_stylesheet_directory() . '/blocks/home/home-services/index.php';

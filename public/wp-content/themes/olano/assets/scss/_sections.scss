@@ -50,7 +50,7 @@
         height: 50%;
         background: url('../img/masthead-clouds.svg') 0 0 repeat-x;
         background-size: 1854px auto;
-        animation: clouds 60s linear 0s infinite;
+        animation: clouds 120s linear 0s infinite;
     }
 
 }
@@ -208,7 +208,7 @@
     margin-bottom: 8rem;
 }
 
-.video {
+.video, .wp-block-embed {
     position: relative;
     z-index: 2;
     height: 0;
@@ -218,7 +218,7 @@
     box-shadow: rgba(0, 0, 0, 0.125) 0 0 16px;
     border-radius: 4px;
   
-    iframe, img {
+    .wp-block-embed__wrapper, iframe, video, img {
       position: absolute;
       top: 0;
       left: 0;

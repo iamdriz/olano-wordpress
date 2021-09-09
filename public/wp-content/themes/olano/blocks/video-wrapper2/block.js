@@ -21,8 +21,8 @@
         PanelRow
     } = components;
 
-    blocks.registerBlockType('olano/olano-video-wrapper-block', {
-        title: 'Video Wrapper Block',
+    blocks.registerBlockType('olano/olano-video-wrapper2-block', {
+        title: 'Video Wrapper2 Block',
         icon: 'universal-access-alt',
         category: 'layout',
         example: {},
@@ -56,7 +56,7 @@
                      * SETTINGS
                      */
                     el( InspectorControls, {},
-                        el( PanelBody, { title: 'Video Wrapper Settings', initialOpen: true },
+                        el( PanelBody, { title: 'Video Wrapper2 Settings', initialOpen: true },
          
                             el( PanelRow, {},
                                 el( SelectControl,
@@ -83,28 +83,30 @@
                     */
                     el('div', { className: 'video-wrapper ' + props.attributes.video_wrapper_class },
                         el('div', { className: 'container'},
-                            el('figure', { className: 'video' },
-                                el( MediaUpload, {
-                                    onSelect: onSelectImage,
-                                    allowedTypes: 'image',
-                                    value: props.attributes.mediaID,
-                                    render: function( obj ) {
-                                        return el(
-                                            components.Button,
-                                            {
-                                                className: props.attributes.mediaID
-                                                    ? 'button button-large'
-                                                    : 'button button-large',
-                                                onClick: obj.open,
-                                            },
-                                            ! props.attributes.mediaID
-                                                ? 'Upload Image'
-                                                : 'Edit Image'
-                                        );
-                                    },
-                                } ),
-                                (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
-                            )
+                            // el('figure', { className: 'video' },
+                            //     el( MediaUpload, {
+                            //         onSelect: onSelectImage,
+                            //         allowedTypes: 'image',
+                            //         value: props.attributes.mediaID,
+                            //         render: function( obj ) {
+                            //             return el(
+                            //                 components.Button,
+                            //                 {
+                            //                     className: props.attributes.mediaID
+                            //                         ? 'button button-large'
+                            //                         : 'button button-large',
+                            //                     onClick: obj.open,
+                            //                 },
+                            //                 ! props.attributes.mediaID
+                            //                     ? 'Upload Image'
+                            //                     : 'Edit Image'
+                            //             );
+                            //         },
+                            //     } ),
+                            //     (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                            // )
+                            
+                            el(InnerBlocks)
                         ),
                     )
                 ))
@@ -113,9 +115,10 @@
 
             return el('div', { className: 'video-wrapper ' + props.attributes.video_wrapper_class },
                 el('div', { className: 'container'},
-                    el('figure', { className: 'video' },
-                        (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
-                    )
+                    // el('figure', { className: 'video' },
+                    //     (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                    // )
+                    el(InnerBlocks.Content)
                 ),
             )
         },

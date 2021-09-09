@@ -129,49 +129,51 @@ looking site overflowing with knowledge and opportunity to inspire the reader.</
         <div class="row margin-top-8">
             <div class="col md:col--7 md:offset-3">
                 <h3>The situation</h3>
-                <p>Partnering with the Economics of Mutuality, the project was to create a knowledge hub for a major
-manufacturing business to empower and promote the benefits of a route-to-market for vulnerable
-communities. Giving benefits to the communities from both a social and economic aspect which
-could also benefit the supply lines for larger businesses.</p>
+                <p>Partnering with the Economics of Mutuality (EoM), the project was to create a knowledge hub for a
+major manufacturing business to empower and promote the benefits of a route-to-market for
+vulnerable communities. This would provide benefits to the communities from both a social and
+economic aspect which could also help the supply lines for larger businesses.</p>
                 <p>EoM have masses of knowledge for the market which feeds in as content for the project. This wealth
 of information needed to be developed into something engaging and presented in a professional
 way which was, in part interactive and bitesize. Meanwhile, everything would also remain editable
 by the client for future updates.</p>
                 <h3>Prompts for Action</h3>
-                <p>Initially solution options were presented as well as mock-ups of the design. We then began the
+                <p>Initially solution options were presented as well as mock-ups of the design. From there we began the
 journey of developing the content as it was created by the subject matter expects.</p>
                 <p>We had elected jointly with our EoM partners to create a professionally designed SharePoint site
 which hosted a multitude of different editable materials, all linked together through some bitesize
 interactive presentations.</p>
-                <p>Furthermore, there would a survey, videos and infographics which made the reader feel more
-involved and offered many opportunities to delve in further or progress in a non-linear fashion.</p>
+                <p>Furthermore, there would be a survey, videos and infographics which made the reader feel more
+involved and offered them opportunities to delve in further or progress in a non-linear fashion.</p>
                 <h3>Consequences</h3>
-                <p>There was a risk that the quantity of content could get monotonous if the slide designs get reused –
-therefore a lot of variation on design was required. Because the quantity of raw content was in
-excess of 300 slides and the timeline to develop was short, there would be a battle between
-efficiency and creativity of design’. Therefore, more of the team would be needed to work on the
+                <p>There was a risk that the quantity of content could get monotonous if the slide designs were reused
+– therefore a lot of variation on design was required. Due to the quantity of raw content being in
+excess of 300 slides and the timeline to develop being short, there would be a battle between
+efficiency and creativity of design. Therefore, more of the team would be needed to work on the
 project and a lead designer would need to be elected to keep a consistent design style across all
 material developed.</p>
-                <p>Keeping content editable is difficult when you need to be creative and being over creative with slides
-will make it difficult for the average user to update the slides.</p>
+                <p>Keeping content editable is difficult when you need to be creative. Whilst being over creative with
+slides often making it difficult for the average user to update, a balance between the two had to be
+found.</p>
                 <h3>Outcomes</h3>
-                <p>The outcome was a tailored SharePoint site which felt like a nicely designed website. Containing a
-homepage that clearly signposted to the subpages within the site. The bitesize modules within the
-site signposted to pages which hosted document viewer. This gives the viewer a fluid way of reading
-content from different sources without the need to click to download or open separate applications.
-Everything feels seamlessly connected with areas of interaction, references to outside sources of
-information, videos and downloadable documents and templates. All helps to equip and empower
-the reader with everything they need to begin developing within the target community.</p>
-                <p>It was all consistently branded and with a vast amount different slide styles which keeps the reader
+                <p>The outcome was a tailored SharePoint site which felt like a nicely designed website. It contained a
+homepage that clearly signposted to the subpages and included bitesize modules within the site that
+signposted to pages which hosted a document viewer. This gives the viewer a fluid way of reading
+content from different sources without the need to download or open separate applications. It
+created a seamless connection with areas of interaction, references to outside sources of
+information, videos and downloadable documents and templates. This all helps to equip and
+empower the reader with everything they need to begin developing within the target community.</p>
+                <p>It was all consistently branded with a vast amount of different slide styles which keeps the reader
 absorbed. Version control and file protection was all setup along with permission groups to give
 specific owners the responsibility to update files.</p>
                 <h3>Moral</h3>
-                <p>The battle against death-by-PowerPoint was won. But not only with nicely designed slides;
-interactive slides, breaking up the content into sections, utilising menu systems and linking to other
-parts of the site to encourage a non-linear flow.</p>
+                <p>The battle against death-by-PowerPoint was won! This was done by not only having nicely designed
+slides but through breaking up the content into sections, utilising menu systems, interactive slides
+and linking to other parts of the site to encourage a non-linear flow.</p>
                 <p>A great solution should not be limited by its modality. SharePoint can be very limiting with its
-options for design, especially if you have restricted access to change features. But thinking outside
-the box to implement externally designed assets which all come together in perfect harmony.</p>
+options for design especially if you have restricted access to change features. The solution is to think
+outside the box to implement externally designed assets which all come together in perfect
+harmony.</p>
             </div>
         </div>
 
