@@ -11,14 +11,14 @@
         </div>
         <div class="row margin-bottom-4">
             <div class="col md:col--7 md:offset-3">
-                <h1 class="font-size-display2">Stafforce Onboarding Process</h1>
+                <h1 class="font-size-display2">Making sales far more engaging!</h1>
             </div>
         </div>
 
         <div class="book">
             <div class="book-page book-page--current" id="page-1">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step1.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/stafforce-step1.png">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -39,7 +39,7 @@ interactive and less linear by bringing in video and animation.</p>
             </div>
             <div class="book-page" id="page-2">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step2.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/stafforce-step2.png">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -61,7 +61,7 @@ different audiences.</p>
             </div>
             <div class="book-page" id="page-3">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step3.jpg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/stafforce-step3.png">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -83,7 +83,7 @@ information to be condensed down into a more engaging format.</p>
             </div>
             <div class="book-page" id="page-4">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step4.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/stafforce-step4.png">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
@@ -105,7 +105,7 @@ the traditional presentation format to allow editability.</p>
             </div>
             <div class="book-page" id="page-5">
                 <div class="book-page__media">
-                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/explainer-videos-step5.svg">
+                    <img loading="lazy" src="<?php echo bloginfo('home'); ?>/wp-content/uploads/stafforce-step5.png">
                 </div>
                 <div class="book-page__content">
                     <div class="book-page__content__main">
