@@ -5,6 +5,21 @@
     var MediaUpload = blockEditor.MediaUpload;
     var useBlockProps = blockEditor.useBlockProps;
 
+    const { InspectorControls, BlockControls } = editor;
+	const { Fragment } = element;
+	const {
+        TextControl,
+        CheckboxControl,
+        RadioControl,
+        SelectControl,
+        TextareaControl,
+        ToggleControl,
+        RangeControl,
+        Panel,
+        PanelBody,
+        PanelRow
+    } = components;
+
     blocks.registerBlockType('olano/olano-about-team-item-block', {
         apiVersion: 2,
         parent: ['olano/olano-about-team-block'],
@@ -24,6 +39,10 @@
                 source: 'children',
                 selector: 'p',
                 default: 'Enter title.',
+            },
+            bio: {
+                type: 'string',
+                default: 'Enter bio.'
             },
             mediaID: {
 				type: 'number',
@@ -51,63 +70,109 @@
 
             const blockProps = useBlockProps( { className: 'staff-list-item' } );
 
-            return el('div', { ...blockProps },
-                el('div', { className: 'staff-list-item__content'},
-                    el( RichText, {
-                        tagName: 'h3',
-                        className: 'staff-list-item__name',
-                        value: props.attributes.name,
-                        onChange: onChangeName,
-                    } ),
-                    el( RichText, {
-                        tagName: 'p',
-                        className: 'staff-list-item__title',
-                        value: props.attributes.title,
-                        onChange: onChangeTitle,
-                    } )
-                ),
-                el('div', { className: 'staff-list-item__photo' },
-                    el( MediaUpload, {
-                        onSelect: onSelectImage,
-                        allowedTypes: 'image',
-                        value: props.attributes.mediaID,
-                        render: function( obj ) {
-                            return el(
-                                components.Button,
+            return(
+                el( Fragment, {},
+
+                /*  
+                 * SETTINGS
+                 */
+                el( InspectorControls, {},
+                    el( PanelBody, { title: 'About Team Settings', initialOpen: true },
+     
+                        el( PanelRow, {},
+                            el( TextareaControl,
                                 {
-                                    className: props.attributes.mediaID
-                                        ? 'button button-large'
-                                        : 'button button-large',
-                                    onClick: obj.open,
-                                },
-                                ! props.attributes.mediaID
-                                    ? 'Upload Image'
-                                    : 'Edit Image'
-                            );
-                        },
-                    } ),
-                    (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                                    label: 'Bio',
+                                    onChange: ( value ) => {
+                                        props.setAttributes( { bio: value } );
+                                    },
+                                    value: props.attributes.bio
+                                }
+                            ),
+                        ),
+
+                    ),
+                ),
+    
+                /*  
+                * BLOCK
+                */
+                el('div', { ...blockProps },
+                    el('div', { className: 'staff-list-item__inner' },
+                        el('div', { className: 'staff-list-item__front' },
+                            el('div', { className: 'staff-list-item__content'},
+                                el( RichText, {
+                                    tagName: 'h3',
+                                    className: 'staff-list-item__name',
+                                    value: props.attributes.name,
+                                    onChange: onChangeName,
+                                } ),
+                                el( RichText, {
+                                    tagName: 'p',
+                                    className: 'staff-list-item__title',
+                                    value: props.attributes.title,
+                                    onChange: onChangeTitle,
+                                } )
+                            ),
+                            el('div', { className: 'staff-list-item__photo' },
+                                el( MediaUpload, {
+                                    onSelect: onSelectImage,
+                                    allowedTypes: 'image',
+                                    value: props.attributes.mediaID,
+                                    render: function( obj ) {
+                                        return el(
+                                            components.Button,
+                                            {
+                                                className: props.attributes.mediaID
+                                                    ? 'button button-large'
+                                                    : 'button button-large',
+                                                onClick: obj.open,
+                                            },
+                                            ! props.attributes.mediaID
+                                                ? 'Upload Image'
+                                                : 'Edit Image'
+                                        );
+                                    },
+                                } ),
+                                (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                            )
+                        ),
+                        el('div', { className: 'staff-list-item__back'},
+                            el('div', { className: 'staff-list-item__content'},
+                                el('p', {}, props.attributes.bio)
+                            )
+                        )
+                    )
                 )
-            )
+            ))
         },
         save: function(props) {
             return el('div', {
                     className: 'staff-list-item'
                 },
-                el('div', { className: 'staff-list-item__content'},
-                    el( RichText.Content, {
-                        tagName: 'h3',
-                        className: 'staff-list-item__name',
-                        value: props.attributes.name,
-                    } ),
-                    el( RichText.Content, {
-                        tagName: 'p',
-                        className: 'staff-list-item__title',
-                        value: props.attributes.title,
-                    } )
-                ),
-                el('div', { className: 'staff-list-item__photo' },
-                    (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                el('div', { className: 'staff-list-item__inner' },
+                    el('div', { className: 'staff-list-item__front' },
+                        el('div', { className: 'staff-list-item__content'},
+                            el( RichText.Content, {
+                                tagName: 'h3',
+                                className: 'staff-list-item__name',
+                                value: props.attributes.name,
+                            } ),
+                            el( RichText.Content, {
+                                tagName: 'p',
+                                className: 'staff-list-item__title',
+                                value: props.attributes.title,
+                            } )
+                        ),
+                        el('div', { className: 'staff-list-item__photo' },
+                            (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
+                        )
+                    ),
+                    el('div', { className: 'staff-list-item__back'},
+                        el('div', { className: 'staff-list-item__content'},
+                            el('p', {}, props.attributes.bio)
+                        )
+                    )
                 )
             )
         },
