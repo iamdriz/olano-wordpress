@@ -39,7 +39,7 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   display: grid;
-  transition: transform 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   transform-style: preserve-3d;
   box-shadow: rgba(0, 0, 0, 0.125) 0 0 1rem;
   border-radius: 0.25rem;
@@ -53,6 +53,7 @@
 .staff-list-item__back {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 0.25rem;
 }
@@ -66,7 +67,11 @@
   flex-direction: column;
 }
 .staff-list-item__back {
-  background-color: #ffffff;
+  background-color: var(--white);
+  background-image: url('../img/card-background.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: var(--grey);
   transform: rotateY(180deg);
 }
