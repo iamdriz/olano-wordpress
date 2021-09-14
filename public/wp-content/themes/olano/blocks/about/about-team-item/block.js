@@ -44,6 +44,9 @@
                 type: 'string',
                 default: 'Enter bio.'
             },
+            fun_fact: {
+                type: 'string'
+            },
             mediaID: {
 				type: 'number',
 			},
@@ -87,6 +90,18 @@
                                         props.setAttributes( { bio: value } );
                                     },
                                     value: props.attributes.bio
+                                }
+                            ),
+                        ),
+
+                        el( PanelRow, {},
+                            el( TextareaControl,
+                                {
+                                    label: 'Fun fact',
+                                    onChange: ( value ) => {
+                                        props.setAttributes( { fun_fact: value } );
+                                    },
+                                    value: props.attributes.fun_fact
                                 }
                             ),
                         ),
@@ -139,7 +154,8 @@
                         ),
                         el('div', { className: 'staff-list-item__back'},
                             el('div', { className: 'staff-list-item__content'},
-                                el('p', {}, props.attributes.bio)
+                                el('p', {}, props.attributes.bio),
+                                (props.attributes.fun_fact ? el('p', {}, el('b', {}, 'Fun fact: '), props.attributes.fun_fact ) : '')
                             )
                         )
                     )
@@ -170,7 +186,8 @@
                     ),
                     el('div', { className: 'staff-list-item__back'},
                         el('div', { className: 'staff-list-item__content'},
-                            el('p', {}, props.attributes.bio)
+                            el('p', {}, props.attributes.bio),
+                            (props.attributes.fun_fact ? el('p', {}, el('b', {}, 'Fun fact: '), props.attributes.fun_fact ) : '')
                         )
                     )
                 )

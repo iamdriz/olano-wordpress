@@ -99,7 +99,7 @@
 
 
 .footer,
-.section { position: relative; overflow: hidden; }
+.section { /*position: relative;*/ overflow: hidden; }
 .footer > .container,
 .section > .container { position: relative; z-index: 1 }
 
