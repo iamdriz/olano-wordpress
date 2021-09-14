@@ -84,6 +84,10 @@ $nextID = $pages[$current+1];
     </div>
 </footer>
 
+<div class="back-to-top">
+    <i class="far fa-chevron-up fa-fw back-top-top__icon"></i>
+</div>
+
 <div class="grid-overlay">
 	<div class="container">
 		<div class="grid">
@@ -221,6 +225,26 @@ $nextID = $pages[$current+1];
         //         scrollTop: $('.section--full-services').offset().top
         //     }, 200);
         // });
+
+        function showHideBackToTop() {
+            if( $(this).scrollTop() < 100 ) {
+                $('.back-to-top').addClass('hidden');
+            } else {
+                $('.back-to-top').removeClass('hidden');
+            }
+        }
+
+        $(document).ready(function(){
+            showHideBackToTop();
+            $(window).scroll(function(){
+                showHideBackToTop();
+            });
+        });
+
+        $(document).on('click', '.back-to-top', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop : 0}, 800);
+        });
     </script>
     <?php wp_footer(); ?>
 </body>

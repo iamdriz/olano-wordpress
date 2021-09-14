@@ -145,3 +145,26 @@ img {
     border-radius: 999em;
   }
 }
+
+.back-to-top {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 999em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  color: var(--grey) !important;
+  transition: all .2s ease-in-out;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+  .back-to-top__icon {
+    font-size: 1rem;
+  }
+  &.hidden {
+    display: none;
+  }
+}
