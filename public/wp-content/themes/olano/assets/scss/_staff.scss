@@ -76,6 +76,9 @@
   transform: rotateY(180deg);
 }
 
-.staff-list-item .social-list {
-  margin-top: 1rem;
+.staff-list-item__back b {
+  color: var(--red);
+}
+.staff-list-item__back .social-list {
+  margin-top: 1.5rem;
 }
