@@ -47,6 +47,9 @@
             fun_fact: {
                 type: 'string'
             },
+            spotify: {
+                type: 'string'
+            },
             mediaID: {
 				type: 'number',
 			},
@@ -70,6 +73,17 @@
 					mediaID: media.id,
 				});
 			};
+
+            let spotify;
+            if(props.attributes.spotify) {
+                spotify = el('ul', { className: 'social-list' },
+                            el('li', { className: 'social-list-item' },
+                                el('a', { className: 'social-list-link social-list-link--green', href: props.attributes.spotify, target: '_blank' },
+                                    el('i', { className: 'fab fa-spotify fa-fw', ariaLabel: 'Spotify' })
+                                )
+                            )
+                        );
+            }
 
             const blockProps = useBlockProps( { className: 'staff-list-item' } );
 
@@ -102,6 +116,18 @@
                                         props.setAttributes( { fun_fact: value } );
                                     },
                                     value: props.attributes.fun_fact
+                                }
+                            ),
+                        ),
+
+                        el( PanelRow, {},
+                            el( TextControl,
+                                {
+                                    label: 'Spotify href',
+                                    onChange: ( value ) => {
+                                        props.setAttributes( { spotify: value } );
+                                    },
+                                    value: props.attributes.spotify
                                 }
                             ),
                         ),
@@ -155,7 +181,8 @@
                         el('div', { className: 'staff-list-item__back'},
                             el('div', { className: 'staff-list-item__content'},
                                 el('p', {}, props.attributes.bio),
-                                (props.attributes.fun_fact ? el('p', {}, el('b', {}, 'Fun fact: '), props.attributes.fun_fact ) : '')
+                                (props.attributes.fun_fact ? el('p', {}, el('b', {}, 'Fun fact: '), props.attributes.fun_fact ) : ''),
+                                (spotify ? spotify : '')
                             )
                         )
                     )
@@ -163,6 +190,16 @@
             ))
         },
         save: function(props) {
+            let spotify;
+            if(props.attributes.spotify) {
+                spotify = el('ul', { className: 'social-list' },
+                            el('li', { className: 'social-list-item' },
+                                el('a', { className: 'social-list-link social-list-link--green', href: props.attributes.spotify, target: '_blank' },
+                                    el('i', { className: 'fab fa-spotify fa-fw', ariaLabel: 'Spotify' })
+                                )
+                            )
+                        );
+            }
             return el('div', {
                     className: 'staff-list-item'
                 },
@@ -187,7 +224,8 @@
                     el('div', { className: 'staff-list-item__back'},
                         el('div', { className: 'staff-list-item__content'},
                             el('p', {}, props.attributes.bio),
-                            (props.attributes.fun_fact ? el('p', {}, el('b', {}, 'Fun fact: '), props.attributes.fun_fact ) : '')
+                            (props.attributes.fun_fact ? el('p', {}, el('b', {}, 'Fun fact: '), props.attributes.fun_fact ) : ''),
+                            (spotify ? spotify : '')
                         )
                     )
                 )

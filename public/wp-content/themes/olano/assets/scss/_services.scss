@@ -184,8 +184,21 @@
     .case-studies-item__content {
 
     }
-    .case-studies-item__photo img {
-        box-shadow: rgba(0, 0, 0, 0.125) 0 0 16px;
+
+    .case-studies-item__photo {
+        img {
+            box-shadow: rgba(0, 0, 0, 0.125) 0 0 16px;
+            transition: all .2s ease-in-out;
+        }
+        a {
+            overflow: hidden;
+            display: block;
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
   }
   @media (max-width: 767px) {
