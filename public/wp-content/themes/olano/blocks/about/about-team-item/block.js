@@ -78,7 +78,7 @@
             if(props.attributes.spotify) {
                 spotify = el('ul', { className: 'social-list' },
                             el('li', { className: 'social-list-item' },
-                                el('a', { className: 'social-list-link social-list-link--green', href: props.attributes.spotify, target: '_blank' },
+                                el('a', { className: 'social-list-link social-list-link--green', href: props.attributes.spotify, target: '_blank', rel: 'noopener' },
                                     el('i', { className: 'fab fa-spotify fa-fw', ariaLabel: 'Spotify' })
                                 )
                             )
@@ -194,7 +194,7 @@
             if(props.attributes.spotify) {
                 spotify = el('ul', { className: 'social-list' },
                             el('li', { className: 'social-list-item' },
-                                el('a', { className: 'social-list-link social-list-link--green', href: props.attributes.spotify, target: '_blank' },
+                                el('a', { className: 'social-list-link social-list-link--green', href: props.attributes.spotify, target: '_blank', rel: 'noopener' },
                                     el('i', { className: 'fab fa-spotify fa-fw', ariaLabel: 'Spotify' })
                                 )
                             )

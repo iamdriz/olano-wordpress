@@ -45,7 +45,8 @@
   border-radius: 0.25rem;
 }
 
-.staff-list-item:not(.wp-block):hover .staff-list-item__inner {
+.staff-list-item:not(.wp-block):hover .staff-list-item__inner,
+.staff-list-item:not(.wp-block):active .staff-list-item__inner {
   transform: rotateY(180deg);
 }
 
