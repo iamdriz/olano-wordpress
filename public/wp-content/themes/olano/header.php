@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body <?php body_class(); ?>>
+    <div style="overflow-x: hidden !important;">
     <header class="header">
         <div class="container">
             <a class="logo" href="<?php echo bloginfo('home'); ?>">

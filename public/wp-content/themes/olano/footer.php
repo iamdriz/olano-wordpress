@@ -247,6 +247,7 @@ $nextID = $pages[$current+1];
         });
     </script>
     <?php wp_footer(); ?>
+    </div><!-- overflow: hidden !important -->
 </body>
 
 </html>

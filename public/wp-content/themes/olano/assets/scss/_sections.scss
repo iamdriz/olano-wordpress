@@ -30,8 +30,7 @@
     align-items: center;
     justify-content: center;
 
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow: visible !important;
 
     &:before {
         content: '';
