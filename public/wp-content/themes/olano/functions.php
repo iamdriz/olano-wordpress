@@ -16,6 +16,7 @@ require get_stylesheet_directory() . '/blocks/home/home-testimonials-list-item/i
 // services
 require get_stylesheet_directory() . '/blocks/services/services-header/index.php';
 require get_stylesheet_directory() . '/blocks/services/services-content/index.php';
+require get_stylesheet_directory() . '/blocks/services/services-content-header/index.php';
 // service
 require get_stylesheet_directory() . '/blocks/service/service-header/index.php';
 require get_stylesheet_directory() . '/blocks/service/service-content/index.php';

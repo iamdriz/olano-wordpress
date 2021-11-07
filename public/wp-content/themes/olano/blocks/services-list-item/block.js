@@ -116,7 +116,7 @@
                                 value: props.attributes.title,
                                 onChange: onChangeTitle,
                             } ),
-                            el('a', { className: 'arrow-link', href: props.attributes.href },
+                            el('div', { className: 'arrow-link' },
                                 'Explore more'
                             )
                         ),
@@ -124,8 +124,9 @@
             ));
         },
         save: function(props) {
-            return el('div', {
-                    className: 'services-list-item'
+            return el('a', {
+                    className: 'services-list-item',
+                    href: props.attributes.href
                 },
                 el('div', { className: 'services-list-item__icon' },
                     (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
@@ -136,7 +137,7 @@
                         className: 'services-list-item__title',
                         value: props.attributes.title,
                     } ),
-                    el('a', { className: 'arrow-link', href: props.attributes.href },
+                    el('div', { className: 'arrow-link' },
                         'Explore more'
                     )
                 ),

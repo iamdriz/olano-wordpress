@@ -144,7 +144,26 @@
                     * BLOCK
                     */
                     el('div', { className: 'row align-items-center' },
-                        el('div', { className: 'col md:col--5 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0'},
+                        el('div', { className: 'col md:col--3 md:offset-2 margin-bottom-4 md:margin-bottom-0'},
+                            el( RichText, {
+                                tagName: 'h1',
+                                className: 'font-size-display2',
+                                onChange: onChangeTitle,
+                                value: props.attributes.title,
+                            } ),
+                            el('ul', { className: 'contact-list' },
+                                el('li', { className: 'contact-list-item contact-list-item--email'},
+                                    el('a', { href: props.attributes.email_href }, props.attributes.email)
+                                ),
+                                el('li', { className: 'contact-list-item contact-list-item--phone'},
+                                    el('a', { href: props.attributes.phone_href }, props.attributes.phone)
+                                ),
+                                el('li', { className: 'contact-list-item contact-list-item--address'},
+                                    props.attributes.address
+                                )
+                            )
+                        ),
+                        el('div', { className: 'col md:col--5 md:offset-1'},
                             el('figure', { className: '' },
                                 el( MediaUpload, {
                                     onSelect: onSelectImage,
@@ -167,25 +186,6 @@
                                 } ),
                                 (props.attributes.mediaID ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                             )
-                        ),
-                        el('div', { className: 'col md:col--3 md:offset-2 md:order-1'},
-                            el( RichText, {
-                                tagName: 'h1',
-                                className: 'font-size-display2',
-                                onChange: onChangeTitle,
-                                value: props.attributes.title,
-                            } ),
-                            el('ul', { className: 'contact-list' },
-                                el('li', { className: 'contact-list-item contact-list-item--email'},
-                                    el('a', { href: props.attributes.email_href }, props.attributes.email)
-                                ),
-                                el('li', { className: 'contact-list-item contact-list-item--phone'},
-                                    el('a', { href: props.attributes.phone_href }, props.attributes.phone)
-                                ),
-                                el('li', { className: 'contact-list-item contact-list-item--address'},
-                                    props.attributes.address
-                                )
-                            )
                         )
                     )
                 ))
@@ -193,12 +193,7 @@
         save: function (props) {
 
             return el('div', { className: 'row align-items-center' },
-                el('div', { className: 'col md:col--5 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0'},
-                    el('figure', { className: '' },
-                        (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
-                    )
-                ),
-                el('div', { className: 'col md:col--3 md:offset-2 md:order-1'},
+                el('div', { className: 'col md:col--3 md:offset-2 margin-bottom-4 md:margin-bottom-0'},
                     el( RichText.Content, {
                         tagName: 'h1',
                         className: 'font-size-display2',
@@ -214,6 +209,11 @@
                         el('li', { className: 'contact-list-item contact-list-item--address'},
                             props.attributes.address
                         )
+                    )
+                ),
+                el('div', { className: 'col md:col--5 md:offset-1'},
+                    el('figure', { className: '' },
+                        (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                     )
                 )
             )
