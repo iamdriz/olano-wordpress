@@ -79,7 +79,7 @@
                     */
                     el(
                         'div', { className: 'row align-items-center margin-bottom-8' },
-                            el('div', { className: props.attributes.mediaAlignment == 'left' ? 'col md:col--4 md:offset-1 margin-bottom-4 md:margin-bottom-0' : 'col md:col--4 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0' },
+                            el('div', { className: props.attributes.mediaAlignment == 'left' ? 'col md:col--5 margin-bottom-4 md:margin-bottom-0' : 'col md:col--5 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0' },
                                 el('figure', { className: '' },
                                     el( MediaUpload, {
                                         onSelect: onSelectImage,
@@ -112,7 +112,7 @@
         save: function (props) {
             return el(
                 'div', { className: 'row align-items-center margin-bottom-8' },
-                    el('div', { className: props.attributes.mediaAlignment == 'left' ? 'col md:col--4 md:offset-1 margin-bottom-4 md:margin-bottom-0' : 'col md:col--4 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0' },
+                    el('div', { className: props.attributes.mediaAlignment == 'left' ? 'col md:col--5 margin-bottom-4 md:margin-bottom-0' : 'col md:col--5 md:offset-1 md:order-2 margin-bottom-4 md:margin-bottom-0' },
                         el('figure', { className: '' },
                             (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                         )
