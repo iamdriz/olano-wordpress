@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <title><?php wp_title('&laquo;', true, 'right'); ?></title>
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
