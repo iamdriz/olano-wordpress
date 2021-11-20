@@ -157,3 +157,58 @@ $(document).on("click", ".back-to-top", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, 800);
 });
+
+
+function onLoad(loading, loaded) {
+  if(document.readyState === 'complete'){
+      return loaded();
+  }
+  loading();
+  if (window.addEventListener) {
+      window.addEventListener('load', loaded, false);
+  }
+  else if (window.attachEvent) {
+      window.attachEvent('onload', loaded);
+  }
+};
+
+onLoad(function(){
+  // page is loading
+},
+function(){
+  $('.fullscreen-loading').addClass('fullscreen-loading--hidden');
+});
+
+
+
+
+function animateIn(el) {
+  el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 250 });
+  el.classList.add("visible");
+}
+
+async function animateOut(el) {
+  el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 250 });
+  el.classList.remove("visible");
+}
+
+// Run this before render, but after click.
+// Use await for the function, then a promise to ensure it's finished before resume
+document.addEventListener("turbo:before-render", async (event) => {
+  const main = document.querySelector(".main");
+  // event.preventDefault();
+  // await animateOut(main);
+  // Promise.all(
+  //   main.getAnimations().map((animation) => {
+  //     return animation.finished;
+  //   })
+  // ).then(() => {
+  //   event.detail.resume();
+  // });
+});
+
+// Run this on every load.
+document.addEventListener("turbo:load", () => {
+  const main = document.querySelector(".main");
+  //animateIn(main);
+});

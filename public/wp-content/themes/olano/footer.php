@@ -21,11 +21,13 @@ $nextID = $pages[$current+1];
             <div class="col md:col--2 margin-bottom-4 md:margin-bottom-0">
                 <div class="footer-about">
                     <a class="footer-about__logo" href="<?php echo bloginfo('home'); ?>">
-                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/logo-red.svg" alt="Olano logo">
+                        <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/logo-red.svg"
+                            alt="Olano logo">
                     </a>
                     <div class="footer-about__content">
-                        <p>Olano is part of <a href="https://www.nicholasassociatesgroup.co.uk" target="_blank">Nicholas Associates Group</a>, Market leading partner of choice for talent management
-                        solutions from Apprentice to Boardroom.</p>
+                        <p>Olano is part of <a href="https://www.nicholasassociatesgroup.co.uk" target="_blank">Nicholas
+                                Associates Group</a>, Market leading partner of choice for talent management
+                            solutions from Apprentice to Boardroom.</p>
                     </div>
                 </div>
             </div>
@@ -36,17 +38,21 @@ $nextID = $pages[$current+1];
                         <h3 class="footer-menu__title">Follow us</h3>
                         <ul class="social-list">
                             <li class="social-list-item">
-                                <a class="social-list-link social-list-link--yellow" href="https://www.instagram.com/olanouk" target="_blank">
+                                <a class="social-list-link social-list-link--yellow"
+                                    href="https://www.instagram.com/olanouk" target="_blank">
                                     <i class="fab fa-instagram fa-fw" aria-label="Instagram"></i>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link social-list-link--blue" href="https://www.linkedin.com/company/olanouk" target="_blank">
+                                <a class="social-list-link social-list-link--blue"
+                                    href="https://www.linkedin.com/company/olanouk" target="_blank">
                                     <i class="fab fa-linkedin fa-fw" aria-label="LinkedIn"></i>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link social-list-link--green" href="https://open.spotify.com/user/mboqenwv93pht1oreco5d4x4g?si=ab43b979b9134bba" target="_blank">
+                                <a class="social-list-link social-list-link--green"
+                                    href="https://open.spotify.com/user/mboqenwv93pht1oreco5d4x4g?si=ab43b979b9134bba"
+                                    target="_blank">
                                     <i class="fab fa-spotify fa-fw" aria-label="Spotify"></i>
                                 </a>
                             </li>
@@ -71,16 +77,18 @@ $nextID = $pages[$current+1];
                             'fallback_cb' => false ) ); ?>
                     </li>
                     <li class="col md:col--2 md:offset-1 footer-menu-item md:text-align-right">
-                    <?php if (!empty($nextID)) { ?>
-                        <a class="arrow-link" href="<?php echo get_permalink($nextID); ?>"><?php echo get_the_title($nextID); ?></a>
-                    <?php } else { ?>
+                        <?php if (!empty($nextID)) { ?>
+                        <a class="arrow-link"
+                            href="<?php echo get_permalink($nextID); ?>"><?php echo get_the_title($nextID); ?></a>
+                        <?php } else { ?>
                         <a class="arrow-link" href="<?php echo bloginfo('home'); ?>">Home</a>
-                    <?php } ?>
+                        <?php } ?>
                     </li>
                 </ul>
                 <div class="footer-copyright">
-                    <p>Copyright &copy; <?php echo date('Y'); ?> Nicholas Associates Group Limited. All rights reserved.<br>
-                    Registered in England – Company number: 03606174 | VAT Registration no: GB727824120</p>
+                    <p>Copyright &copy; <?php echo date('Y'); ?> Nicholas Associates Group Limited. All rights
+                        reserved.<br>
+                        Registered in England – Company number: 03606174 | VAT Registration no: GB727824120</p>
                 </div>
             </div>
         </div>
@@ -93,29 +101,28 @@ $nextID = $pages[$current+1];
 </div>
 
 <div class="grid-overlay">
-	<div class="container">
-		<div class="grid">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="<?php echo bloginfo('template_directory'); ?>/assets/js/application.js"></script>
-    <?php wp_footer(); ?>
-    </div><!-- overflow: hidden !important -->
+<!-- <div class="fullscreen-loading"></div> -->
+
+<?php wp_footer(); ?>
+</div><!-- overflow: hidden !important -->
 </body>
 
 </html>
