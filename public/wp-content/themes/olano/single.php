@@ -29,7 +29,7 @@
             <div class="container">
 
                 <div class="article-content">
-                    <figure class="article__thumbnail">
+                    <figure class="article-thumbnail">
                         <?php if ( has_post_thumbnail() ) { ?>
                             <?php echo the_post_thumbnail(); ?>
                         <?php } else { ?>
