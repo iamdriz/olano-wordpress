@@ -24,7 +24,7 @@
     background-color: var(--red);
     color: var(--white);
     position: relative;
-
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +101,7 @@
 
 
 .footer,
-.section { position: relative; overflow: hidden; }
+.section { position: relative; /*overflow: hidden;*/ }
 .footer > .container,
 .section > .container { position: relative; z-index: 1 }
 
@@ -109,9 +109,9 @@
     content: '';
     position: absolute;
     z-index: -1;
-    top: -100%;
+    top: -6rem;
     left: 0;
-    bottom: -100%;
+    bottom: -6rem;
     width: 100vw;
     transform: translateX(-100%);
     background: url('../img/pattern/pattern-off-white.svg') center right repeat;
@@ -121,13 +121,21 @@
     content: '';
     position: absolute;
     z-index: -1;
-    top: -100%;
+    top: -6rem;
     right: 192px;
-    bottom: -100%;
+    bottom: -6rem;
     width: 100vw;
     transform: translateX(100%);
     background: url('../img/pattern/pattern-off-white.svg') center left repeat;
     background-size: 192px auto;
+}
+.section--pattern.section--padded > .container:before {
+    top: -9rem;
+    bottom: -9rem;
+}
+.section--pattern.section--padded > .container:after {
+    top: -9rem;
+    bottom: -9rem;
 }
 
 .section--pattern--alternate > .container:before {

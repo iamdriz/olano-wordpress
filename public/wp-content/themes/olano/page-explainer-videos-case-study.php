@@ -9,7 +9,7 @@
                 <p class="border-top border-top--half">Case Study: <b>ITIL standard</b></p>
             </div>
         </div>
-        <div class="row margin-bottom-4">
+        <div class="row margin-bottom-8">
             <div class="col md:col--7 md:offset-3">
                 <h1 class="font-size-display2">Explain Incidents, Problems and Changes</h1>
             </div>

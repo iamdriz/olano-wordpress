@@ -4,6 +4,22 @@
   margin: auto;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  /*@media (min-width: 567px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }*/
 }
 
 .row {
@@ -320,6 +336,9 @@
   }
 }
 
+.offset-0 {
+  margin-left: 0;
+}
 @for $i from 12 through 1 {
   .col--#{$i},
   .row--col--#{$i} > * {
@@ -346,6 +365,9 @@
 }
 
 @media (max-width: 575px) {
+  .xs\:offset-0 {
+    margin-left: 0;
+  }
   @for $i from 12 through 1 {
     .xs\:col--#{$i},
     .xs\:row--col--#{$i} > * {
@@ -374,6 +396,9 @@
 }
 
 @media (min-width: 576px) {
+  .sm\:offset-0 {
+    margin-left: 0;
+  }
   @for $i from 12 through 1 {
     .sm\:col--#{$i},
     .sm\:row--col--#{$i} > * {
@@ -402,6 +427,9 @@
 }
 
 @media (min-width: 768px) {
+  .md\:offset-0 {
+    margin-left: 0;
+  }
   @for $i from 12 through 1 {
     .md\:col--#{$i},
     .md\:row--col--#{$i} > * {
@@ -428,6 +456,9 @@
 }
 
 @media (min-width: 992px) {
+  .lg\:offset-0 {
+    margin-left: 0;
+  }
   @for $i from 12 through 1 {
     .lg\:col--#{$i},
     .lg\:row--col--#{$i} > * {
@@ -454,6 +485,9 @@
 }
 
 @media (min-width: 1200px) {
+  .xl\:offset-0 {
+    margin-left: 0;
+  }
   @for $i from 12 through 1 {
     .xl\:col--#{$i},
     .xl\:row--col--#{$i} > * {
@@ -480,6 +514,9 @@
 }
 
 @media (min-width: 1400px) {
+  .xxl\:offset-0 {
+    margin-left: 0;
+  }
   @for $i from 12 through 1 {
     .xxl\:col--#{$i},
     .xxl\:row--col--#{$i} > * {

@@ -9,7 +9,9 @@
     }
     gap: 2rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
 }
 
 a.services-list-item {

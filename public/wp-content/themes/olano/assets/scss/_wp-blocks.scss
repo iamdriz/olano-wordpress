@@ -62,3 +62,14 @@
     border: var(--white) 2px solid;
   }
 }
+
+
+.wp-block-separator {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom-color: var(--yellow);
+  opacity: 1;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  max-width: 100%;
+}

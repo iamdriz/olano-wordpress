@@ -59,10 +59,6 @@
                     el('div', { className: 'row' },
                         el('div', { className: 'col md:col--6 md:offset-3'},
                             el( 'h2', { className: 'font-size-display3' }, 'Tell us about your latest project' ),
-                        )
-                    ),
-                    el('div', { className: 'row' },
-                        el('div', { className: 'col md:col--6 md:offset-3'},
                             el('div', { className: 'wp-block-buttons' },
                                 el('div', { className: 'wp-block-button is-style-fill'},
                                     el('a', { className: 'wp-block-button__link has-white-background-color has-background', href: '/contact/' },
@@ -70,8 +66,8 @@
                                     )
                                 ),
                             ),
-                        ),
-                    )
+                        )
+                    ),
                 ))
         },
         save: function (props) {
@@ -81,10 +77,6 @@
                     el('div', { className: 'row' },
                         el('div', { className: 'col md:col--6 md:offset-3'},
                             el( 'h2', { className: 'font-size-display3' }, 'Tell us about your latest project' ),
-                        )
-                    ),
-                    el('div', { className: 'row' },
-                        el('div', { className: 'col md:col--6 md:offset-3'},
                             el('div', { className: 'wp-block-buttons' },
                                 el('div', { className: 'wp-block-button is-style-fill'},
                                     el('a', { className: 'wp-block-button__link has-white-background-color has-background', href: '/contact/' },
@@ -92,8 +84,8 @@
                                     )
                                 ),
                             ),
-                        ),
-                    )
+                        )
+                    ),
             ))
         },
     });

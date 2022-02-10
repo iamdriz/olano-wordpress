@@ -10,6 +10,7 @@ $prevID = $pages[$current-1];
 $nextID = $pages[$current+1];
 ?>
 
+</main>
 <footer class="footer">
     <div class="container">
 
@@ -75,7 +76,7 @@ $nextID = $pages[$current+1];
                     </li>
                 </ul>
                 <div class="footer-copyright">
-                    <p>Copyright &copy; 2021 Nicholas Associates Group Limited. All rights reserved.<br>
+                    <p>Copyright &copy; <?php echo date('Y'); ?> Nicholas Associates Group Limited. All rights reserved.<br>
                     Registered in England – Company number: 03606174 | VAT Registration no: GB727824120</p>
                 </div>
             </div>
