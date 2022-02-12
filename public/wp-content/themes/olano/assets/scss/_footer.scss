@@ -8,6 +8,11 @@
   p {
     font-size: 14px;
   }
+  a {
+    text-decoration-line: underline;
+    text-decoration-color: var(--red);
+    text-underline-offset: 2px;
+  }
 }
 
 .footer-about__logo {
@@ -26,7 +31,7 @@
   margin-top: 1.5rem;
 
   p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

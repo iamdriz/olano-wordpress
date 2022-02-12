@@ -279,3 +279,10 @@ function erango_numeric_posts_nav() {
     //     printf( '<li>%s</li>' . "\n", get_next_posts_link() );
     echo '</ul>' . "\n";
 }
+
+function wpdocs_five_posts_on_homepage( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 6 );
+    }
+}
+add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' );
