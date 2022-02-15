@@ -20,7 +20,7 @@
 					<?php if ( has_post_thumbnail() ) { ?>
 						<a href="<?php echo get_permalink(); ?>"><?php echo the_post_thumbnail(); ?></a>
 					<?php } else { ?>
-						<a href="<?php echo get_permalink(); ?>"><img src="https://picsum.photos/1920/1080?random=<?php the_ID(); ?>" width="1920" height="1080"></a>
+						<a href="<?php echo get_permalink(); ?>"><img src="https://picsum.photos/1920/1080?grayscale&blur=10&random=<?php the_ID(); ?>" width="1920" height="1080"></a>
 					<?php } ?>		
 				</figure>
 				<section class="post-content">

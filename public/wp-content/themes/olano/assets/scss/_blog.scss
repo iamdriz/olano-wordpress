@@ -43,6 +43,14 @@
     .post-content {
       padding: 3rem 2rem;
     }
+
+    &--featured {
+      .post-content {
+        @media (min-width: 768px) {
+          padding: 3rem calc(2 / 12 * 100%);
+        }
+      }
+    }
   
     .post-footer {
       display: flex;

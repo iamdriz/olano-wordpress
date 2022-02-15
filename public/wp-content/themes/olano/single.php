@@ -11,8 +11,8 @@
                 <header class="article-header margin-bottom-8">
                     <div class="row">
                         <div class="col col--6 offset-3 md:col--2 md:offset-1 margin-bottom-4 md:margin-bottom-0">
-                            <figure class="figure figure--rounded">
-                                <img src="http://localhost:8222/wp-content/uploads/Red.svg">
+                            <figure class="figure">
+                                <img src="http://localhost:8222/wp-content/uploads/Blue.svg">
                             </figure>
                         </div>
                         <div class="col md:col--7 md:offset-1">
@@ -80,7 +80,7 @@
     <?php if ($related_query->have_posts()) { ?>
         <div class="row margin-bottom-6">
             <div class="col md:col-11 md:offset-1">
-                <h2 class="font-size-display4">See also</h2>
+                <h2 class="font-size-display4">Related posts</h2>
             </div>
         </div>
         <?php get_template_part('template-parts/post-list', 'posts', array('the_query' => $related_query)); ?>
