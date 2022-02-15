@@ -24,14 +24,10 @@
     background-color: var(--red);
     color: var(--white);
     position: relative;
-    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    overflow: visible !important;
-
     &:before {
         content: '';
         position: absolute;
@@ -101,9 +97,14 @@
 
 
 .footer,
-.section { position: relative; /*overflow: hidden;*/ }
+.section {
+    position: relative;
+}
 .footer > .container,
-.section > .container { position: relative; z-index: 1 }
+.section > .container {
+    position: relative;
+    z-index: 1;
+}
 
 .section--pattern > .container:before {
     content: '';
@@ -128,6 +129,10 @@
     transform: translateX(100%);
     background: url('../img/pattern/pattern-off-white.svg') center left repeat;
     background-size: 192px auto;
+}
+.header + main .section--pattern:first-child > .container:before,
+.header + main .section--pattern:first-child > .container:after {
+    top: -8rem;
 }
 .section--pattern.section--padded > .container:before {
     top: -9rem;
@@ -187,8 +192,10 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 50%;
         background: var(--red);
+        z-index: 2;
+        margin-top: -6rem;
+        height: calc(50% + 6rem);
     }
 
     &--red {
