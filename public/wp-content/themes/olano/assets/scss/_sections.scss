@@ -106,6 +106,10 @@
     z-index: 1;
 }
 
+.section--pattern {
+    overflow-x: hidden;
+}
+
 .section--pattern > .container:before {
     content: '';
     position: absolute;

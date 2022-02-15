@@ -50,7 +50,7 @@
             return el(
                 'div', { className: 'row margin-bottom-8' },
                     el('div', { className: 'col col--6 md:col--2 md:breakout-right margin-bottom-4 md:margin-bottom-0' },
-                        el('figure', { className: '' },
+                        el('figure', { className: 'figure' },
                             el( MediaUpload, {
                                 onSelect: onSelectImage,
                                 allowedTypes: 'image',
@@ -93,7 +93,7 @@
             return el(
                 'div', { className: 'row margin-bottom-8' },
                     el('div', { className: 'col col--6 md:col--2 md:breakout-right margin-bottom-4 md:margin-bottom-0' },
-                        el('figure', { className: '' },
+                        el('figure', { className: 'figure' },
                             (props.attributes.mediaURL ? el( 'img', { src: props.attributes.mediaURL } ) : el('div'))
                         )
                     ),
