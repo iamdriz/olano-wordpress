@@ -25,17 +25,26 @@
 	</div>
 </section>
 
-<!--<section class="section section--blue">
+<?php /*
+<section class="section section--white">
 	<div class="container">
 
-		<h3>Categories</h3>
-		<?php wp_list_categories('title_li=0&hide_empty=0'); ?>
+		<div class="row">
+			<div class="col md:col--4">
+				<h3>Categories</h3>
+				<?php wp_list_categories('title_li=0&hide_empty=0'); ?>
+			</div>
+			<div class="col md:col--4">
+				<h3>Tags</h3>
+				<?php wp_tag_cloud('hide_empty=0'); ?>
+			</div>
+			<div class="col md:col--4">
+				<h3>Archives</h3>
+				<?php wp_get_archives('type=monthly'); ?>
+			</div>
+		</div>
 
-		<h3>Tags</h3>
-		<?php wp_tag_cloud('hide_empty=0'); ?>
-
-		<h3>Archives</h3>
-		<?php wp_get_archives('type=monthly'); ?>
+		<!--
 		<h3>Authors</h3>
 		<?php wp_list_authors('exclude_admin=0&optioncount=1&show_fullname=1&hide_empty=0'); ?>
 
@@ -44,9 +53,11 @@
 			<li><a href="<?php bloginfo('atom_url'); ?>" title="<?php _e('Syndicate this site using Atom'); ?>"><?php _e('Atom'); ?></a></li>
 			<li><a href="<?php bloginfo('comments_rss2_url'); ?>" title="<?php _e('The latest comments to all posts in RSS'); ?>"><?php _e('Comments <abbr title="Really Simple Syndication">RSS</abbr>'); ?></a></li>
 		</ul>
+		-->
 
 	</div>
-</section>-->
+</section>
+*/ ?>
 
 <?php get_template_part('template-parts/follow-us-section'); ?>
 
