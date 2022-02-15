@@ -28,23 +28,25 @@
         <section class="section section--off-white">
             <div class="container">
 
-                <div class="article-content">
-                    <figure class="article-thumbnail">
-                        <?php if ( has_post_thumbnail() ) { ?>
-                            <?php echo the_post_thumbnail(); ?>
-                        <?php } else { ?>
-                            <!-- <img src="https://picsum.photos/1920/1080?random=<?php the_ID(); ?>" width="1920" height="1080"> -->
-                            <div style="height:2rem;background-color:var(--blue);"></div>
-                        <?php } ?>		
-                    </figure>
-                    <div class="article-content__inner">
-                        <div class="row">
-                            <div class="col md:col--10 md:offset-1">
-                                <?php the_content(); ?>
-                            </div>
+            <div class="row">
+                <div class="col md:col--12">
+
+                    <div class="article-content">
+                        <figure class="article-thumbnail">
+                            <?php if ( has_post_thumbnail() ) { ?>
+                                <?php echo the_post_thumbnail(); ?>
+                            <?php } else { ?>
+                                <!-- <img src="https://picsum.photos/1920/1080?random=<?php the_ID(); ?>" width="1920" height="1080"> -->
+                                <div style="height:1rem;background-color:var(--blue);"></div>
+                            <?php } ?>		
+                        </figure>
+                        <div class="article-content__inner">
+                            <?php the_content(); ?>
                         </div>
                     </div>
+
                 </div>
+            </div>
                 
             </div>
         </section>

@@ -67,11 +67,16 @@
   }
   
   .article-content__inner {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    @media (max-width: 767px) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+    padding: 3rem 2rem;
+
+    @media (min-width: 768px) {
+      padding: 3rem calc(1 / 12 * 100%);
+    }
+
+    a {
+      text-decoration-line: underline;
+      text-decoration-color: var(--red);
+      text-underline-offset: 2px;
     }
   }
   

@@ -1,12 +1,12 @@
 .footer {
   background-color: var(--white);
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .footer-about {
   p {
-    font-size: 14px;
+    font-size: .875rem;
   }
   a {
     text-decoration-line: underline;
@@ -18,7 +18,7 @@
 .footer-about__logo {
   display: inline-flex;
   margin-bottom: 1.5rem;
-  height: 32px;
+  height: 2rem;
 
   img {
     height: 100%;
@@ -31,7 +31,7 @@
   margin-top: 1.5rem;
 
   p {
-    font-size: 12px;
+    font-size: .75rem;
   }
 }
 
@@ -40,15 +40,15 @@
 }
 
 .footer-menu__title {
-  font-size: 20px;
-  margin-bottom: 16px;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .footer-menu__list {
   list-style: none;
 }
 .footer-menu__list li {
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
 }
 .footer-menu__list li:last-child {
   margin-bottom: 0;
