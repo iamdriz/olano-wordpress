@@ -15,6 +15,10 @@
   }
 }
 
+.wp-block-buttons {
+  display: flex;
+}
+
 .wp-block-button__link {
   color: var(--grey) !important;
   background-color: var(--yellow);
@@ -71,5 +75,5 @@
   opacity: 1;
 }
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-  max-width: 100%;
+  width: 100%;
 }

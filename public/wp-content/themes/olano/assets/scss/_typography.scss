@@ -9,6 +9,10 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: normal;
+}
+
 $font-size-base: 1rem;
 $font-size-sm: $font-size-base * 0.875;
 $font-size-md: $font-size-base;

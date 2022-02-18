@@ -18,15 +18,16 @@
 			<article <?php post_class(($featured ? 'post--featured text-align-center' : 'post--archived')); ?> id="post-<?php the_ID(); ?>">         
 				<figure class="post-thumbnail<?php if($count == 1 && !is_archive() && get_query_var('paged') == 0) echo ' post-thumbnail--short' ?>">
 					<?php if ( has_post_thumbnail() ) { ?>
-						<a href="<?php echo get_permalink(); ?>"><?php echo the_post_thumbnail(); ?></a>
+						<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 					<?php } else { ?>
-						<a href="<?php echo get_permalink(); ?>"><img src="https://picsum.photos/1920/1080?grayscale&blur=10&random=<?php the_ID(); ?>" width="1920" height="1080"></a>
+						<a href="<?php echo get_permalink(); ?>"><img src="https://picsum.photos/1920/1080?blur=10&random=<?php the_ID(); ?>" width="1920" height="1080"></a>
 					<?php } ?>		
 				</figure>
 				<section class="post-content">
-					<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 					<?php if($featured) : ?>
-						<p class="post-datetime"><?php echo get_the_date('d/m/Y') ?></p>
+						<p class="post-categories"><?php the_category(', '); ?></p>
+						<h2 class="font-size-display4 post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						<p class="post-datetime"><i class="far fa-calendar-alt fa-fw"></i> <?php echo get_the_date('d F, Y') ?></p>
 						<?php the_excerpt(); ?>
 						<div class="wp-block-buttons is-content-justification-center margin-top-4">
 							<div class="wp-block-button">
@@ -34,8 +35,12 @@
 							</div>
 						</div>
 					<?php else : ?>
-						<div class="post-footer">
-							<p class="post-datetime"><?php echo get_the_date('d/m/Y') ?></p>
+						<div class="post-content__top">
+							<p class="post-categories"><?php the_category(', '); ?></p>
+							<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						</div>
+						<div class="post-content__bottom">
+							<p class="post-datetime"><i class="far fa-calendar-alt fa-fw"></i> <?php echo get_the_date('d/m/Y') ?></p>
 							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="arrow-link post-link">Read more</a>
 						</div>
 					<?php endif; ?>

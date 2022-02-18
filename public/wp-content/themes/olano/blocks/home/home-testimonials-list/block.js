@@ -2,7 +2,7 @@
     var el = element.createElement;
     var InnerBlocks = blockEditor.InnerBlocks;
     var useBlockProps = blockEditor.useBlockProps;
-    var useInnerBlocksProps = blockEditor.__experimentalUseInnerBlocksProps;
+    var useInnerBlocksProps = blockEditor.useInnerBlocksProps;
 
     blocks.registerBlockType('olano/olano-home-testimonials-list-block', {
         apiVersion: 2,

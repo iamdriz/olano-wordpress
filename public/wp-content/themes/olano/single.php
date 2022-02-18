@@ -12,12 +12,18 @@
                     <div class="row">
                         <div class="col col--6 offset-3 md:col--2 md:offset-1 margin-bottom-4 md:margin-bottom-0">
                             <figure class="figure">
-                                <img src="http://localhost:8222/wp-content/uploads/Blue.svg">
+                                <?php $post_icon = get_field('post_icon'); ?>
+                                <?php if($post_icon) { ?>
+                                    <img src="<?php the_field('post_icon'); ?>">
+                                <?php } else { ?>
+                                    <img src="http://localhost:8222/wp-content/uploads/Blue.svg">
+                                <?php } ?>
                             </figure>
                         </div>
-                        <div class="col md:col--7 md:offset-1">
+                        <div class="col md:col--7">
+                            <p class="article-categories"><?php the_category(', '); ?></p>
                             <h1 class="font-size-display2"><?php the_title(); ?></h1>
-                            <p class="font-size-lg"><?php echo get_the_date('F d, Y') ?></p>
+                            <p class="font-size-lg article-datetime">Published on <?php echo get_the_date('d F, Y') ?></p>
                         </div>
                     </div>
                 </header>
@@ -33,12 +39,14 @@
 
                     <div class="article-content">
                         <figure class="article-thumbnail">
-                            <?php if ( has_post_thumbnail() ) { ?>
+                            <?php /*if ( has_post_thumbnail() ) { ?>
                                 <?php echo the_post_thumbnail(); ?>
                             <?php } else { ?>
                                 <!-- <img src="https://picsum.photos/1920/1080?random=<?php the_ID(); ?>" width="1920" height="1080"> -->
                                 <div style="height:1rem;background-color:var(--blue);"></div>
-                            <?php } ?>		
+                            <?php }*/ ?>
+
+                            <div style="height:1rem;background-color:var(--blue);"></div>
                         </figure>
                         <div class="article-content__inner">
                             <?php the_content(); ?>
@@ -79,14 +87,14 @@
     
     <?php if ($related_query->have_posts()) { ?>
         <div class="row margin-bottom-6">
-            <div class="col md:col-11 md:offset-1">
+            <div class="col md:col-7 md:offset-2">
                 <h2 class="font-size-display4">Related posts</h2>
             </div>
         </div>
         <?php get_template_part('template-parts/post-list', 'posts', array('the_query' => $related_query)); ?>
     <?php } ?>
 
-    <div class="wp-block-buttons is-content-justification-center<?php if($related_query->have_posts()) echo ' margin-top-4'; ?>">
+    <div class="wp-block-buttons is-content-justification-center<?php if($related_query->have_posts()) echo ' margin-top-8'; ?>">
         <div class="wp-block-button">
             <a class="wp-block-button__link has-orange-background-color has-background" href="<?php echo get_post_type_archive_link('post'); ?>">Back to Blog</a>
         </div>

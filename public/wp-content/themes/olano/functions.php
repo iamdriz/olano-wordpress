@@ -280,9 +280,12 @@ function erango_numeric_posts_nav() {
     echo '</ul>' . "\n";
 }
 
-function wpdocs_five_posts_on_homepage( $query ) {
-    if ( $query->is_home() && $query->is_main_query() ) {
+function olano_six_posts( $query ) {
+
+    if ( ($query->is_home() && $query->is_main_query()) || ($query->is_archive() && $query->is_main_query()) ) {
         $query->set( 'posts_per_page', 6 );
     }
 }
-add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' );
+add_action( 'pre_get_posts', 'olano_six_posts' );
+
+add_theme_support( 'post-thumbnails' );

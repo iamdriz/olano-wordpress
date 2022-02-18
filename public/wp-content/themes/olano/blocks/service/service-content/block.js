@@ -2,7 +2,7 @@
     var el = element.createElement;
     var InnerBlocks = blockEditor.InnerBlocks;
     var useBlockProps = blockEditor.useBlockProps;
-    var useInnerBlocksProps = blockEditor.__experimentalUseInnerBlocksProps;
+    var useInnerBlocksProps = blockEditor.useInnerBlocksProps;
     var RichText = blockEditor.RichText;
 
     blocks.registerBlockType('olano/olano-service-content-block', {

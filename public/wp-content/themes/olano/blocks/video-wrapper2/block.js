@@ -4,7 +4,7 @@
 	var MediaUpload = blockEditor.MediaUpload;
     var InnerBlocks = blockEditor.InnerBlocks;
     var useBlockProps = blockEditor.useBlockProps;
-    var useInnerBlocksProps = blockEditor.__experimentalUseInnerBlocksProps;
+    var useInnerBlocksProps = blockEditor.useInnerBlocksProps;
 
     const { InspectorControls, BlockControls } = editor;
 	const { Fragment } = element;
