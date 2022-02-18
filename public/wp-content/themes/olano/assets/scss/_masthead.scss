@@ -1,0 +1,289 @@
+.the-o {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tooltips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tooltip {
+  position: absolute;
+}
+
+.tooltip:nth-child(1) {
+  top: 12.5%;
+  left: 62.5%;
+}
+
+.tooltip:nth-child(2) {
+  bottom: 50%;
+  left: 28.125%;
+}
+
+.tooltip:nth-child(3) {
+  bottom: 25%;
+  right: 25%;
+}
+
+.tooltip-pulse {
+  cursor: pointer;
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  border: transparent 2px solid;
+  background-color: #fff;
+  border-radius: 999em;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  color: var(--grey);
+}
+
+.tooltip-pulse__icon {
+  color: var(--grey);
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.tooltip-pulse:hover .tooltip-pulse__icon {
+}
+
+.tooltip-pulse:after {
+  content: "";
+  display: block;
+  position: absolute;
+  text-align: center;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: #fff 2px solid;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  animation: pulse-animation 1.5s linear infinite;
+  z-index: 10;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.tooltip--disabled {
+  opacity: .5;
+  .tooltip-pulse {
+    cursor: default;
+    &:after {
+        display: none;
+    }
+  }
+}
+
+.tooltip-bubble {
+  position: absolute;
+  width: 256px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(50%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10001;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 8px 16px);
+}
+
+.tooltip-bubble--top {
+  bottom: 3.5rem;
+}
+
+.tooltip-bubble--bottom {
+  top: 3.5rem;
+}
+
+.tooltip-bubble--right {
+  right: -1.75rem;
+}
+
+.tooltip-bubble--left {
+  left: -1.75rem;
+}
+
+.tooltip-bubble--center {
+  left: calc(-320px / 2);
+}
+
+.tooltip-bubble:after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.tooltip-bubble--top:after {
+  bottom: -0.75rem;
+}
+
+.tooltip-bubble--bottom:after {
+  top: -0.75rem;
+}
+
+.tooltip-bubble--left:after {
+  left: 2rem;
+}
+
+.tooltip-bubble--right:after {
+  right: 2rem;
+}
+
+.tooltip-bubble--center:after {
+  left: calc(50% + 0.25rem);
+}
+
+.tooltip-bubble__content {
+  color: var(--grey);
+  padding: 1.5rem 1.5rem;
+}
+
+.tooltip-bubble__content a {
+  color: var(--grey);
+  box-shadow: var(--grey) 0 2px 0;
+}
+
+.tooltip-bubble__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem 1rem 1rem;
+  width: 100%;
+}
+
+.tooltip-arrow {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--grey) !important;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease-in-out;
+
+  &--disabled {
+    opacity: 0.25;
+    pointer-events: none;
+  }
+}
+
+.tooltip-arrow:first-child {
+  margin-left: 0;
+}
+
+.tooltip-arrow:hover {
+  color: var(--grey) !important;
+}
+
+.tooltip-arrow__icon {
+  font-size: 1.5rem;
+}
+
+.tooltip-bubble__close {
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  background-color: var(--grey);
+  border: #fff 2px solid;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999em;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.tooltip-bubble__close:hover {
+  background-color: var(--grey);
+  color: #fff;
+}
+
+.tooltip--open .tooltip-bubble {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip--open .tooltip-pulse {
+  background-color: var(--grey);
+  border-color: #fff;
+  transform: rotate(45deg);
+}
+
+.tooltip--open .tooltip-pulse:after {
+  content: none;
+}
+
+.tooltip--open .tooltip-pulse__icon {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .tooltip-bubble {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10004;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  .tooltip-bubble__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .show-tooltip {
+    overflow-y: hidden;
+  }
+}
+
+.show-tooltip .section--masthead > .container {
+  z-index: 10004;
+}
+
+.section--masthead .button {
+  position: relative;
+  z-index: 10004;
+}

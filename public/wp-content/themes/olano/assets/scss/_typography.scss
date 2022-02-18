@@ -1,0 +1,223 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: normal;
+}
+
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-md: $font-size-base;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-xl: $font-size-base * 1.5;
+$font-size-xxl: $font-size-base * 1.75;
+$font-size-xxxl: $font-size-base * 2;
+
+$font-size-h1: $font-size-base * 2.5;
+$font-size-h2: $font-size-base * 2;
+$font-size-h3: $font-size-base * 1.75;
+$font-size-h4: $font-size-base * 1.5;
+$font-size-h5: $font-size-base * 1.25;
+$font-size-h6: $font-size-base;
+
+$font-size-display1: $font-size-base * 5;
+$font-size-display2: $font-size-base * 4.5;
+$font-size-display3: $font-size-base * 4;
+$font-size-display4: $font-size-base * 3.5;
+$font-size-display5: $font-size-base * 3;
+$font-size-display6: $font-size-base * 2.5;
+
+.font-size-sm,
+.has-sm-font-size {
+  font-size: $font-size-sm;
+}
+.font-size-md,
+.has-md-font-size {
+  font-size: $font-size-md;
+}
+.font-size-lg,
+.has-lg-font-size {
+  font-size: $font-size-lg;
+  font-size: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
+}
+.font-size-xl,
+.has-xl-font-size {
+  font-size: $font-size-xl;
+  font-size: clamp(1.25rem, 1.1591rem + 0.4545vw, 1.5rem);
+}
+.font-size-xxl,
+.has-xxl-font-size {
+  font-size: $font-size-xxl;
+  font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 1.75rem);
+}
+.font-size-xxxl,
+.has-xxxl-font-size {
+  font-size: $font-size-xxxl;
+  font-size: clamp(1.75rem, 1.6591rem + 0.4545vw, 2rem);
+}
+
+h1,
+.font-size-h1,
+.has-h1-font-size {
+  font-size: $font-size-h1;
+  font-size: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem);
+}
+h2,
+.font-size-h2,
+.has-h2-font-size {
+  font-size: $font-size-h2;
+  font-size: clamp(1.75rem, 1.6591rem + 0.4545vw, 2rem);
+}
+h3,
+.font-size-h3,
+.has-h3-font-size {
+  font-size: $font-size-h3;
+  font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 1.75rem);
+}
+h4,
+.font-size-h4,
+.has-h4-font-size {
+  font-size: $font-size-h4;
+  font-size: clamp(1.25rem, 1.1591rem + 0.4545vw, 1.5rem);
+}
+h5,
+.font-size-h5,
+.has-h5-font-size {
+  font-size: $font-size-h5;
+}
+h6,
+.font-size-h6,
+.has-h6-font-size {
+  font-size: $font-size-h6;
+}
+
+.font-size-display1,
+.has-display1-font-size,
+.has-display-1-font-size {
+  font-size: $font-size-display1;
+  font-size: clamp(3.5rem, 2.9545rem + 2.7273vw, 5rem);
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.font-size-display2,
+.has-display2-font-size,
+.has-display-2-font-size {
+  font-size: $font-size-display2;
+  font-size: clamp(3rem, 2.4545rem + 2.7273vw, 4.5rem);
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.font-size-display3,
+.has-display3-font-size,
+.has-display-3-font-size {
+  font-size: $font-size-display3;
+  font-size: clamp(2.5rem, 1.9545rem + 2.7273vw, 4rem);
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.font-size-display4,
+.has-display4-font-size,
+.has-display-4-font-size {
+  font-size: $font-size-display4;
+  font-size: clamp(2rem, 1.4545rem + 2.7273vw, 3.5rem);
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.font-size-display5,
+.has-display5-font-size,
+.has-display-5-font-size {
+  font-size: $font-size-display5;
+  font-size: clamp(1.5rem, 0.9545rem + 2.7273vw, 3rem);
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.font-size-display6,
+.has-display6-font-size,
+.has-display-6-font-size {
+  font-size: $font-size-display6;
+  font-size: clamp(1rem, 0.4545rem + 2.7273vw, 2.5rem);
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.border-top {
+  padding-top: 1rem;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: var(--grey) 2px solid;
+  }
+  &--half {
+    &:before {
+      width: 128px;
+    }
+  }
+}
+
+.section--red .border-top,
+.section--green .border-top,
+.section--blue .border-top,
+.section--grey .border-top {
+  &:before {
+    border-top-color: var(--white);
+  }
+}
+
+.has-black-color {
+  color: var(--black);
+}
+.has-white-color {
+  color: var(--white);
+}
+.has-red-color {
+  color: var(--red);
+}
+.has-off-red-color {
+  color: var(--off-red);
+}
+.has-off-white-color {
+  color: var(--off-white);
+}
+.has-yellow-color {
+  color: var(--yellow);
+}
+.has-green-color {
+  color: var(--green);
+}
+.has-blue-color {
+  color: var(--blue);
+}
+.has-grey-color {
+  color: var(--grey);
+}

@@ -1,0 +1,27 @@
+.client-list {
+    border-top: #fff 2px solid;
+    padding-top: 4rem;
+    margin-top: 4rem;
+  
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 50%));
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, minmax(0, 25%));
+    }
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(6, minmax(0, 16.6666666667%));
+    }
+    column-gap: 32px;
+    row-gap: 48px;
+  
+    .client-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      img {
+        height: 100%;
+      }
+    }
+  }

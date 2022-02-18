@@ -1,0 +1,27 @@
+//@import 'fontawesome';
+@import 'application';
+@import 'typography';
+@import 'spacing';
+@import 'grid';
+@import 'wp-blocks';
+@import 'sections';
+@import 'masthead';
+@import 'services';
+@import 'staff';
+@import 'testimonials';
+@import 'clients';
+@import 'contact';
+@import 'book';
+@import 'blog';
+@import 'header';
+@import 'footer';
+
+.wp-block {
+    border: lime 2px dashed;
+}
+
+.wp-block,
+.wp-block[data-align='wide'],
+.wp-block[data-align='full'] {
+    max-width: 1320px;
+}

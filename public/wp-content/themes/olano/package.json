@@ -1,0 +1,15 @@
+{
+  "name": "olano",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Olano WordPress Theme",
+  "scripts": {
+    "build:style": "sass assets/scss/style.scss:assets/css/style.css --style=compressed --source-map",
+    "build:style-editor": "sass assets/scss/style-editor.scss:assets/css/style-editor.css --style=compressed --source-map",
+    "build": "npm run build:style && npm run build:style-editor"
+  },
+  "author": "Cameron Drysdale",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
