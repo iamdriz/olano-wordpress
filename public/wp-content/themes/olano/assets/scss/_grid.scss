@@ -548,12 +548,16 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: all .2s ease-in-out;
-  transform: translateY(-100%)
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .grid-overlay--visible {
+  visibility: visible;
   transform: translateY(0);
+  opacity: 1;
 }
 
 .grid-overlay,
@@ -563,12 +567,28 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 2rem;
-
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.25;
   > div {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.0625);
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    outline: 1px solid #000000;
+    background-color: #7f7f7f;
+    min-height: 100vh;
+    &:after {
+      content: "";
+      background-color: #000000;
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 0;
+      top: 0;
+      bottom: 0;
+    }
   }
 }

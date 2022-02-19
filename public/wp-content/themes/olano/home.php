@@ -6,7 +6,7 @@
 		<div class="row<?php if (!is_archive() && get_query_var('paged') == 0) echo ' margin-bottom-8' ?>">
 			<div class="col col--6 offset-3 md:col--2 md:offset-1 margin-bottom-4 md:margin-bottom-0">
 				<figure class="figure figure--rounded">
-					<img src="http://localhost:8222/wp-content/uploads/Red.svg">
+					<img src="<?php echo bloginfo('template_directory'); ?>/assets/img/blog.svg">
 				</figure>
 			</div>
 			<div class="col md:col--7">
