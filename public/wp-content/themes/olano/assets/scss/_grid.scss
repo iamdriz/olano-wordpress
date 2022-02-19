@@ -549,15 +549,11 @@
   width: 100%;
   z-index: 999;
   transition: all 0.2s ease-in-out;
-  visibility: hidden;
-  transform: translateY(-100%);
-  opacity: 0;
+  transform: translateY(-101%);
 }
 
 .grid-overlay--visible {
-  visibility: visible;
   transform: translateY(0);
-  opacity: 1;
 }
 
 .grid-overlay,
@@ -571,7 +567,7 @@
   margin-right: -1rem;
   display: flex;
   flex-wrap: wrap;
-  opacity: 0.25;
+  opacity: .125;
   > div {
     flex: 1;
     padding-left: 1rem;
