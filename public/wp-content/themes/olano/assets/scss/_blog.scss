@@ -215,15 +215,17 @@
   }
 
   a {
-    display: inline-flex;
-    padding: 0.5rem 1rem;
-    border: #ddd 1px solid;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    border: var(--grey) 1px solid;
     border-radius: 0.25rem;
   }
   .current-cat {
     a {
-      color: white;
+      color: var(--white);
       background-color: var(--red);
+      border-color: var(--red);
       font-weight: 600;
     }
   }
