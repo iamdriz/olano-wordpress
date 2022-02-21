@@ -4,8 +4,11 @@ $pages = array();
 foreach ($pagelist as $page) {
    $pages[] += $page->ID;
 }
-
-$current = array_search(get_the_ID(), $pages);
+$current = array_search(get_queried_object_id(), $pages);
+if(!$current) {
+    $page = get_page_by_path('blog');
+    $current = array_search($page->ID, $pages);
+}
 $prevID = $pages[$current-1];
 $nextID = $pages[$current+1];
 ?>
