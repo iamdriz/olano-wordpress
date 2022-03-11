@@ -16,7 +16,7 @@
                                 <?php if($post_icon) { ?>
                                     <img src="<?php the_field('post_icon'); ?>">
                                 <?php } else { ?>
-                                    <img src="http://localhost:8222/wp-content/uploads/Blue.svg">
+                                    <img src="<?php echo bloginfo('home'); ?>/wp-content/uploads/Blue.svg">
                                 <?php } ?>
                             </figure>
                         </div>
