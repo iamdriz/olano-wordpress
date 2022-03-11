@@ -9,7 +9,12 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: normal;
 }
 
@@ -171,7 +176,7 @@ p {
   padding-top: 1rem;
   position: relative;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -221,3 +226,22 @@ p {
 .has-grey-color {
   color: var(--grey);
 }
+
+
+ul:not(.footer-menu, .footer-menu__list, .menu-list, .social-list, .contact-list, .pagination),
+ol:not(.footer-menu, .footer-menu__list, .menu-list, .social-list, .contact-list, .pagination) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+
+  > li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+} 

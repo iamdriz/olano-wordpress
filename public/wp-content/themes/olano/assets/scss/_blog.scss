@@ -132,9 +132,8 @@
   overflow: hidden;
 
   a {
-    text-decoration-line: underline;
-    text-decoration-color: var(--red);
-    text-underline-offset: 2px;
+    font-weight: 600;
+    color: var(--blue);
   }
 }
 
