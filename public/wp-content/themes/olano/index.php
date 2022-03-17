@@ -18,9 +18,6 @@
                     <div class="wp-block-button">
                         <a class="wp-block-button__link has-yellow-background-color" href="<?php echo bloginfo('home'); ?>">Go to Home</a>
                     </div>
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link has-white-background-color" href="javascript:history.back();">Go back</a>
-                    </div>
                 </div>
             </div>
             <div class="col lg:col--7 lg:offset-1">
