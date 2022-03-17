@@ -11,14 +11,16 @@
                 <header class="article-header margin-bottom-8">
                     <div class="row">
                         <div class="col col--6 offset-3 md:col--2 md:offset-1 margin-bottom-4 md:margin-bottom-0">
-                            <figure class="figure">
-                                <?php $post_icon = get_field('post_icon'); ?>
-                                <?php if($post_icon) { ?>
+                            <?php $post_icon = get_field('post_icon'); ?>
+                            <?php if($post_icon) { ?>
+                                <figure class="figure">
                                     <img src="<?php the_field('post_icon'); ?>">
-                                <?php } else { ?>
-                                    <img src="<?php echo bloginfo('home'); ?>/wp-content/uploads/Blue.svg">
-                                <?php } ?>
-                            </figure>
+                                </figure>
+                            <?php } else { ?>
+                                <figure class="figure figure--rounded">
+                                    <img src="<?php echo bloginfo('template_directory'); ?>/assets/img/blog.svg">
+                                </figure>
+                            <?php } ?>
                         </div>
                         <div class="col md:col--7">
                             <p class="article-categories"><?php the_category(', '); ?></p>

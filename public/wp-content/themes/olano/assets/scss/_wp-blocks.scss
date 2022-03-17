@@ -67,6 +67,11 @@
   }
 }
 
+.wp-block-buttons {
+  .wp-block-button:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
 
 .wp-block-separator {
   margin-top: 1.5rem;
