@@ -119,7 +119,7 @@ $nextID = $pages[$current+1];
     </div>
 </div>
 
-<!-- <div class="fullscreen-loading"></div> -->
+<div class="fullscreen-loading"></div>
 
 <?php wp_footer(); ?>
 </div><!-- overflow: hidden !important -->

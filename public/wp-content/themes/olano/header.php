@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <!-- <script src="https://unpkg.com/@hotwired/turbo@7.0.1/dist/turbo.es2017-umd.js"></script> -->
+    <script src="https://unpkg.com/@hotwired/turbo@7.0.1/dist/turbo.es2017-umd.js"></script>
     <script src="<?php echo bloginfo('template_directory'); ?>/assets/js/application.js"></script>
 </head>
 
