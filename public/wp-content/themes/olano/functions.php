@@ -26,6 +26,9 @@ require get_stylesheet_directory() . '/blocks/service/service-contact/index.php'
 require get_stylesheet_directory() . '/blocks/work/work-header/index.php';
 require get_stylesheet_directory() . '/blocks/work/work-case-studies/index.php';
 require get_stylesheet_directory() . '/blocks/work/work-case-studies-item/index.php';
+// case studies
+require get_stylesheet_directory() . '/blocks/case-study/case-study-header/index.php';
+require get_stylesheet_directory() . '/blocks/case-study/case-study-content/index.php';
 // about
 require get_stylesheet_directory() . '/blocks/about/about-header/index.php';
 require get_stylesheet_directory() . '/blocks/about/about-team/index.php';

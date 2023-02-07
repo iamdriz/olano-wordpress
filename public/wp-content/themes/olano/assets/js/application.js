@@ -132,10 +132,12 @@ $(document).on("click", ".testimonial-arrow:first-child", function (e) {
   e.preventDefault();
   previousTestimonial();
 });
+
 $(document).on("click", ".testimonial-arrow:last-child", function (e) {
   e.preventDefault();
   nextTestimonial();
 });
+
 // $(document).on('click', '.toggle-services-full-list a', function(e){
 //     e.preventDefault();
 //     $('.section--full-services').toggleClass('section--full-services--visible');

@@ -20,3 +20,13 @@ function olano_home_testimonials_list_register_block() {
 
 }
 add_action( 'init', 'olano_home_testimonials_list_register_block' );
+
+function olano_home_testimonials_list_javascript() {
+    wp_enqueue_script(
+        'home-testimonials-list-javascript',
+        get_stylesheet_directory_uri() . '/blocks/home/home-testimonials-list/javascript.js',
+		array('jquery', 'home-testimonials-list-block'),
+		filemtime( get_stylesheet_directory() . '/blocks/home/home-testimonials-list/javascript.js' )
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'olano_home_testimonials_list_javascript');
