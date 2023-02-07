@@ -286,7 +286,7 @@ function erango_numeric_posts_nav() {
 function olano_six_posts( $query ) {
 
     if ( ($query->is_home() && $query->is_main_query()) || ($query->is_archive() && $query->is_main_query()) ) {
-        $query->set( 'posts_per_page', 6 );
+        $query->set( 'posts_per_page', 9 );
     }
 }
 add_action( 'pre_get_posts', 'olano_six_posts' );

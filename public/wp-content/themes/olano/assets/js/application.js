@@ -138,14 +138,6 @@ $(document).on("click", ".testimonial-arrow:last-child", function (e) {
   nextTestimonial();
 });
 
-// $(document).on('click', '.toggle-services-full-list a', function(e){
-//     e.preventDefault();
-//     $('.section--full-services').toggleClass('section--full-services--visible');
-//     $('html, body').animate({
-//         scrollTop: $('.section--full-services').offset().top
-//     }, 200);
-// });
-
 function showHideBackToTop() {
   if ($(this).scrollTop() < 100) {
     $(".back-to-top").addClass("hidden");
